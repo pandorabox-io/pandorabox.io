@@ -1,0 +1,40 @@
+version: "2"
+
+services:
+ minetest:
+  image: registry.rudin.io/x86/minetest:backport-0.4
+  restart: always
+  ports:
+   - "30000:30000/udp"
+  depends_on:
+   - "postgres"
+  volumes:
+   - "./minetest:/data"
+  command: minetestserver --config /data/minetest.conf --world /data/world/ --quiet
+
+ tileserver:
+  image: registry.rudin.io/x86/minetest-tileserver
+  restart: always
+  networks:
+   - default
+   - terminator
+  depends_on:
+   - "postgres"
+  volumes:
+   - "./tileserver.properties:/tileserver.properties"
+  environment:
+   VIRTUAL_PORT: 8080
+   VIRTUAL_HOST: pandorabox.io
+   LETSENCRYPT_HOST: pandorabox.io
+
+ postgres:
+  image: postgres
+  restart: always
+  environment:
+   POSTGRES_PASSWORD: enter
+  volumes:
+   - "./postgres:/var/lib/postgresql/data"
+
+networks:
+ terminator:
+  external: true
