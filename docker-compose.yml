@@ -35,6 +35,14 @@ services:
   volumes:
    - "./postgres:/var/lib/postgresql/data"
 
+ postgres-tiles:
+  image: postgres
+  restart: always
+  environment:
+   POSTGRES_PASSWORD: enter
+  volumes:
+   - "./postgres-tiles:/var/lib/postgresql/data"
+
 networks:
  terminator:
   external: true
