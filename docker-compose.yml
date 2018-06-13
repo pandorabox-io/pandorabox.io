@@ -21,11 +21,7 @@ services:
   depends_on:
    - "postgres"
   volumes:
-   - "./tileserver.properties:/tileserver.properties"
-  environment:
-   VIRTUAL_PORT: 8080
-   VIRTUAL_HOST: pandorabox.io
-   LETSENCRYPT_HOST: pandorabox.io
+   - "./data/tileserver.properties:/tileserver.properties"
 
  postgres:
   image: postgres
@@ -42,6 +38,23 @@ services:
    POSTGRES_PASSWORD: enter
   volumes:
    - "./postgres-tiles:/var/lib/postgresql/data"
+
+ nginx:
+  image: nginx
+  networks:
+   - terminator
+   - default
+  restart: always
+  environment:
+   VIRTUAL_PORT: 80
+   VIRTUAL_HOST: pandorabox.io
+   LETSENCRYPT_HOST: pandorabox.io
+   LETSENCRYPT_EMAIL: thomas@rudin.io
+  volumes:
+   - "./data/nginx/nginx.conf:/etc/nginx/nginx.conf:ro"
+   - "./data/nginx/routes:/routes"
+   - "./data/nginx/html:/html"
+
 
  forum:
   image: registry.rudin.io/x86/vanilla-forum
