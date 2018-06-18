@@ -2,7 +2,7 @@ version: "2"
 
 services:
  minetest:
-  image: registry.rudin.io/x86/minetest:backport-0.4
+  image: registry.rudin.io/x86/minetest:0.4.17
   restart: always
   ports:
    - "30000:30000/udp"
