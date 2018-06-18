@@ -10,7 +10,7 @@
 	var Intro = m("div", {class:"card"}, [
 		m("div", {class:"card-body"}, [
 			m("h3", "Pandorabox minetest server"),
-			m("p", "Pandorabox minetest server"),
+			m("p", "Trains, currency, monsters, space, moon, spaceships and more..."),
 			ForumButton
 		])
 	]);
@@ -22,11 +22,28 @@
 
 	var Nav = m("nav", {class:"navbar navbar-expand-lg navbar-dark bg-primary fixed-top"}, m("a", {class:"navbar-brand", href:"#"}, "Pandorabox"));
 
+	var Screenshots = m("div", {class:"col-md-12"}, [
+		m("div", {class:"card"}, [
+			m("div", {class:"card-body"}, [
+				m("h4", "Screenshots"),
+				m("img", {src:"img/screenshot_20180615_181459.png"}),
+				m("img", {src:"img/screenshot_20180615_181414.png"}),
+				m("img", {src:"img/screenshot_20180615_181421.png"}),
+				m("img", {src:"img/screenshot_20180615_181441.png"}),
+				m("img", {src:"img/screenshot_20180615_181519.png"}),
+				m("img", {src:"img/screenshot_20180615_181728.png"}),
+				m("img", {src:"img/screenshot_20180615_182026.png"}),
+			])
+		])
+	]);
+
 
 	m.render(document.getElementById("app"), [
 		Nav,
 		m("br"), m("br"), m("br"), m("br"),
-		MapRow
+		MapRow,
+		m("br"), m("br"),
+		m("div", {class:"row"}, Screenshots)
 	]);
 
 
