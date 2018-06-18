@@ -55,6 +55,15 @@ services:
    - "./data/nginx/routes:/routes"
    - "./data/nginx/html:/html"
 
+ highscore:
+  image: registry.rudin.io/x86/minetest-xp-highscore
+  restart: always
+  environment:
+   PGHOST: postgres
+   PGUSER: postgres
+   PGDATABASE: postgres
+   PGPASSWORD: enter
+   PGPORT: 5432
 
  forum:
   image: registry.rudin.io/x86/vanilla-forum
