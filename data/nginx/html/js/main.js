@@ -3,6 +3,7 @@
 	var MapHref = "https://pandorabox.io/map/#-1782.25/493.5/10";
 
 	var ForumButton = m("a", {class:"btn btn-primary btn-block",href:"https://pandorabox.io/forum"}, "Forum");
+	var HighscoreButton = m("a", {class:"btn btn-primary btn-block",href:"https://pandorabox.io/highscore"}, "Highscore");
 
 	var MapButton = m("a", {class:"btn btn-primary btn-block",href:MapHref}, "Open map");
 	var MapIframe = m("iframe", {src:MapHref, width:"100%", height:"450px", style:"border: 0px solid"});
@@ -11,7 +12,8 @@
 		m("div", {class:"card-body"}, [
 			m("h3", "Pandorabox minetest server"),
 			m("p", "Trains, currency, monsters, space, moon, spaceships and more..."),
-			ForumButton
+			ForumButton,
+			HighscoreButton
 		])
 	]);
 
