@@ -1,0 +1,22 @@
+version: "2"
+
+services:
+ minetest:
+  image: registry.rudin.io/x86/minetest:0.4.17
+  restart: always
+  ports:
+   - "30003:30000/udp"
+  depends_on:
+   - "postgres"
+  volumes:
+   - "./minetest:/data"
+  command: minetestserver --config /data/minetest.conf --world /data/world/ --quiet
+
+ postgres:
+  image: postgres
+  restart: always
+  environment:
+   POSTGRES_PASSWORD: enter
+  volumes:
+   - "./postgres:/var/lib/postgresql/data"
+
