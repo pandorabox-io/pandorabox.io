@@ -22,6 +22,7 @@ services:
    - "postgres"
   volumes:
    - "./data/tileserver.properties:/tileserver.properties"
+   - "./data/tiles:/tiles"
 
  postgres:
   image: postgres
@@ -30,14 +31,6 @@ services:
    POSTGRES_PASSWORD: enter
   volumes:
    - "./postgres:/var/lib/postgresql/data"
-
- postgres-tiles:
-  image: postgres
-  restart: always
-  environment:
-   POSTGRES_PASSWORD: enter
-  volumes:
-   - "./postgres-tiles:/var/lib/postgresql/data"
 
  nginx:
   image: nginx
