@@ -4,22 +4,26 @@
 
 	var ForumButton = m("a", {class:"btn btn-primary btn-block",href:"https://pandorabox.io/forum"}, "Forum");
 	var HighscoreButton = m("a", {class:"btn btn-primary btn-block",href:"https://pandorabox.io/highscore"}, "Highscore");
+	var MapButton = m("a", {class:"btn btn-primary btn-block",href:MapHref}, "Realtime Map");
 
-	var MapButton = m("a", {class:"btn btn-primary btn-block",href:MapHref}, "Open map");
 	var MapIframe = m("iframe", {src:MapHref, width:"100%", height:"450px", style:"border: 0px solid"});
 
 	var Intro = m("div", {class:"card"}, [
 		m("div", {class:"card-body"}, [
 			m("h3", "Pandorabox minetest server"),
 			m("p", "Trains, currency, monsters, space, moon, spaceships and more..."),
+			m("p", ["Download ", m("a", {href:"https://www.minetest.net/downloads/"}, "Minetest"), " and enter the following Server address:"]),
+			m("p", "Server: ", m("b", "pandorabox.io")),
+			m("p", "Port: ", m("b", "30000")),
 			ForumButton,
-			HighscoreButton
+			HighscoreButton,
+			MapButton
 		])
 	]);
 
 	var MapRow = m("div", {class:"row"}, [
 		m("div", {class:"col-md-6"}, Intro),
-		m("div", {class:"col-md-6"}, [MapButton, MapIframe])
+		m("div", {class:"col-md-6"}, MapIframe)
 	]);
 
 	var Nav = m("nav", {class:"navbar navbar-expand-lg navbar-dark bg-primary fixed-top"}, m("a", {class:"navbar-brand", href:"#"}, "Pandorabox"));
