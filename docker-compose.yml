@@ -9,7 +9,7 @@ services:
   depends_on:
    - "postgres"
   volumes:
-   - "./minetest:/data"
+   - "./data/minetest:/data"
   command: minetestserver --config /data/minetest.conf --world /data/world/ --quiet
   logging:
    options:
@@ -36,7 +36,9 @@ services:
   environment:
    POSTGRES_PASSWORD: enter
   volumes:
-   - "./postgres:/var/lib/postgresql/data"
+   - "./data/postgres-minetest:/var/lib/postgresql/data"
+   - "./data/postgres-minetest-backup:/backup"
+   - "./data/postgres-minetest-restore:/restore"
 
  postgres-tiles:
   image: postgres
@@ -91,53 +93,53 @@ services:
   volumes:
    - "./data/forum-db:/var/lib/mysql"
 
- node-exporter:
-  image: prom/node-exporter
-  ports:
-   - '9100:9100'
-  logging:
-   options:
-    max-size: 50m
-
- postgres-exporter:
-  image: wrouesnel/postgres_exporter
-  restart: always
-  depends_on:
-   - "postgres"
-  environment:
-   DATA_SOURCE_NAME: postgresql://postgres:enter@postgres:5432/?sslmode=disable
-  logging:
-   options:
-    max-size: 50m
-
- prometheus:
-  image: prom/prometheus:0.18.0
-  volumes:
-   - ./data/prometheus.yml:/etc/prometheus/prometheus.yml
-   - ./data/prometheus:/prometheus/data
-  command:
-   - '-config.file=/etc/prometheus/prometheus.yml'
-  ports:
-   - '9090:9090'
-  logging:
-   options:
-    max-size: 50m
-
- grafana:
-  image: grafana/grafana:3.0.0-beta7
-  environment:
-   - GF_SECURITY_ADMIN_PASSWORD=enter
-  depends_on:
-   - prometheus
-  ports:
-   - "3000:3000"
-  volumes:
-   - "./data/grafana:/var/lib/grafana"
-   - "./data/grafana.ini:/etc/grafana/grafana.ini"
-  logging:
-   options:
-    max-size: 50m
-
+# node-exporter:
+#  image: prom/node-exporter
+#  ports:
+#   - '9100:9100'
+#  logging:
+#   options:
+#    max-size: 50m
+#
+# postgres-exporter:
+#  image: wrouesnel/postgres_exporter
+#  restart: always
+#  depends_on:
+#   - "postgres"
+#  environment:
+#   DATA_SOURCE_NAME: postgresql://postgres:enter@postgres:5432/?sslmode=disable
+#  logging:
+#   options:
+#    max-size: 50m
+#
+# prometheus:
+#  image: prom/prometheus:0.18.0
+#  volumes:
+#   - ./data/prometheus.yml:/etc/prometheus/prometheus.yml
+#   - ./data/prometheus:/prometheus/data
+#  command:
+#   - '-config.file=/etc/prometheus/prometheus.yml'
+#  ports:
+#   - '9090:9090'
+#  logging:
+#   options:
+#    max-size: 50m
+#
+# grafana:
+#  image: grafana/grafana:3.0.0-beta7
+#  environment:
+#   - GF_SECURITY_ADMIN_PASSWORD=enter
+#  depends_on:
+#   - prometheus
+#  ports:
+#   - "3000:3000"
+#  volumes:
+#   - "./data/grafana:/var/lib/grafana"
+#   - "./data/grafana.ini:/etc/grafana/grafana.ini"
+#  logging:
+#   options:
+#    max-size: 50m
+#
 
 networks:
  terminator:

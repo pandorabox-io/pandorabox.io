@@ -3,4 +3,4 @@ forum-db
 tiles
 grafana
 prometheus
-postgres-tiles
+postgres*
