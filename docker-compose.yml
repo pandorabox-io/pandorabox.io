@@ -31,7 +31,7 @@ services:
     max-size: 50m
 
  postgres:
-  image: postgres
+  image: postgres:10
   restart: always
   environment:
    POSTGRES_PASSWORD: enter
