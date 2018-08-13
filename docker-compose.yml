@@ -77,8 +77,14 @@ services:
    PGPASSWORD: enter
    PGPORT: 5432
 
+ wiki:
+  image: registry.rudin.io/x86/php-pandorabox
+  restart: always
+  volumes:
+   - "./data/wiki:/var/www/html"
+
  forum:
-  image: registry.rudin.io/x86/vanilla-forum
+  image: registry.rudin.io/x86/php-pandorabox
   restart: always
   depends_on:
    - "forum-db"
