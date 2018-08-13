@@ -70,6 +70,8 @@ services:
  highscore:
   image: registry.rudin.io/x86/minetest-xp-highscore
   restart: always
+  volumes:
+   - "./data/minetest/world/ranks.json:/data/public/js/ranks.json:ro"
   environment:
    PGHOST: postgres
    PGUSER: postgres
