@@ -1,0 +1,13 @@
+{
+  "layers": [{
+    "id": 0,
+    "name": "Earth",
+    "from": -16,
+    "to": 160
+  },{
+    "id": 1,
+    "name": "Moon",
+    "from": 5000,
+    "to": 5500
+  }]
+}

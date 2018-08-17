@@ -25,6 +25,7 @@ services:
    - "postgres-tiles"
   volumes:
    - "./data/tileserver.properties:/tileserver.properties"
+   - "./data/tileserver.layers.json:/layers.json"
    - "./data/tiles:/tiles"
   logging:
    options:
