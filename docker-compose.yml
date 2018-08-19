@@ -102,6 +102,16 @@ services:
   volumes:
    - "./data/forum-db:/var/lib/mysql"
 
+ minetest-exporter:
+  image: registry.rudin.io/x86/minetest-serverstats-exporter
+  restart: always
+  environment:
+   PGHOST: postgres
+   PGUSER: postgres
+   PGDATABASE: postgres
+   PGPASSWORD: enter
+   PGPORT: 5432
+
  node-exporter:
   image: prom/node-exporter
   ports:
@@ -117,6 +127,17 @@ services:
    - "postgres"
   environment:
    DATA_SOURCE_NAME: postgresql://postgres:enter@postgres:5432/?sslmode=disable
+  logging:
+   options:
+    max-size: 50m
+
+ postgres-tiles-exporter:
+  image: wrouesnel/postgres_exporter
+  restart: always
+  depends_on:
+   - "postgres-tiles"
+  environment:
+   DATA_SOURCE_NAME: postgresql://postgres-tiles:enter@postgres:5432/?sslmode=disable
   logging:
    options:
     max-size: 50m
