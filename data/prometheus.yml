@@ -12,3 +12,6 @@ scrape_configs:
     - job_name: 'postgres-exporter'
       target_groups:
           - targets: ['postgres-exporter:9187']
+    - job_name: 'tileserver-exporter'
+      target_groups:
+          - targets: ['tileserver:8081']
