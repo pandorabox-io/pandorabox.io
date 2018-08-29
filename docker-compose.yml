@@ -82,19 +82,14 @@ services:
    PGPASSWORD: enter
    PGPORT: 5432
 
-# wiki:
-#  image: mediawiki
-#  restart: always
-#  volumes:
-#   - "./data/wiki/images:/var/www/html/images"
-#  environment:
-#   VIRTUAL_PORT: 80
-#   VIRTUAL_HOST: wiki.pandorabox.io
-#   LETSENCRYPT_HOST: wiki.pandorabox.io
-#   LETSENCRYPT_EMAIL: thomas@rudin.io
-#  logging:
-#   options:
-#    max-size: 50m
+ wiki:
+  image: registry.rudin.io/x86/php-pandorabox
+  restart: always
+  volumes:
+   - "./data/wiki:/var/www/html/wiki"
+  logging:
+   options:
+    max-size: 50m
 
  forum:
   image: registry.rudin.io/x86/php-pandorabox
