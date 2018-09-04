@@ -13,6 +13,7 @@ services:
   volumes:
    - "./data/minetest:/data"
   command: minetestserver --config /data/minetest.conf --world /data/world/ --quiet
+  working_dir: /data
   logging:
    options:
     max-size: 50m
