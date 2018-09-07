@@ -5,6 +5,9 @@
 	var ForumButton = m("a", {class:"btn btn-primary btn-block",href:"https://pandorabox.io/forum"}, "Forum");
 	var HighscoreButton = m("a", {class:"btn btn-primary btn-block",href:"https://pandorabox.io/highscore"}, "Highscore");
 	var MapButton = m("a", {class:"btn btn-primary btn-block",href:MapHref}, "Realtime Map");
+	var GithubButton = m("a", {class: "btn btn-secondary btn-block", href:"https://github.com/pandorabox-io/pandorabox.io"}, "Github/Issues");
+
+	var AdminMailButton = m("a", {class: "btn btn-secondary btn-block", href:"mailto:admin@pandorabox.io"}, "Mail to admin");
 
 	var MapIframe = m("iframe", {src:MapHref, width:"100%", height:"450px", style:"border: 0px solid"});
 
@@ -17,7 +20,9 @@
 			m("p", "Port: ", m("b", "30000")),
 			ForumButton,
 			HighscoreButton,
-			MapButton
+			MapButton,
+			GithubButton,
+			AdminMailButton
 		])
 	]);
 
