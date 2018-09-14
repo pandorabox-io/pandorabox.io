@@ -97,22 +97,6 @@ services:
    options:
     max-size: 50m
 
- forum:
-  image: registry.rudin.io/x86/php-pandorabox
-  restart: always
-  depends_on:
-   - "forum-db"
-  volumes:
-  - "./data/forum-web:/var/www/html"
-
- forum-db:
-  image: mysql:5
-  restart: always
-  environment:
-   MYSQL_ROOT_PASSWORD: enter
-  volumes:
-   - "./data/forum-db:/var/lib/mysql"
-
  minetest-exporter:
   image: registry.rudin.io/x86/minetest-serverstats-exporter
   restart: always
