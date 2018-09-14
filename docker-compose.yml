@@ -130,8 +130,6 @@ services:
    - '--path.procfs=/host/proc'
    - '--path.sysfs=/host/sys'
    - '--collector.filesystem.ignored-mount-points=^/(sys|proc|dev|host|etc)($$|/)'
-  ports:
-   - '9100:9100'
   networks:
    - monitor-net
    - default
@@ -171,8 +169,6 @@ services:
    - "minetest-exporter"
   command:
    - '-config.file=/etc/prometheus/prometheus.yml'
-  ports:
-   - '9090:9090'
   logging:
    options:
     max-size: 50m
@@ -183,8 +179,6 @@ services:
    - GF_SECURITY_ADMIN_PASSWORD=enter
   depends_on:
    - prometheus
-  ports:
-   - "3000:3000"
   volumes:
    - "./data/grafana:/var/lib/grafana"
    - "./data/grafana.ini:/etc/grafana/grafana.ini"
