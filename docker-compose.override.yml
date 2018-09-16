@@ -25,10 +25,6 @@ services:
    PGPASSWORD: enter
    PGPORT: 5432
 
- forum-db:
-  environment:
-   MYSQL_ROOT_PASSWORD: enter
-
  minetest-exporter:
   environment:
    PGHOST: postgres

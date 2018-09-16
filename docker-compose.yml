@@ -62,7 +62,6 @@ services:
    - wiki
    - highscore
    - grafana
-   - forum
   environment:
    VIRTUAL_PORT: 80
    VIRTUAL_HOST: pandorabox.io
