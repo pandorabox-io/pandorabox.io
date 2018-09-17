@@ -1,5 +1,11 @@
 (function(){
 
+	var enable_maintenance = false;
+
+	var Maintenance = m("div", {class:"col-md-12"}, m("div", {class:"alert alert-warning"},
+		m("h4", "Test")
+	));
+
 	var MapHref = "map/#-1782.25/493.5/10";
 
 	var ServerStatsButton = m("a", {class: "btn btn-secondary btn-block", href:"grafana/d/cACE6ppik/overview?refresh=5s&orgId=1"}, "Server status");
@@ -54,6 +60,7 @@
 	m.render(document.getElementById("app"), [
 		Nav,
 		m("br"), m("br"), m("br"), m("br"),
+		enable_maintenance ? Maintenance : null,
 		MapRow,
 		m("br"), m("br"),
 		m("div", {class:"row"}, Screenshots)
