@@ -87,6 +87,16 @@ services:
    PGPASSWORD: enter
    PGPORT: 5432
 
+ forum:
+  image: registry.rudin.io/x86/php-pandorabox
+  restart: always
+  volumes:
+   - "./data/forum:/var/www/html/forum"
+  logging:
+   options:
+    max-size: 50m
+
+
  wiki:
   image: registry.rudin.io/x86/php-pandorabox
   restart: always
@@ -99,26 +109,6 @@ services:
  minetest-exporter:
   image: registry.rudin.io/x86/minetest-serverstats-exporter
   restart: always
-
- node-exporter:
-  image: prom/node-exporter
-  restart: always
-  user: root
-  privileged: true
-  volumes:
-   - /proc:/host/proc:ro
-   - /sys:/host/sys:ro
-   - /:/rootfs:ro
-  command:
-   - '--path.procfs=/host/proc'
-   - '--path.sysfs=/host/sys'
-   - '--collector.filesystem.ignored-mount-points=^/(sys|proc|dev|host|etc)($$|/)'
-  networks:
-   - monitor-net
-   - default
-  logging:
-   options:
-    max-size: 50m
 
  postgres-exporter:
   image: wrouesnel/postgres_exporter
@@ -148,7 +138,6 @@ services:
    - ./data/prometheus.yml:/etc/prometheus/prometheus.yml
    - ./data/prometheus:/prometheus/data
   depends_on:
-   - "node-exporter"
    - "minetest-exporter"
   command:
    - '-config.file=/etc/prometheus/prometheus.yml'
