@@ -8,7 +8,7 @@ scrape_configs:
           - targets: ['localhost:9090']
     - job_name: 'node-exporter'
       target_groups:
-          - targets: ['10.0.0.43:9100']
+          - targets: ['159.69.92.148:9100']
     - job_name: 'minetest-exporter'
       target_groups:
           - targets: ['minetest-exporter:8080']
