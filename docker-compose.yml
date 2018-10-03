@@ -71,6 +71,7 @@ services:
    - "./data/nginx/nginx.conf:/etc/nginx/nginx.conf:ro"
    - "./data/nginx/routes:/routes"
    - "./data/nginx/html:/html"
+   - "./data/minetest/world/news.txt:/html/news.txt"
   logging:
    options:
     max-size: 50m
