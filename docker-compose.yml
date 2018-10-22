@@ -37,16 +37,21 @@ services:
  postgres:
   image: postgres:10
   restart: always
+  shm_size: '2gb'
   environment:
    POSTGRES_PASSWORD: enter
   volumes:
    - "./data/postgres-minetest:/var/lib/postgresql/data"
    - "./data/postgres-minetest-backup:/backup"
    - "./data/postgres-minetest-restore:/restore"
+  logging:
+   options:
+    max-size: 50m
 
  postgres-tiles:
   image: postgres
   restart: always
+  shm_size: '2gb'
   environment:
    POSTGRES_PASSWORD: enter
   volumes:
@@ -163,7 +168,5 @@ services:
 networks:
  terminator:
   external: true
- monitor-net:
-  driver: bridge
 
  
