@@ -2,10 +2,11 @@
 
 	var enable_maintenance = false;
 
-	var Maintenance = m("div", {class:"col-md-12"}, m("div", {class:"alert alert-danger"},
-		m("h3", "Maintenance window"),
-		m("h4", "There will be a maintenance window on 2018-09-17 06:00 UTC for 2 hours"),
-		m("h4", "The server will be available again afterwards")
+	var Maintenance = m("div", {class:"col-md-12"}, m("div", {class:"alert alert-warning"},
+		m("h3", "Current status"),
+		//m("h4", "There will be a maintenance window on 2018-09-17 06:00 UTC for 2 hours"),
+		//m("h4", "Server currently down for maintenance, will be up shortly"),
+		m("h4", "There are some lag issues ongoing, please be patient...")
 	));
 
 	var MapHref = "map/#-1782.25/493.5/10";

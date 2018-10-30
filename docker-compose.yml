@@ -37,16 +37,21 @@ services:
  postgres:
   image: postgres:10
   restart: always
+  shm_size: '2gb'
   environment:
    POSTGRES_PASSWORD: enter
   volumes:
    - "./data/postgres-minetest:/var/lib/postgresql/data"
    - "./data/postgres-minetest-backup:/backup"
    - "./data/postgres-minetest-restore:/restore"
+  logging:
+   options:
+    max-size: 50m
 
  postgres-tiles:
   image: postgres
   restart: always
+  shm_size: '2gb'
   environment:
    POSTGRES_PASSWORD: enter
   volumes:
@@ -59,7 +64,7 @@ services:
    - default
   restart: always
   depends_on:
-   - wiki
+#   - wiki
    - highscore
    - grafana
   environment:
@@ -88,24 +93,24 @@ services:
    PGPASSWORD: enter
    PGPORT: 5432
 
- forum:
-  image: registry.rudin.io/x86/php-pandorabox
-  restart: always
-  volumes:
-   - "./data/forum:/var/www/html/forum"
-  logging:
-   options:
-    max-size: 50m
+   #forum:
+   #  image: registry.rudin.io/x86/php-pandorabox
+   #  restart: always
+   #  volumes:
+   #   - "./data/forum:/var/www/html/forum"
+   #  logging:
+   #   options:
+   #    max-size: 50m
 
 
- wiki:
-  image: registry.rudin.io/x86/php-pandorabox
-  restart: always
-  volumes:
-   - "./data/wiki:/var/www/html/wiki"
-  logging:
-   options:
-    max-size: 50m
+   # wiki:
+   #  image: registry.rudin.io/x86/php-pandorabox
+   #  restart: always
+   #  volumes:
+   #   - "./data/wiki:/var/www/html/wiki"
+   #  logging:
+   #   options:
+   #    max-size: 50m
 
  minetest-exporter:
   image: registry.rudin.io/x86/minetest-serverstats-exporter
@@ -163,7 +168,5 @@ services:
 networks:
  terminator:
   external: true
- monitor-net:
-  driver: bridge
 
  
