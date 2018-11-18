@@ -13,8 +13,13 @@
 
 	var ServerStatsButton = m("a", {class: "btn btn-secondary btn-block", href:"grafana/d/cACE6ppik/overview?refresh=5s&orgId=1"}, "Server status");
 	var ForumButton = m("a", {class:"btn btn-primary btn-block",href:"https://forum.minetest.net/viewtopic.php?f=10&t=20311"}, "Forum");
-	var HighscoreButton = m("a", {class:"btn btn-primary btn-block",href:"highscore"}, "Highscore");
-	var MapButton = m("a", {class:"btn btn-primary btn-block",href:MapHref}, "Realtime Map");
+	var HighscoreButton = m("a", {class:"btn btn-primary btn-block",href:"highscore"},
+		"Highscore");
+	var MapButton = m("a", {class:"btn btn-primary btn-block",href:MapHref},
+		"Realtime Map");
+	var ShopSearchButton = m("a", {class:"btn btn-block btn-primary", href: "map/search.html"},
+		"Shop search");
+
 	var GithubButton = m("a", {class: "btn btn-secondary btn-block", href:"https://github.com/pandorabox-io/pandorabox.io"}, "Github/Issues");
 
 	var AdminMailButton = m("a", {class: "btn btn-secondary btn-block", href:"mailto:admin@pandorabox.io"}, "Mail to admin");
@@ -32,6 +37,7 @@
 			ForumButton,
 			HighscoreButton,
 			MapButton,
+			ShopSearchButton,
 			NewsButton,
 			GithubButton,
 			AdminMailButton,
