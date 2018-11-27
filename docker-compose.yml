@@ -64,9 +64,9 @@ services:
    - default
   restart: always
   depends_on:
-#   - wiki
    - highscore
    - grafana
+   - tileserver
   environment:
    VIRTUAL_PORT: 80
    VIRTUAL_HOST: pandorabox.io
@@ -86,6 +86,8 @@ services:
   restart: always
   volumes:
    - "./data/minetest/world/ranks.json:/data/public/js/ranks.json:ro"
+  depends_on:
+   - postgres
   environment:
    PGHOST: postgres
    PGUSER: postgres
@@ -134,6 +136,7 @@ services:
 
  grafana:
   image: grafana/grafana
+  restart: always
   environment:
    - GF_SECURITY_ADMIN_PASSWORD=enter
   depends_on:
