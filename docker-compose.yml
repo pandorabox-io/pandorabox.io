@@ -85,7 +85,7 @@ services:
   image: registry.rudin.io/x86/minetest-xp-highscore
   restart: always
   volumes:
-   - "./data/minetest/world/ranks.json:/data/public/js/ranks.json:ro"
+   - "./data/minetest/world:/data/world:ro"
   depends_on:
    - postgres
   environment:
