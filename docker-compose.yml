@@ -128,14 +128,14 @@ services:
     max-size: 50m
 
  prometheus:
-  image: prom/prometheus:0.18.0
+  image: prom/prometheus:v2.6.1
   volumes:
    - ./data/prometheus.yml:/etc/prometheus/prometheus.yml
    - ./data/prometheus:/prometheus/data
   depends_on:
    - "minetest-exporter"
   command:
-   - '-config.file=/etc/prometheus/prometheus.yml'
+   - '--config.file=/etc/prometheus/prometheus.yml'
   logging:
    options:
     max-size: 50m

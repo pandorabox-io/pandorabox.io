@@ -4,17 +4,17 @@ global:
         monitor: 'my-monitor'
 scrape_configs:
     - job_name: 'prometheus'
-      target_groups:
+      static_configs:
           - targets: ['localhost:9090']
     - job_name: 'node-exporter'
-      target_groups:
+      static_configs:
           - targets: ['pandorabox.io:9100']
     - job_name: 'minetest-exporter'
-      target_groups:
+      static_configs:
           - targets: ['minetest-exporter:8080']
     - job_name: 'postgres-exporter'
-      target_groups:
+      static_configs:
           - targets: ['postgres-exporter:9187']
     - job_name: 'tileserver-exporter'
-      target_groups:
+      static_configs:
           - targets: ['tileserver:8081']
