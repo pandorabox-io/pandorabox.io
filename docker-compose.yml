@@ -101,8 +101,8 @@ services:
   depends_on:
    - minetest
 
- minetest-exporter:
-  image: registry.rudin.io/x86/minetest-serverstats-exporter
+ pushgateway:
+  image: prom/pushgateway
   restart: always
 
  postgres-exporter:
