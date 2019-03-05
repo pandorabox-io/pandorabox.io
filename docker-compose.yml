@@ -4,7 +4,7 @@ version: "2"
 
 services:
  minetest:
-  image: registry.rudin.io/x86/minetest:0.4.17.1
+  image: registry.rudin.io/x86/minetest:5.0.0
   restart: always
   ports:
    - "30000:30000/udp"
@@ -12,8 +12,8 @@ services:
    - "postgres"
   volumes:
    - "./data/minetest:/data"
-  command: minetestserver --config /data/minetest.conf --world /data/world/ --quiet
   working_dir: /data
+  command: minetestserver --config /data/minetest.conf --world /data/world/ --quiet
   logging:
    options:
     max-size: 50m
@@ -48,6 +48,13 @@ services:
    options:
     max-size: 50m
 
+ portainer:
+  image: portainer/portainer
+  restart: always
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    - /opt/portainer/data:/data
+
  postgres-tiles:
   image: postgres
   restart: always
@@ -67,10 +74,11 @@ services:
    - highscore
    - grafana
    - tileserver
+   - portainer
   environment:
    VIRTUAL_PORT: 80
-   VIRTUAL_HOST: pandorabox.io
-   LETSENCRYPT_HOST: pandorabox.io
+   VIRTUAL_HOST: test.pandorabox.io
+   LETSENCRYPT_HOST: test.pandorabox.io
    LETSENCRYPT_EMAIL: thomas@rudin.io
   volumes:
    - "./data/nginx/nginx.conf:/etc/nginx/nginx.conf:ro"
@@ -133,7 +141,7 @@ services:
    - ./data/prometheus.yml:/etc/prometheus/prometheus.yml
    - ./data/prometheus:/prometheus/data
   depends_on:
-   - "minetest-exporter"
+   - "pushgateway"
   command:
    - '--config.file=/etc/prometheus/prometheus.yml'
   logging:
