@@ -12,6 +12,7 @@ services:
    - "postgres"
   volumes:
    - "./data/minetest:/data"
+   - "./data/minetest/debug.txt:/usr/local/debug.txt"
   working_dir: /data
   command: minetestserver --config /data/minetest.conf --world /data/world/ --quiet
   logging:
