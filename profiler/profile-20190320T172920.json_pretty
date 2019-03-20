@@ -1,0 +1,3714 @@
+{
+   "3d_armor" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 3.7417823126872607,
+            "part_max" : 0.49883604921849023,
+            "part_min" : 0.00096900163761276764,
+            "samples" : 185,
+            "time_all" : 724,
+            "time_max" : 64,
+            "time_min" : 2
+         },
+         "globalstep[2]" : {
+            "part_all" : 5.9537242975631068,
+            "part_max" : 0.42446156264738255,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 185,
+            "time_all" : 1636,
+            "time_max" : 70,
+            "time_min" : 1
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.047499951530661701,
+            "part_max" : 0.047499951530661701,
+            "part_min" : 0.047499951530661701,
+            "samples" : 1,
+            "time_all" : 49,
+            "time_max" : 49,
+            "time_min" : 49
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 1.4587240842898708,
+            "part_max" : 0.62553925798101806,
+            "part_min" : 0.044551698533506587,
+            "samples" : 5,
+            "time_all" : 387,
+            "time_max" : 198,
+            "time_min" : 12
+         }
+      },
+      "part_all" : 11.201730646070905,
+      "part_max" : 0.64279551337359797,
+      "part_min" : 0.00129200218348369,
+      "samples" : 186,
+      "time_all" : 2796,
+      "time_max" : 251,
+      "time_min" : 3
+   },
+   "3d_armor_stand" : {
+      "instruments" : {
+         "ABM[1]" : {
+            "part_all" : 0.8055622413245187,
+            "part_max" : 0.49936984281739705,
+            "part_min" : 0.3061923985071216,
+            "samples" : 2,
+            "time_all" : 411,
+            "time_max" : 210,
+            "time_min" : 201
+         },
+         "on_activate[1]" : {
+            "part_all" : 5.5296964667874748,
+            "part_max" : 2.8281544080070797,
+            "part_min" : 0.25543423820494843,
+            "samples" : 6,
+            "time_all" : 3643,
+            "time_max" : 2269,
+            "time_min" : 153
+         }
+      },
+      "part_all" : 6.3352587081119935,
+      "part_max" : 2.8281544080070797,
+      "part_min" : 0,
+      "samples" : 166,
+      "time_all" : 4054,
+      "time_max" : 2269,
+      "time_min" : 0
+   },
+   "??" : {
+      "instruments" : {
+         "on_joinplayer[1]" : {
+            "part_all" : 0.67275441555671878,
+            "part_max" : 0.67275441555671878,
+            "part_min" : 0.67275441555671878,
+            "samples" : 1,
+            "time_all" : 694,
+            "time_max" : 694,
+            "time_min" : 694
+         }
+      },
+      "part_all" : 0.67275441555671878,
+      "part_max" : 0.67275441555671878,
+      "part_min" : 0,
+      "samples" : 136,
+      "time_all" : 694,
+      "time_max" : 694,
+      "time_min" : 0
+   },
+   "adv_keys" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.067743706501925557,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 8,
+            "time_max" : 2,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 0.067743706501925557,
+      "part_max" : 0.044742729306487698,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 8,
+      "time_max" : 2,
+      "time_min" : 0
+   },
+   "advtrains" : {
+      "instruments" : {
+         "LBM 'advtrains:nodedb_on_load_update'" : {
+            "part_all" : 4.7584297047330146,
+            "part_max" : 1.8776971811587551,
+            "part_min" : 0.42206870445727263,
+            "samples" : 6,
+            "time_all" : 2527,
+            "time_max" : 818,
+            "time_min" : 223
+         },
+         "globalstep[1]" : {
+            "part_all" : 6599.6752397647551,
+            "part_max" : 82.893009328573072,
+            "part_min" : 1.4445248580951484,
+            "samples" : 185,
+            "time_all" : 1576282,
+            "time_max" : 109316,
+            "time_min" : 2077
+         },
+         "on_dignode[1]" : {
+            "part_all" : 6.9333773144787694,
+            "part_max" : 0.61375221054821594,
+            "part_min" : 0.018943430181620136,
+            "samples" : 38,
+            "time_all" : 2438,
+            "time_max" : 174,
+            "time_min" : 6
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 1.1390294499699491,
+            "part_max" : 1.1390294499699491,
+            "part_min" : 1.1390294499699491,
+            "samples" : 1,
+            "time_all" : 1175,
+            "time_max" : 1175,
+            "time_min" : 1175
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.32172613385695126,
+            "part_max" : 0.22371364653243847,
+            "part_min" : 0.0058163205955912289,
+            "samples" : 5,
+            "time_all" : 36,
+            "time_max" : 11,
+            "time_min" : 4
+         },
+         "on_step[3]" : {
+            "part_all" : 190.25880465001995,
+            "part_max" : 29.644403920674723,
+            "part_min" : 0.025840043669673803,
+            "samples" : 185,
+            "time_all" : 40714,
+            "time_max" : 5202,
+            "time_min" : 60
+         }
+      },
+      "part_all" : 6803.0866070178154,
+      "part_max" : 83.091097546930783,
+      "part_min" : 0.22371364653243847,
+      "samples" : 186,
+      "time_all" : 1623172,
+      "time_max" : 109473,
+      "time_min" : 5
+   },
+   "advtrains_interlocking" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.12938710394092914,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 14,
+            "time_max" : 5,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 1.5139054122597382,
+            "part_max" : 0.87144089732528052,
+            "part_min" : 0.011632641191182458,
+            "samples" : 5,
+            "time_all" : 255,
+            "time_max" : 202,
+            "time_min" : 10
+         },
+         "on_player_receive_fields[3]" : {
+            "part_all" : 0.11906603775639764,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 11,
+            "time_max" : 4,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[4]" : {
+            "part_all" : 0.12806212991493335,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 14,
+            "time_max" : 4,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[5]" : {
+            "part_all" : 0.49210639931038969,
+            "part_max" : 0.31319910514541388,
+            "part_min" : 0.010663254425250585,
+            "samples" : 5,
+            "time_all" : 63,
+            "time_max" : 20,
+            "time_min" : 7
+         },
+         "on_player_receive_fields[6]" : {
+            "part_all" : 0.52450835937612861,
+            "part_max" : 0.35794183445190159,
+            "part_min" : 0.010663254425250585,
+            "samples" : 5,
+            "time_all" : 61,
+            "time_max" : 18,
+            "time_min" : 8
+         },
+         "on_player_receive_fields[7]" : {
+            "part_all" : 3.9448455446238584,
+            "part_max" : 3.7583892617449663,
+            "part_min" : 0.011632641191182458,
+            "samples" : 5,
+            "time_all" : 143,
+            "time_max" : 84,
+            "time_min" : 9
+         },
+         "on_player_receive_fields[8]" : {
+            "part_all" : 0.62976604368754474,
+            "part_max" : 0.40268456375838929,
+            "part_min" : 0.0135714147230462,
+            "samples" : 5,
+            "time_all" : 80,
+            "time_max" : 26,
+            "time_min" : 9
+         },
+         "on_player_receive_fields[9]" : {
+            "part_all" : 0.76233011581085453,
+            "part_max" : 0.53691275167785235,
+            "part_min" : 0.0135714147230462,
+            "samples" : 5,
+            "time_all" : 82,
+            "time_max" : 27,
+            "time_min" : 12
+         },
+         "on_punchnode[1]" : {
+            "part_all" : 4.5353221606992955,
+            "part_max" : 1.4916286149162861,
+            "part_min" : 0.060411851229249844,
+            "samples" : 10,
+            "time_all" : 824,
+            "time_max" : 308,
+            "time_min" : 23
+         },
+         "on_punchnode[2]" : {
+            "part_all" : 3.3154782109086125,
+            "part_max" : 1.2886859462201927,
+            "part_min" : 0.0236394200462282,
+            "samples" : 10,
+            "time_all" : 587,
+            "time_max" : 221,
+            "time_min" : 9
+         },
+         "on_punchnode[3]" : {
+            "part_all" : 2.4404399256159834,
+            "part_max" : 0.90309487569761537,
+            "part_min" : 0.01838621559151082,
+            "samples" : 10,
+            "time_all" : 408,
+            "time_max" : 141,
+            "time_min" : 7
+         }
+      },
+      "part_all" : 18.535217443904667,
+      "part_max" : 6.174496644295302,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 2542,
+      "time_max" : 749,
+      "time_min" : 0
+   },
+   "advtrains_itrainmap" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.072057770350070507,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 9,
+            "time_max" : 3,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 0.072057770350070507,
+      "part_max" : 0.044742729306487698,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 9,
+      "time_max" : 3,
+      "time_min" : 0
+   },
+   "advtrains_line_automation" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.38938306098339787,
+            "part_max" : 0.31319910514541388,
+            "part_min" : 0.0029081602977956145,
+            "samples" : 5,
+            "time_all" : 30,
+            "time_max" : 8,
+            "time_min" : 3
+         }
+      },
+      "part_all" : 0.38938306098339787,
+      "part_max" : 0.31319910514541388,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 30,
+      "time_max" : 8,
+      "time_min" : 0
+   },
+   "advtrains_luaautomation" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.12507304009278419,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 13,
+            "time_max" : 4,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 2.137837157783165,
+            "part_max" : 1.476510067114094,
+            "part_min" : 0.018418348552705559,
+            "samples" : 5,
+            "time_all" : 213,
+            "time_max" : 110,
+            "time_min" : 19
+         },
+         "on_punchnode[1]" : {
+            "part_all" : 0.9272551239969069,
+            "part_max" : 0.66804883667357751,
+            "part_min" : 0.011956359288596622,
+            "samples" : 10,
+            "time_all" : 116,
+            "time_max" : 58,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 3.1901653218728567,
+      "part_max" : 1.5659955257270695,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 342,
+      "time_max" : 114,
+      "time_min" : 0
+   },
+   "advtrains_railbus" : {
+      "instruments" : {
+         "on_step[1]" : {
+            "part_all" : 262.76739597478365,
+            "part_max" : 8.8720843540313137,
+            "part_min" : 0.046096021558754703,
+            "samples" : 185,
+            "time_all" : 52568,
+            "time_max" : 1542,
+            "time_min" : 93
+         }
+      },
+      "part_all" : 262.76739597478365,
+      "part_max" : 8.8720843540313137,
+      "part_min" : 0.046096021558754703,
+      "samples" : 185,
+      "time_all" : 52568,
+      "time_max" : 1542,
+      "time_min" : 93
+   },
+   "advtrains_train_subway" : {
+      "instruments" : {
+         "on_step[1]" : {
+            "part_all" : 353.08892143373231,
+            "part_max" : 11.831732589762126,
+            "part_min" : 0.079512152377737899,
+            "samples" : 185,
+            "time_all" : 73949,
+            "time_max" : 3437,
+            "time_min" : 180
+         }
+      },
+      "part_all" : 353.08892143373231,
+      "part_max" : 11.831732589762126,
+      "part_min" : 0.079512152377737899,
+      "samples" : 185,
+      "time_all" : 73949,
+      "time_max" : 3437,
+      "time_min" : 180
+   },
+   "ambience" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 338.07498983735422,
+            "part_max" : 31.338660283712912,
+            "part_min" : 0.00064600109174184502,
+            "samples" : 185,
+            "time_all" : 122479,
+            "time_max" : 16242,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 338.07498983735422,
+      "part_max" : 31.338660283712912,
+      "part_min" : 0.00064600109174184502,
+      "samples" : 185,
+      "time_all" : 122479,
+      "time_max" : 16242,
+      "time_min" : 1
+   },
+   "anvil" : {
+      "instruments" : {
+         "LBM 'anvil:anvil_item_restoration'" : {
+            "part_all" : 0.32583063957243913,
+            "part_max" : 0.1164652787887611,
+            "part_min" : 0.026712077197903101,
+            "samples" : 5,
+            "time_all" : 190,
+            "time_max" : 72,
+            "time_min" : 16
+         },
+         "get_staticdata[1]" : {
+            "part_all" : 0.033069061874023503,
+            "part_max" : 0.011356108640105991,
+            "part_min" : 0.0033390096497378876,
+            "samples" : 5,
+            "time_all" : 19,
+            "time_max" : 6,
+            "time_min" : 2
+         },
+         "on_activate[1]" : {
+            "part_all" : 0.16119400126647634,
+            "part_max" : 0.077376346646032976,
+            "part_min" : 0.015359267223323744,
+            "samples" : 4,
+            "time_all" : 89,
+            "time_max" : 39,
+            "time_min" : 11
+         }
+      },
+      "part_all" : 0.52009370271293898,
+      "part_max" : 0.14384404277467588,
+      "part_min" : 0,
+      "samples" : 156,
+      "time_all" : 298,
+      "time_max" : 76,
+      "time_min" : 0
+   },
+   "areas" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 242.83361272331794,
+            "part_max" : 8.1123467351012266,
+            "part_min" : 0.055233093343927758,
+            "samples" : 185,
+            "time_all" : 50978,
+            "time_max" : 1652,
+            "time_min" : 121
+         },
+         "on_punchnode[1]" : {
+            "part_all" : 0.43395068675554488,
+            "part_max" : 0.12176560121765602,
+            "part_min" : 0.013133011136793445,
+            "samples" : 10,
+            "time_all" : 76,
+            "time_max" : 21,
+            "time_min" : 3
+         }
+      },
+      "part_all" : 243.26756341007348,
+      "part_max" : 8.1123467351012266,
+      "part_min" : 0.055233093343927758,
+      "samples" : 185,
+      "time_all" : 51054,
+      "time_max" : 1652,
+      "time_min" : 121
+   },
+   "atm" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 3.3672173368069691,
+            "part_max" : 0.59340408535889533,
+            "part_min" : 0.00064600109174184502,
+            "samples" : 185,
+            "time_all" : 682,
+            "time_max" : 101,
+            "time_min" : 1
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 7.5932065375443489,
+            "part_max" : 7.5932065375443489,
+            "part_min" : 7.5932065375443489,
+            "samples" : 1,
+            "time_all" : 7833,
+            "time_max" : 7833,
+            "time_min" : 7833
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.12746070761124728,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 14,
+            "time_max" : 4,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 11.087884581962546,
+      "part_max" : 7.5970840846080776,
+      "part_min" : 0.00064600109174184502,
+      "samples" : 186,
+      "time_all" : 8529,
+      "time_max" : 7837,
+      "time_min" : 1
+   },
+   "banners" : {
+      "instruments" : {
+         "on_activate[1]" : {
+            "part_all" : 0.20822189959501794,
+            "part_max" : 0.20822189959501794,
+            "part_min" : 0.20822189959501794,
+            "samples" : 1,
+            "time_all" : 109,
+            "time_max" : 109,
+            "time_min" : 109
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.23648033691882375,
+            "part_max" : 0.17897091722595079,
+            "part_min" : 0.0038775470637274858,
+            "samples" : 5,
+            "time_all" : 23,
+            "time_max" : 7,
+            "time_min" : 3
+         }
+      },
+      "part_all" : 0.44470223651384166,
+      "part_max" : 0.20822189959501794,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 132,
+      "time_max" : 109,
+      "time_min" : 0
+   },
+   "beacon" : {
+      "instruments" : {
+         "ABM[5]" : {
+            "part_all" : 25.399047763480343,
+            "part_max" : 2.1068651463629231,
+            "part_min" : 0.21617324880280733,
+            "samples" : 29,
+            "time_all" : 17216,
+            "time_max" : 3813,
+            "time_min" : 173
+         },
+         "ABM[6]" : {
+            "part_all" : 17.770692159332331,
+            "part_max" : 2.862937719031982,
+            "part_min" : 0.15714073699005648,
+            "samples" : 29,
+            "time_all" : 10664,
+            "time_max" : 2075,
+            "time_min" : 104
+         },
+         "LBM 'Beacon without base cleanup for green'" : {
+            "part_all" : 0.42329470697775073,
+            "part_max" : 0.070680828302896001,
+            "part_min" : 0.021692178554923652,
+            "samples" : 10,
+            "time_all" : 246,
+            "time_max" : 39,
+            "time_min" : 10
+         },
+         "LBM 'Beacon without base cleanup for purple'" : {
+            "part_all" : 0.015859912605875555,
+            "part_max" : 0.0091818933063997788,
+            "part_min" : 0.0066780192994757752,
+            "samples" : 2,
+            "time_all" : 8,
+            "time_max" : 4,
+            "time_min" : 4
+         },
+         "LBM 'Beacon without base cleanup for red'" : {
+            "part_all" : 0.0074785925288860635,
+            "part_max" : 0.0074785925288860635,
+            "part_min" : 0.0074785925288860635,
+            "samples" : 1,
+            "time_all" : 6,
+            "time_max" : 6,
+            "time_min" : 6
+         }
+      },
+      "part_all" : 43.616373134925183,
+      "part_max" : 4.0688208835784652,
+      "part_min" : 0,
+      "samples" : 181,
+      "time_all" : 28140,
+      "time_max" : 4371,
+      "time_min" : 0
+   },
+   "beds" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.11680049965655821,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 10,
+            "time_max" : 3,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 0.11680049965655821,
+      "part_max" : 0.089485458612975396,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 10,
+      "time_max" : 3,
+      "time_min" : 0
+   },
+   "beerchat" : {
+      "instruments" : {
+         "on_joinplayer[1]" : {
+            "part_all" : 0.085306035402004682,
+            "part_max" : 0.085306035402004682,
+            "part_min" : 0.085306035402004682,
+            "samples" : 1,
+            "time_all" : 88,
+            "time_max" : 88,
+            "time_min" : 88
+         }
+      },
+      "part_all" : 0.085306035402004682,
+      "part_max" : 0.085306035402004682,
+      "part_min" : 0,
+      "samples" : 136,
+      "time_all" : 88,
+      "time_max" : 88,
+      "time_min" : 0
+   },
+   "binoculars" : {
+      "instruments" : {
+         "on_joinplayer[1]" : {
+            "part_all" : 0.81428488338277194,
+            "part_max" : 0.81428488338277194,
+            "part_min" : 0.81428488338277194,
+            "samples" : 1,
+            "time_all" : 840,
+            "time_max" : 840,
+            "time_min" : 840
+         }
+      },
+      "part_all" : 0.81428488338277194,
+      "part_max" : 0.81428488338277194,
+      "part_min" : 0,
+      "samples" : 136,
+      "time_all" : 840,
+      "time_max" : 840,
+      "time_min" : 0
+   },
+   "biome_lib" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 4.5270197061123172,
+            "part_max" : 0.2308136180034622,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 185,
+            "time_all" : 1098,
+            "time_max" : 127,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 4.5270197061123172,
+      "part_max" : 0.2308136180034622,
+      "part_min" : 0.00032300054587092251,
+      "samples" : 185,
+      "time_all" : 1098,
+      "time_max" : 127,
+      "time_min" : 1
+   },
+   "boost_cart" : {
+      "instruments" : {
+         "get_staticdata[1]" : {
+            "part_all" : 0.55143619716111669,
+            "part_max" : 0.34825399829658371,
+            "part_min" : 0.032114831466949649,
+            "samples" : 5,
+            "time_all" : 305,
+            "time_max" : 184,
+            "time_min" : 23
+         },
+         "on_activate[1]" : {
+            "part_all" : 0.088788417377098444,
+            "part_max" : 0.051584231097355319,
+            "part_min" : 0.037204186279743132,
+            "samples" : 2,
+            "time_all" : 49,
+            "time_max" : 26,
+            "time_min" : 23
+         },
+         "on_step[1]" : {
+            "part_all" : 5.9057425252114486,
+            "part_max" : 0.93446376632217343,
+            "part_min" : 0.0016226969873007735,
+            "samples" : 71,
+            "time_all" : 1127,
+            "time_max" : 151,
+            "time_min" : 4
+         }
+      },
+      "part_all" : 6.5459671397496644,
+      "part_max" : 0.93446376632217343,
+      "part_min" : 0,
+      "samples" : 185,
+      "time_all" : 1481,
+      "time_max" : 194,
+      "time_min" : 0
+   },
+   "bow" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 151.99361549597103,
+            "part_max" : 3.1795098255685583,
+            "part_min" : 0.035207059499930554,
+            "samples" : 185,
+            "time_all" : 30103,
+            "time_max" : 512,
+            "time_min" : 87
+         }
+      },
+      "part_all" : 151.99361549597103,
+      "part_max" : 3.1795098255685583,
+      "part_min" : 0.035207059499930554,
+      "samples" : 185,
+      "time_all" : 30103,
+      "time_max" : 512,
+      "time_min" : 87
+   },
+   "ccompass" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 21.99219072917624,
+            "part_max" : 3.2041774711241069,
+            "part_min" : 0.00094073377234242701,
+            "samples" : 185,
+            "time_all" : 26292,
+            "time_max" : 9873,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.067743706501925557,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 8,
+            "time_max" : 2,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 22.059934435678162,
+      "part_max" : 3.2041774711241069,
+      "part_min" : 0.00094073377234242701,
+      "samples" : 186,
+      "time_all" : 26300,
+      "time_max" : 9873,
+      "time_min" : 1
+   },
+   "controls" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 184.58533921730759,
+            "part_max" : 11.532238631278185,
+            "part_min" : 0.033915057316446867,
+            "samples" : 185,
+            "time_all" : 40777,
+            "time_max" : 3350,
+            "time_min" : 82
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.015510188254909943,
+            "part_max" : 0.015510188254909943,
+            "part_min" : 0.015510188254909943,
+            "samples" : 1,
+            "time_all" : 16,
+            "time_max" : 16,
+            "time_min" : 16
+         }
+      },
+      "part_all" : 184.60084940556251,
+      "part_max" : 11.532238631278185,
+      "part_min" : 0.033915057316446867,
+      "samples" : 185,
+      "time_all" : 40793,
+      "time_max" : 3350,
+      "time_min" : 82
+   },
+   "creative" : {
+      "instruments" : {
+         "on_placenode[1]" : {
+            "part_all" : 19.684827479584982,
+            "part_max" : 5.8420290958945849,
+            "part_min" : 0.0054910092798056828,
+            "samples" : 47,
+            "time_all" : 6143,
+            "time_max" : 3835,
+            "time_min" : 12
+         }
+      },
+      "part_all" : 19.684827479584982,
+      "part_max" : 5.8420290958945849,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 6143,
+      "time_max" : 3835,
+      "time_min" : 0
+   },
+   "currency" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.071702183090006574,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 10,
+            "time_max" : 3,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 0.071702183090006574,
+      "part_max" : 0.044742729306487698,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 10,
+      "time_max" : 3,
+      "time_min" : 0
+   },
+   "default" : {
+      "instruments" : {
+         "ABM 'Grass covered'" : {
+            "part_all" : 6.4931122181061411,
+            "part_max" : 1.8422807602534179,
+            "part_min" : 1.1341825161402896,
+            "samples" : 4,
+            "time_all" : 4384,
+            "time_max" : 1188,
+            "time_min" : 921
+         },
+         "ABM 'Grass spread'" : {
+            "part_all" : 2.7151774688241446,
+            "part_max" : 1.0451977401129944,
+            "part_min" : 0.3573498164960402,
+            "samples" : 5,
+            "time_all" : 1494,
+            "time_max" : 434,
+            "time_min" : 213
+         },
+         "ABM 'Grow papyrus'" : {
+            "part_all" : 0.040284968180164082,
+            "part_max" : 0.032855955625132868,
+            "part_min" : 0.0074290125550312176,
+            "samples" : 2,
+            "time_all" : 40,
+            "time_max" : 23,
+            "time_min" : 17
+         },
+         "ABM 'Lava cooling'" : {
+            "part_all" : 12.670946054426242,
+            "part_max" : 3.4110364809693134,
+            "part_min" : 0.15148725601346266,
+            "samples" : 10,
+            "time_all" : 7254,
+            "time_max" : 1974,
+            "time_min" : 97
+         },
+         "get_staticdata[1]" : {
+            "part_all" : 0.3713025498331714,
+            "part_max" : 0.15043431843548308,
+            "part_min" : 0.050668605291564778,
+            "samples" : 4,
+            "time_all" : 213,
+            "time_max" : 93,
+            "time_min" : 23
+         },
+         "on_activate[1]" : {
+            "part_all" : 0.18317096199518285,
+            "part_max" : 0.13911130521990911,
+            "part_min" : 0.044059656775273723,
+            "samples" : 2,
+            "time_all" : 106,
+            "time_max" : 86,
+            "time_min" : 20
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.0135714147230462,
+            "part_max" : 0.0135714147230462,
+            "part_min" : 0.0135714147230462,
+            "samples" : 1,
+            "time_all" : 14,
+            "time_max" : 14,
+            "time_min" : 14
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.10578470444180521,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 7,
+            "time_max" : 2,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 0.11345582257434511,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 10,
+            "time_max" : 2,
+            "time_min" : 2
+         },
+         "on_step[1]" : {
+            "part_all" : 294.82565530283466,
+            "part_max" : 15.596116504854368,
+            "part_min" : 0.02437770370895681,
+            "samples" : 163,
+            "time_all" : 60193,
+            "time_max" : 2008,
+            "time_min" : 48
+         }
+      },
+      "part_all" : 317.53246146593881,
+      "part_max" : 15.596116504854368,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 73715,
+      "time_max" : 3254,
+      "time_min" : 0
+   },
+   "digilines" : {
+      "instruments" : {
+         "on_activate[1]" : {
+            "part_all" : 0.52323911811546442,
+            "part_max" : 0.37059677542599528,
+            "part_min" : 0.15264234268946916,
+            "samples" : 2,
+            "time_all" : 297,
+            "time_max" : 194,
+            "time_min" : 103
+         },
+         "on_dignode[1]" : {
+            "part_all" : 2.2936238672762324,
+            "part_max" : 0.23991275899672848,
+            "part_min" : 0.0047358575454050341,
+            "samples" : 38,
+            "time_all" : 768,
+            "time_max" : 66,
+            "time_min" : 2
+         },
+         "on_placenode[1]" : {
+            "part_all" : 2.7993479643563113,
+            "part_max" : 0.34020618556701032,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 47,
+            "time_all" : 806,
+            "time_max" : 68,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 5.6162109497480062,
+      "part_max" : 0.52533048062963239,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 1871,
+      "time_max" : 275,
+      "time_min" : 0
+   },
+   "digiterms" : {
+      "instruments" : {
+         "get_staticdata[1]" : {
+            "part_all" : 0.30476254990934881,
+            "part_max" : 0.19249122466475793,
+            "part_min" : 0.043407125446592539,
+            "samples" : 3,
+            "time_all" : 175,
+            "time_max" : 119,
+            "time_min" : 26
+         },
+         "on_activate[1]" : {
+            "part_all" : 0.33576890648911706,
+            "part_max" : 0.24561564594619409,
+            "part_min" : 0.090153260542922969,
+            "samples" : 2,
+            "time_all" : 161,
+            "time_max" : 107,
+            "time_min" : 54
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.06500045172339855,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 8,
+            "time_max" : 2,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 0.7055319081218645,
+      "part_max" : 0.31447984574419247,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 344,
+      "time_max" : 137,
+      "time_min" : 0
+   },
+   "digtron" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.080330310786296474,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 12,
+            "time_max" : 4,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 0.11405724487803119,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 10,
+            "time_max" : 3,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[3]" : {
+            "part_all" : 0.12075897624463923,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 12,
+            "time_max" : 3,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 0.31514653190896685,
+      "part_max" : 0.22371364653243847,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 34,
+      "time_max" : 10,
+      "time_min" : 0
+   },
+   "display_api" : {
+      "instruments" : {
+         "LBM 'Update display_api entities'" : {
+            "part_all" : 11.0960397945901,
+            "part_max" : 7.2405240000498567,
+            "part_min" : 0.055093659220675141,
+            "samples" : 6,
+            "time_all" : 8334,
+            "time_max" : 5809,
+            "time_min" : 33
+         }
+      },
+      "part_all" : 11.0960397945901,
+      "part_max" : 7.2405240000498567,
+      "part_min" : 0,
+      "samples" : 143,
+      "time_all" : 8334,
+      "time_max" : 5809,
+      "time_min" : 0
+   },
+   "elevator" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 17.62638257086989,
+            "part_max" : 1.5000223883938566,
+            "part_min" : 0.00032453939746015468,
+            "samples" : 185,
+            "time_all" : 4205,
+            "time_max" : 437,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.11405724487803119,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 10,
+            "time_max" : 3,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 17.740439815747923,
+      "part_max" : 1.5000223883938566,
+      "part_min" : 0.00032453939746015468,
+      "samples" : 186,
+      "time_all" : 4215,
+      "time_max" : 437,
+      "time_min" : 1
+   },
+   "fancy_vend" : {
+      "instruments" : {
+         "ABM[1]" : {
+            "part_all" : 0.43785310734463279,
+            "part_max" : 0.43785310734463279,
+            "part_min" : 0.43785310734463279,
+            "samples" : 1,
+            "time_all" : 155,
+            "time_max" : 155,
+            "time_min" : 155
+         },
+         "get_staticdata[1]" : {
+            "part_all" : 0.51147352978155036,
+            "part_max" : 0.39680177767196401,
+            "part_min" : 0.11467175210958631,
+            "samples" : 2,
+            "time_all" : 292,
+            "time_max" : 200,
+            "time_min" : 92
+         },
+         "on_activate[1]" : {
+            "part_all" : 1.1180495830684665,
+            "part_max" : 1.1180495830684665,
+            "part_min" : 1.1180495830684665,
+            "samples" : 1,
+            "time_all" : 897,
+            "time_max" : 897,
+            "time_min" : 897
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.18636085027172383,
+            "part_max" : 0.13422818791946309,
+            "part_min" : 0.0038775470637274858,
+            "samples" : 5,
+            "time_all" : 20,
+            "time_max" : 6,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 2.2537370704663733,
+      "part_max" : 1.2327213351780528,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 1364,
+      "time_max" : 989,
+      "time_min" : 0
+   },
+   "farming" : {
+      "instruments" : {
+         "ABM[2]" : {
+            "part_all" : 15.084686890135149,
+            "part_max" : 8.6141967267473536,
+            "part_min" : 6.4704901633877956,
+            "samples" : 2,
+            "time_all" : 7518,
+            "time_max" : 3881,
+            "time_min" : 3637
+         }
+      },
+      "part_all" : 15.084686890135149,
+      "part_max" : 8.6141967267473536,
+      "part_min" : 0,
+      "samples" : 173,
+      "time_all" : 7518,
+      "time_max" : 3881,
+      "time_min" : 0
+   },
+   "fire" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 95.812674290199141,
+            "part_max" : 32.340156484628153,
+            "part_min" : 0.00064907879492030935,
+            "samples" : 185,
+            "time_all" : 24389,
+            "time_max" : 4092,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 95.812674290199141,
+      "part_max" : 32.340156484628153,
+      "part_min" : 0.00064907879492030935,
+      "samples" : 185,
+      "time_all" : 24389,
+      "time_max" : 4092,
+      "time_min" : 2
+   },
+   "flowers" : {
+      "instruments" : {
+         "ABM 'Flower spread'" : {
+            "part_all" : 3.376485175880517,
+            "part_max" : 2.5375473682122096,
+            "part_min" : 0.83893780766830761,
+            "samples" : 2,
+            "time_all" : 2126,
+            "time_max" : 1279,
+            "time_min" : 847
+         }
+      },
+      "part_all" : 3.376485175880517,
+      "part_max" : 2.5375473682122096,
+      "part_min" : 0,
+      "samples" : 148,
+      "time_all" : 2126,
+      "time_max" : 1279,
+      "time_min" : 0
+   },
+   "font_api" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.076016246938151524,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 11,
+            "time_max" : 3,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 0.11776988642249007,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 11,
+            "time_max" : 3,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 0.1937861333606416,
+      "part_max" : 0.13422818791946309,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 22,
+      "time_max" : 6,
+      "time_min" : 0
+   },
+   "homedecor" : {
+      "instruments" : {
+         "on_placenode[1]" : {
+            "part_all" : 6.3692779546897222,
+            "part_max" : 0.62756883369425909,
+            "part_min" : 0.0094355200150968328,
+            "samples" : 47,
+            "time_all" : 2049,
+            "time_max" : 142,
+            "time_min" : 3
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.12374806606678838,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 13,
+            "time_max" : 4,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 6.4930260207565116,
+      "part_max" : 0.62756883369425909,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 2062,
+      "time_max" : 142,
+      "time_min" : 0
+   },
+   "itemframes" : {
+      "instruments" : {
+         "LBM 'Maintain itemframe and pedestal entities'" : {
+            "part_all" : 0.23238959602737091,
+            "part_max" : 0.10506609612592648,
+            "part_min" : 0.0074785925288860635,
+            "samples" : 5,
+            "time_all" : 153,
+            "time_max" : 55,
+            "time_min" : 6
+         },
+         "get_staticdata[1]" : {
+            "part_all" : 0.53270833416388519,
+            "part_max" : 0.20822189959501794,
+            "part_min" : 0.0024928641762953546,
+            "samples" : 10,
+            "time_all" : 339,
+            "time_max" : 109,
+            "time_min" : 2
+         },
+         "on_activate[1]" : {
+            "part_all" : 2.1685053215123089,
+            "part_max" : 0.81569496446855649,
+            "part_min" : 0.054843011878497799,
+            "samples" : 5,
+            "time_all" : 1484,
+            "time_max" : 516,
+            "time_min" : 44
+         }
+      },
+      "part_all" : 2.9336032517035648,
+      "part_max" : 1.1289829601895012,
+      "part_min" : 0,
+      "samples" : 156,
+      "time_all" : 1976,
+      "time_max" : 591,
+      "time_min" : 0
+   },
+   "jails" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 3.2193964645909143,
+            "part_max" : 0.39427146750159447,
+            "part_min" : 0.00064600109174184502,
+            "samples" : 185,
+            "time_all" : 832,
+            "time_max" : 204,
+            "time_min" : 1
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.0087244808933868434,
+            "part_max" : 0.0087244808933868434,
+            "part_min" : 0.0087244808933868434,
+            "samples" : 1,
+            "time_all" : 9,
+            "time_max" : 9,
+            "time_min" : 9
+         }
+      },
+      "part_all" : 3.2281209454843016,
+      "part_max" : 0.39427146750159447,
+      "part_min" : 0.00064600109174184502,
+      "samples" : 185,
+      "time_all" : 841,
+      "time_max" : 204,
+      "time_min" : 1
+   },
+   "lag_warning" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 2.6733646789690089,
+            "part_max" : 0.6014215418261345,
+            "part_min" : 0.00064600109174184502,
+            "samples" : 185,
+            "time_all" : 515,
+            "time_max" : 73,
+            "time_min" : 1
+         },
+         "globalstep[2]" : {
+            "part_all" : 1.8911574585812241,
+            "part_max" : 0.19764901695620515,
+            "part_min" : 0.00044323097652648746,
+            "samples" : 185,
+            "time_all" : 399,
+            "time_max" : 41,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 4.564522137550231,
+      "part_max" : 0.62329141607435756,
+      "part_min" : 0.00129200218348369,
+      "samples" : 185,
+      "time_all" : 914,
+      "time_max" : 74,
+      "time_min" : 2
+   },
+   "locator" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 76.930600233241123,
+            "part_max" : 17.393438753835262,
+            "part_min" : 0.00094313819804015887,
+            "samples" : 185,
+            "time_all" : 75717,
+            "time_max" : 18424,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 76.930600233241123,
+      "part_max" : 17.393438753835262,
+      "part_min" : 0.00094313819804015887,
+      "samples" : 185,
+      "time_all" : 75717,
+      "time_max" : 18424,
+      "time_min" : 1
+   },
+   "mail" : {
+      "instruments" : {
+         "on_joinplayer[1]" : {
+            "part_all" : 0.22586711646212604,
+            "part_max" : 0.22586711646212604,
+            "part_min" : 0.22586711646212604,
+            "samples" : 1,
+            "time_all" : 233,
+            "time_max" : 233,
+            "time_min" : 233
+         },
+         "on_joinplayer[2]" : {
+            "part_all" : 0.25397933267415035,
+            "part_max" : 0.25397933267415035,
+            "part_min" : 0.25397933267415035,
+            "samples" : 1,
+            "time_all" : 262,
+            "time_max" : 262,
+            "time_min" : 262
+         },
+         "on_joinplayer[3]" : {
+            "part_all" : 0.0096938676593187161,
+            "part_max" : 0.0096938676593187161,
+            "part_min" : 0.0096938676593187161,
+            "samples" : 1,
+            "time_all" : 10,
+            "time_max" : 10,
+            "time_min" : 10
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 5.8024810858066402,
+            "part_max" : 4.7818823092630405,
+            "part_min" : 0.005978179644298311,
+            "samples" : 5,
+            "time_all" : 2236,
+            "time_max" : 1288,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 6.2920214026022352,
+      "part_max" : 4.7818823092630405,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 2741,
+      "time_max" : 1446,
+      "time_min" : 0
+   },
+   "map" : {
+      "instruments" : {
+         "on_joinplayer[1]" : {
+            "part_all" : 0.12020395897555207,
+            "part_max" : 0.12020395897555207,
+            "part_min" : 0.12020395897555207,
+            "samples" : 1,
+            "time_all" : 124,
+            "time_max" : 124,
+            "time_min" : 124
+         }
+      },
+      "part_all" : 0.12020395897555207,
+      "part_max" : 0.12020395897555207,
+      "part_min" : 0,
+      "samples" : 136,
+      "time_all" : 124,
+      "time_max" : 124,
+      "time_min" : 0
+   },
+   "mesecons" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 3931.8637188845842,
+            "part_max" : 89.507996237064916,
+            "part_min" : 0.0099740674246957903,
+            "samples" : 185,
+            "time_all" : 2091475,
+            "time_max" : 109464,
+            "time_min" : 6
+         },
+         "globalstep[2]" : {
+            "part_all" : 1.6740228230218084,
+            "part_max" : 0.030161363293620871,
+            "part_min" : 0.00032453939746015468,
+            "samples" : 185,
+            "time_all" : 347,
+            "time_max" : 5,
+            "time_min" : 1
+         },
+         "on_dignode[1]" : {
+            "part_all" : 39.284345977054208,
+            "part_max" : 14.535760530124154,
+            "part_min" : 0.04202563563773902,
+            "samples" : 38,
+            "time_all" : 18158,
+            "time_max" : 9542,
+            "time_min" : 15
+         },
+         "on_placenode[1]" : {
+            "part_all" : 36.451211338743086,
+            "part_max" : 3.3090046120091343,
+            "part_min" : 0.043196544276457881,
+            "samples" : 47,
+            "time_all" : 13151,
+            "time_max" : 1185,
+            "time_min" : 20
+         }
+      },
+      "part_all" : 4009.2732990234013,
+      "part_max" : 89.511759172154285,
+      "part_min" : 0.012823800974608873,
+      "samples" : 186,
+      "time_all" : 2123131,
+      "time_max" : 109466,
+      "time_min" : 7
+   },
+   "mesecons_detector" : {
+      "instruments" : {
+         "ABM[1]" : {
+            "part_all" : 16.509355765785866,
+            "part_max" : 4.095646921643298,
+            "part_min" : 0.15359444388794283,
+            "samples" : 29,
+            "time_all" : 19575,
+            "time_max" : 12680,
+            "time_min" : 89
+         },
+         "ABM[2]" : {
+            "part_all" : 0.80268272143906183,
+            "part_max" : 0.2974026832330976,
+            "part_min" : 0.11018731844135028,
+            "samples" : 4,
+            "time_all" : 410,
+            "time_max" : 136,
+            "time_min" : 66
+         }
+      },
+      "part_all" : 17.312038487224928,
+      "part_max" : 4.095646921643298,
+      "part_min" : 0,
+      "samples" : 181,
+      "time_all" : 19985,
+      "time_max" : 12680,
+      "time_min" : 0
+   },
+   "mesecons_receiver" : {
+      "instruments" : {
+         "on_dignode[1]" : {
+            "part_all" : 2.9169797007823464,
+            "part_max" : 0.27522935779816515,
+            "part_min" : 0.0071037863181075515,
+            "samples" : 38,
+            "time_all" : 1065,
+            "time_max" : 72,
+            "time_min" : 3
+         },
+         "on_placenode[1]" : {
+            "part_all" : 4.6321884298700589,
+            "part_max" : 0.4390270506108202,
+            "part_min" : 0.0023588800037742082,
+            "samples" : 47,
+            "time_all" : 1716,
+            "time_max" : 190,
+            "time_min" : 1
+         },
+         "on_placenode[2]" : {
+            "part_all" : 4.1814714102124588,
+            "part_max" : 0.60855092062831584,
+            "part_min" : 0.0035383200056613119,
+            "samples" : 47,
+            "time_all" : 1204,
+            "time_max" : 117,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 11.730639540864862,
+      "part_max" : 1.191095391657131,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 3985,
+      "time_max" : 248,
+      "time_min" : 0
+   },
+   "mesecons_torch" : {
+      "instruments" : {
+         "ABM[1]" : {
+            "part_all" : 0.48853822609566722,
+            "part_max" : 0.095810678100074251,
+            "part_min" : 0.024198160939768575,
+            "samples" : 9,
+            "time_all" : 260,
+            "time_max" : 40,
+            "time_min" : 22
+         }
+      },
+      "part_all" : 0.48853822609566722,
+      "part_max" : 0.095810678100074251,
+      "part_min" : 0,
+      "samples" : 51,
+      "time_all" : 260,
+      "time_max" : 40,
+      "time_min" : 0
+   },
+   "missions" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 5.1393437530280472,
+            "part_max" : 1.5873015873015872,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 185,
+            "time_all" : 942,
+            "time_max" : 183,
+            "time_min" : 1
+         },
+         "globalstep[2]" : {
+            "part_all" : 119.67973581558394,
+            "part_max" : 12.207763564181738,
+            "part_min" : 0.00032453939746015468,
+            "samples" : 185,
+            "time_all" : 33966,
+            "time_max" : 3667,
+            "time_min" : 1
+         },
+         "on_dignode[1]" : {
+            "part_all" : 1.8030696205442145,
+            "part_max" : 0.16428516848781233,
+            "part_min" : 0.0071037863181075515,
+            "samples" : 38,
+            "time_all" : 688,
+            "time_max" : 86,
+            "time_min" : 3
+         },
+         "on_dignode[2]" : {
+            "part_all" : 6.3807612255353066,
+            "part_max" : 3.4665027658266747,
+            "part_min" : 0.0051680087339347602,
+            "samples" : 38,
+            "time_all" : 1493,
+            "time_max" : 564,
+            "time_min" : 9
+         },
+         "on_dignode[3]" : {
+            "part_all" : 1.8838307731589583,
+            "part_max" : 0.18119945198214524,
+            "part_min" : 0.005138482092389908,
+            "samples" : 38,
+            "time_all" : 731,
+            "time_max" : 84,
+            "time_min" : 2
+         },
+         "on_dignode[4]" : {
+            "part_all" : 2.7448113952412347,
+            "part_max" : 0.30000447767877131,
+            "part_min" : 0.0045220076421929149,
+            "samples" : 38,
+            "time_all" : 801,
+            "time_max" : 67,
+            "time_min" : 5
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.12892843986893893,
+            "part_max" : 0.12892843986893893,
+            "part_min" : 0.12892843986893893,
+            "samples" : 1,
+            "time_all" : 133,
+            "time_max" : 133,
+            "time_min" : 133
+         },
+         "on_joinplayer[2]" : {
+            "part_all" : 0.75806045095872343,
+            "part_max" : 0.75806045095872343,
+            "part_min" : 0.75806045095872343,
+            "samples" : 1,
+            "time_all" : 782,
+            "time_max" : 782,
+            "time_min" : 782
+         },
+         "on_joinplayer[3]" : {
+            "part_all" : 0.08821419569980031,
+            "part_max" : 0.08821419569980031,
+            "part_min" : 0.08821419569980031,
+            "samples" : 1,
+            "time_all" : 91,
+            "time_max" : 91,
+            "time_min" : 91
+         },
+         "on_placenode[1]" : {
+            "part_all" : 8.5981814657646272,
+            "part_max" : 1.1017289907519099,
+            "part_min" : 0.0054910092798056828,
+            "samples" : 47,
+            "time_all" : 1541,
+            "time_max" : 148,
+            "time_min" : 13
+         },
+         "on_placenode[2]" : {
+            "part_all" : 3.8624827580253602,
+            "part_max" : 0.50735667174023336,
+            "part_min" : 0.0048450081880638375,
+            "samples" : 47,
+            "time_all" : 1074,
+            "time_max" : 118,
+            "time_min" : 2
+         },
+         "on_placenode[3]" : {
+            "part_all" : 3.5824873659707559,
+            "part_max" : 0.31319910514541388,
+            "part_min" : 0.0054910092798056828,
+            "samples" : 47,
+            "time_all" : 830,
+            "time_max" : 63,
+            "time_min" : 6
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.23765631237573207,
+            "part_max" : 0.17256255392579811,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 48,
+            "time_max" : 40,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 0.12806212991493335,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 14,
+            "time_max" : 4,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[3]" : {
+            "part_all" : 0.081025039816517971,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 12,
+            "time_max" : 5,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[4]" : {
+            "part_all" : 0.12075897624463923,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 12,
+            "time_max" : 3,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[5]" : {
+            "part_all" : 0.076016246938151524,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 11,
+            "time_max" : 3,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[6]" : {
+            "part_all" : 0.11978958947870737,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 11,
+            "time_max" : 3,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[7]" : {
+            "part_all" : 0.068345128805611624,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 8,
+            "time_max" : 3,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[8]" : {
+            "part_all" : 0.25313517000771751,
+            "part_max" : 0.17897091722595079,
+            "part_min" : 0.0038775470637274858,
+            "samples" : 5,
+            "time_all" : 27,
+            "time_max" : 8,
+            "time_min" : 4
+         },
+         "on_player_receive_fields[9]" : {
+            "part_all" : 0.11704633470018035,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 11,
+            "time_max" : 3,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 155.8517421876621,
+      "part_max" : 12.569145666871542,
+      "part_min" : 0.00064907879492030935,
+      "samples" : 186,
+      "time_all" : 43226,
+      "time_max" : 3668,
+      "time_min" : 2
+   },
+   "mob_horse" : {
+      "instruments" : {
+         "get_staticdata[1]" : {
+            "part_all" : 6.5333398036265997,
+            "part_max" : 5.6000000000000005,
+            "part_min" : 0.9333398036265993,
+            "samples" : 2,
+            "time_all" : 1298,
+            "time_max" : 721,
+            "time_min" : 577
+         },
+         "on_activate[1]" : {
+            "part_all" : 2.7262135922330097,
+            "part_max" : 2.7262135922330097,
+            "part_min" : 2.7262135922330097,
+            "samples" : 1,
+            "time_all" : 351,
+            "time_max" : 351,
+            "time_min" : 351
+         },
+         "on_step[1]" : {
+            "part_all" : 43.674191831579911,
+            "part_max" : 4.2481833426495248,
+            "part_min" : 0.019047800455242431,
+            "samples" : 98,
+            "time_all" : 7687,
+            "time_max" : 304,
+            "time_min" : 11
+         }
+      },
+      "part_all" : 52.933745227439537,
+      "part_max" : 8.3262135922330103,
+      "part_min" : 0.019047800455242431,
+      "samples" : 99,
+      "time_all" : 9336,
+      "time_max" : 1072,
+      "time_min" : 11
+   },
+   "mobs" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.11405724487803119,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 10,
+            "time_max" : 3,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 0.11405724487803119,
+      "part_max" : 0.089485458612975396,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 10,
+      "time_max" : 3,
+      "time_min" : 0
+   },
+   "mobs_animal" : {
+      "instruments" : {
+         "ABM 'mobs_animal:cow spawning'" : {
+            "part_all" : 0.75262428203604681,
+            "part_max" : 0.75262428203604681,
+            "part_min" : 0.75262428203604681,
+            "samples" : 1,
+            "time_all" : 798,
+            "time_max" : 798,
+            "time_min" : 798
+         },
+         "get_staticdata[17]" : {
+            "part_all" : 26.389935678761049,
+            "part_max" : 7.6396540786002873,
+            "part_min" : 5.4567287553408361,
+            "samples" : 4,
+            "time_all" : 15323,
+            "time_max" : 4576,
+            "time_min" : 3291
+         },
+         "get_staticdata[1]" : {
+            "part_all" : 18.223127663098964,
+            "part_max" : 6.0967771554494536,
+            "part_min" : 3.4114621245207943,
+            "samples" : 4,
+            "time_all" : 10475,
+            "time_max" : 2994,
+            "time_min" : 2109
+         },
+         "get_staticdata[2]" : {
+            "part_all" : 9.9314581117989356,
+            "part_max" : 2.6828942535643927,
+            "part_min" : 0.32255326372973431,
+            "samples" : 5,
+            "time_all" : 5990,
+            "time_max" : 1650,
+            "time_min" : 342
+         },
+         "on_activate[1]" : {
+            "part_all" : 5.569280084005074,
+            "part_max" : 2.9908682174872236,
+            "part_min" : 2.5784118665178499,
+            "samples" : 2,
+            "time_all" : 3736,
+            "time_max" : 2142,
+            "time_min" : 1594
+         },
+         "on_activate[33]" : {
+            "part_all" : 8.7870865786171848,
+            "part_max" : 4.4374319305202601,
+            "part_min" : 4.3496546480969247,
+            "samples" : 2,
+            "time_all" : 5867,
+            "time_max" : 3178,
+            "time_min" : 2689
+         },
+         "on_activate[3]" : {
+            "part_all" : 3.2336266427828768,
+            "part_max" : 1.083526487754475,
+            "part_min" : 0.077337332239293025,
+            "samples" : 5,
+            "time_all" : 2008,
+            "time_max" : 776,
+            "time_min" : 82
+         },
+         "on_step[18]" : {
+            "part_all" : 238.09868918775373,
+            "part_max" : 16.294349540078841,
+            "part_min" : 0.0061662485517429378,
+            "samples" : 68,
+            "time_all" : 67562,
+            "time_max" : 7902,
+            "time_min" : 9
+         },
+         "on_step[1]" : {
+            "part_all" : 151.09542628010107,
+            "part_max" : 35.907608695652172,
+            "part_min" : 0.016339869281045749,
+            "samples" : 68,
+            "time_all" : 35811,
+            "time_max" : 6607,
+            "time_min" : 10
+         },
+         "on_step[3]" : {
+            "part_all" : 150.68206328343467,
+            "part_max" : 7.5595500661667394,
+            "part_min" : 0.0038944727695218563,
+            "samples" : 185,
+            "time_all" : 34240,
+            "time_max" : 1371,
+            "time_min" : 9
+         }
+      },
+      "part_all" : 612.76331779238944,
+      "part_max" : 47.722826086956523,
+      "part_min" : 0.018237756914488708,
+      "samples" : 185,
+      "time_all" : 181810,
+      "time_max" : 14922,
+      "time_min" : 18
+   },
+   "mobs_fish" : {
+      "instruments" : {
+         "ABM 'mobs_fish:tropical spawning'" : {
+            "part_all" : 0.059395485943068323,
+            "part_max" : 0.059395485943068323,
+            "part_min" : 0.059395485943068323,
+            "samples" : 1,
+            "time_all" : 54,
+            "time_max" : 54,
+            "time_min" : 54
+         }
+      },
+      "part_all" : 0.059395485943068323,
+      "part_max" : 0.059395485943068323,
+      "part_min" : 0,
+      "samples" : 45,
+      "time_all" : 54,
+      "time_max" : 54,
+      "time_min" : 0
+   },
+   "mobs_monster" : {
+      "instruments" : {
+         "ABM 'mobs_monster:dungeon_master spawning'" : {
+            "part_all" : 0.2471445725934821,
+            "part_max" : 0.2471445725934821,
+            "part_min" : 0.2471445725934821,
+            "samples" : 1,
+            "time_all" : 177,
+            "time_max" : 177,
+            "time_min" : 177
+         },
+         "ABM 'mobs_monster:mese_monster spawning'" : {
+            "part_all" : 0.82333159390038846,
+            "part_max" : 0.82333159390038846,
+            "part_min" : 0.82333159390038846,
+            "samples" : 1,
+            "time_all" : 426,
+            "time_max" : 426,
+            "time_min" : 426
+         },
+         "ABM 'mobs_monster:oerkki spawning'" : {
+            "part_all" : 0.85212958297519203,
+            "part_max" : 0.85212958297519203,
+            "part_min" : 0.85212958297519203,
+            "samples" : 1,
+            "time_all" : 575,
+            "time_max" : 575,
+            "time_min" : 575
+         },
+         "ABM 'mobs_monster:spider spawning'" : {
+            "part_all" : 0.26935126461373882,
+            "part_max" : 0.26935126461373882,
+            "part_min" : 0.26935126461373882,
+            "samples" : 1,
+            "time_all" : 141,
+            "time_max" : 141,
+            "time_min" : 141
+         },
+         "ABM 'mobs_monster:stone_monster spawning'" : {
+            "part_all" : 0.33390096497378874,
+            "part_max" : 0.33390096497378874,
+            "part_min" : 0.33390096497378874,
+            "samples" : 1,
+            "time_all" : 200,
+            "time_max" : 200,
+            "time_min" : 200
+         },
+         "get_staticdata[5]" : {
+            "part_all" : 0.052361005331302356,
+            "part_max" : 0.052361005331302356,
+            "part_min" : 0.052361005331302356,
+            "samples" : 1,
+            "time_all" : 22,
+            "time_max" : 22,
+            "time_min" : 22
+         },
+         "on_step[11]" : {
+            "part_all" : 39.835136549475884,
+            "part_max" : 2.007856831078132,
+            "part_min" : 0.004757675716823141,
+            "samples" : 185,
+            "time_all" : 9206,
+            "time_max" : 468,
+            "time_min" : 4
+         },
+         "on_step[6]" : {
+            "part_all" : 61.939950581366567,
+            "part_max" : 13.230616526427394,
+            "part_min" : 0.0035458478122118997,
+            "samples" : 185,
+            "time_all" : 16475,
+            "time_max" : 5865,
+            "time_min" : 8
+         }
+      },
+      "part_all" : 104.3533061152303,
+      "part_max" : 14.286358817027228,
+      "part_min" : 0.0093078505070562385,
+      "samples" : 185,
+      "time_all" : 27222,
+      "time_max" : 6333,
+      "time_min" : 13
+   },
+   "mobs_npc" : {
+      "instruments" : {
+         "get_staticdata[3]" : {
+            "part_all" : 3.588931604888657,
+            "part_max" : 2.1705057238656429,
+            "part_min" : 0.43125166721005365,
+            "samples" : 3,
+            "time_all" : 2177,
+            "time_max" : 1094,
+            "time_min" : 291
+         },
+         "on_activate[5]" : {
+            "part_all" : 0.75118417393396442,
+            "part_max" : 0.51851574866943373,
+            "part_min" : 0.23266842526453063,
+            "samples" : 2,
+            "time_all" : 573,
+            "time_max" : 416,
+            "time_min" : 157
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.12075897624463923,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 12,
+            "time_max" : 3,
+            "time_min" : 2
+         },
+         "on_step[3]" : {
+            "part_all" : 84.803245237400432,
+            "part_max" : 4.7802374077638756,
+            "part_min" : 0.0061662485517429378,
+            "samples" : 119,
+            "time_all" : 16294,
+            "time_max" : 922,
+            "time_min" : 10
+         }
+      },
+      "part_all" : 89.264119992467712,
+      "part_max" : 4.7802374077638756,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 19056,
+      "time_max" : 1407,
+      "time_min" : 0
+   },
+   "monitoring" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 28.597552050554476,
+            "part_max" : 6.182795698924731,
+            "part_min" : 0.0019472363847609282,
+            "samples" : 185,
+            "time_all" : 5663,
+            "time_max" : 483,
+            "time_min" : 4
+         },
+         "globalstep[2]" : {
+            "part_all" : 2.2755978559825429,
+            "part_max" : 0.86934417895271987,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 185,
+            "time_all" : 450,
+            "time_max" : 171,
+            "time_min" : 1
+         },
+         "globalstep[3]" : {
+            "part_all" : 1.6146790899155659,
+            "part_max" : 0.5028801316631617,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 179,
+            "time_all" : 274,
+            "time_max" : 55,
+            "time_min" : 1
+         },
+         "globalstep[4]" : {
+            "part_all" : 1.2627016125049844,
+            "part_max" : 0.11970042542178223,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 178,
+            "time_all" : 294,
+            "time_max" : 74,
+            "time_min" : 1
+         },
+         "globalstep[5]" : {
+            "part_all" : 32.275925475524588,
+            "part_max" : 6.9390233324659558,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 185,
+            "time_all" : 7183,
+            "time_max" : 1988,
+            "time_min" : 1
+         },
+         "on_dignode[1]" : {
+            "part_all" : 2.4334322986490706,
+            "part_max" : 0.23546853878690099,
+            "part_min" : 0.002367928772702517,
+            "samples" : 38,
+            "time_all" : 830,
+            "time_max" : 66,
+            "time_min" : 1
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.0029081602977956145,
+            "part_max" : 0.0029081602977956145,
+            "part_min" : 0.0029081602977956145,
+            "samples" : 1,
+            "time_all" : 3,
+            "time_max" : 3,
+            "time_min" : 3
+         },
+         "on_placenode[1]" : {
+            "part_all" : 3.6100993893149611,
+            "part_max" : 0.38508037433394526,
+            "part_min" : 0.0023588800037742082,
+            "samples" : 47,
+            "time_all" : 1119,
+            "time_max" : 86,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.12374806606678838,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 13,
+            "time_max" : 4,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 72.196643998810785,
+      "part_max" : 7.0604562407841094,
+      "part_min" : 0.0032453939746015471,
+      "samples" : 186,
+      "time_all" : 15829,
+      "time_max" : 2019,
+      "time_min" : 5
+   },
+   "more_chests" : {
+      "instruments" : {
+         "on_joinplayer[1]" : {
+            "part_all" : 0.16576513697435002,
+            "part_max" : 0.16576513697435002,
+            "part_min" : 0.16576513697435002,
+            "samples" : 1,
+            "time_all" : 171,
+            "time_max" : 171,
+            "time_min" : 171
+         }
+      },
+      "part_all" : 0.16576513697435002,
+      "part_max" : 0.16576513697435002,
+      "part_min" : 0,
+      "samples" : 136,
+      "time_all" : 171,
+      "time_max" : 171,
+      "time_min" : 0
+   },
+   "ontime_clocks" : {
+      "instruments" : {
+         "ABM[1]" : {
+            "part_all" : 1.7214591123820502,
+            "part_max" : 0.86440677966101698,
+            "part_min" : 0.21064702289695747,
+            "samples" : 4,
+            "time_all" : 927,
+            "time_max" : 309,
+            "time_min" : 143
+         },
+         "get_staticdata[1]" : {
+            "part_all" : 0.37309191823994992,
+            "part_max" : 0.11705652441322938,
+            "part_min" : 0.043285207629366919,
+            "samples" : 4,
+            "time_all" : 212,
+            "time_max" : 66,
+            "time_min" : 31
+         },
+         "on_activate[1]" : {
+            "part_all" : 0.13795943050062259,
+            "part_max" : 0.081344364422752613,
+            "part_min" : 0.056615066077869987,
+            "samples" : 2,
+            "time_all" : 76,
+            "time_max" : 41,
+            "time_min" : 35
+         }
+      },
+      "part_all" : 2.2325104611226227,
+      "part_max" : 0.86440677966101698,
+      "part_min" : 0,
+      "samples" : 181,
+      "time_all" : 1215,
+      "time_max" : 309,
+      "time_min" : 0
+   },
+   "pandorabox_custom" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 2.2565719196153138,
+            "part_max" : 0.077697364400639041,
+            "part_min" : 0.00079294595280385695,
+            "samples" : 185,
+            "time_all" : 895,
+            "time_max" : 89,
+            "time_min" : 1
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.065918300083367257,
+            "part_max" : 0.065918300083367257,
+            "part_min" : 0.065918300083367257,
+            "samples" : 1,
+            "time_all" : 68,
+            "time_max" : 68,
+            "time_min" : 68
+         }
+      },
+      "part_all" : 2.3224902196986816,
+      "part_max" : 0.077697364400639041,
+      "part_min" : 0.00079294595280385695,
+      "samples" : 185,
+      "time_all" : 963,
+      "time_max" : 89,
+      "time_min" : 1
+   },
+   "pipeworks" : {
+      "instruments" : {
+         "ABM 'Vacuum tubes'" : {
+            "part_all" : 2.1964655419886743,
+            "part_max" : 0.81563740993508183,
+            "part_min" : 0.065110688169888811,
+            "samples" : 7,
+            "time_all" : 1213,
+            "time_max" : 343,
+            "time_min" : 39
+         },
+         "get_staticdata[1]" : {
+            "part_all" : 0.31640460193977682,
+            "part_max" : 0.076824583866837381,
+            "part_min" : 0.0028321925890960587,
+            "samples" : 7,
+            "time_all" : 106,
+            "time_max" : 24,
+            "time_min" : 3
+         },
+         "globalstep[1]" : {
+            "part_all" : 1121.3179321802156,
+            "part_max" : 30.647795318454001,
+            "part_min" : 0.00064600109174184502,
+            "samples" : 185,
+            "time_all" : 243752,
+            "time_max" : 14783,
+            "time_min" : 1
+         },
+         "globalstep[2]" : {
+            "part_all" : 27.92183670608938,
+            "part_max" : 1.0432308543428435,
+            "part_min" : 0.0038944727695218563,
+            "samples" : 185,
+            "time_all" : 5458,
+            "time_max" : 150,
+            "time_min" : 9
+         },
+         "on_activate[1]" : {
+            "part_all" : 0.47569904781252309,
+            "part_max" : 0.27528809218950068,
+            "part_min" : 0.0018881283927307058,
+            "samples" : 6,
+            "time_all" : 108,
+            "time_max" : 43,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.064031064957466674,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 7,
+            "time_max" : 2,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 1152.2923691430035,
+      "part_max" : 30.992560333877702,
+      "part_min" : 0.012597021288965978,
+      "samples" : 186,
+      "time_all" : 250644,
+      "time_max" : 14839,
+      "time_min" : 1
+   },
+   "player_api" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 67.87085212863316,
+            "part_max" : 3.7349705807111793,
+            "part_min" : 0.014535024564191514,
+            "samples" : 185,
+            "time_all" : 13440,
+            "time_max" : 438,
+            "time_min" : 35
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.070765233913026623,
+            "part_max" : 0.070765233913026623,
+            "part_min" : 0.070765233913026623,
+            "samples" : 1,
+            "time_all" : 73,
+            "time_max" : 73,
+            "time_min" : 73
+         }
+      },
+      "part_all" : 67.941617362546182,
+      "part_max" : 3.7349705807111793,
+      "part_min" : 0.014535024564191514,
+      "samples" : 185,
+      "time_all" : 13513,
+      "time_max" : 438,
+      "time_min" : 35
+   },
+   "poshud" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 192.37193088195926,
+            "part_max" : 26.481609592989741,
+            "part_min" : 0.049005449016483363,
+            "samples" : 185,
+            "time_all" : 42693,
+            "time_max" : 9187,
+            "time_min" : 51
+         }
+      },
+      "part_all" : 192.37193088195926,
+      "part_max" : 26.481609592989741,
+      "part_min" : 0.049005449016483363,
+      "samples" : 185,
+      "time_all" : 42693,
+      "time_max" : 9187,
+      "time_min" : 51
+   },
+   "protector" : {
+      "instruments" : {
+         "ABM[1]" : {
+            "part_all" : 0.65123206378478637,
+            "part_max" : 0.22372429550647374,
+            "part_min" : 0.09867197230714482,
+            "samples" : 4,
+            "time_all" : 320,
+            "time_max" : 105,
+            "time_min" : 60
+         },
+         "globalstep[1]" : {
+            "part_all" : 40.662508143556273,
+            "part_max" : 8.3652296535052386,
+            "part_min" : 0.00064600109174184502,
+            "samples" : 185,
+            "time_all" : 9049,
+            "time_max" : 2116,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 3.6106918621506794,
+            "part_max" : 3.5794183445190155,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 90,
+            "time_max" : 80,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 0.13371354499125598,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0038775470637274858,
+            "samples" : 5,
+            "time_all" : 17,
+            "time_max" : 4,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 45.058145614482989,
+      "part_max" : 8.3652296535052386,
+      "part_min" : 0.00064600109174184502,
+      "samples" : 186,
+      "time_all" : 9476,
+      "time_max" : 2116,
+      "time_min" : 1
+   },
+   "server_news" : {
+      "instruments" : {
+         "on_joinplayer[1]" : {
+            "part_all" : 3.8843327710890092,
+            "part_max" : 3.8843327710890092,
+            "part_min" : 3.8843327710890092,
+            "samples" : 1,
+            "time_all" : 4007,
+            "time_max" : 4007,
+            "time_min" : 4007
+         }
+      },
+      "part_all" : 3.8843327710890092,
+      "part_max" : 3.8843327710890092,
+      "part_min" : 0,
+      "samples" : 136,
+      "time_all" : 4007,
+      "time_max" : 4007,
+      "time_min" : 0
+   },
+   "sethome" : {
+      "instruments" : {
+         "/home" : {
+            "part_all" : 0.48812852471446849,
+            "part_max" : 0.48812852471446849,
+            "part_min" : 0.48812852471446849,
+            "samples" : 1,
+            "time_all" : 103,
+            "time_max" : 103,
+            "time_min" : 103
+         }
+      },
+      "part_all" : 0.48812852471446849,
+      "part_max" : 0.48812852471446849,
+      "part_min" : 0,
+      "samples" : 76,
+      "time_all" : 103,
+      "time_max" : 103,
+      "time_min" : 0
+   },
+   "sfinv" : {
+      "instruments" : {
+         "on_joinplayer[1]" : {
+            "part_all" : 0.004846933829659358,
+            "part_max" : 0.004846933829659358,
+            "part_min" : 0.004846933829659358,
+            "samples" : 1,
+            "time_all" : 5,
+            "time_max" : 5,
+            "time_min" : 5
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.12579659181509392,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 13,
+            "time_max" : 4,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 0.13064352564475329,
+      "part_max" : 0.089485458612975396,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 18,
+      "time_max" : 7,
+      "time_min" : 0
+   },
+   "signs" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.18107739965764699,
+            "part_max" : 0.13422818791946309,
+            "part_min" : 0.0029081602977956145,
+            "samples" : 5,
+            "time_all" : 18,
+            "time_max" : 5,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 0.18107739965764699,
+      "part_max" : 0.13422818791946309,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 18,
+      "time_max" : 5,
+      "time_min" : 0
+   },
+   "signs_api" : {
+      "instruments" : {
+         "get_staticdata[1]" : {
+            "part_all" : 7.4588529290506322,
+            "part_max" : 4.7140051187429322,
+            "part_min" : 1.2404042799134534,
+            "samples" : 3,
+            "time_all" : 4420,
+            "time_max" : 2376,
+            "time_min" : 837
+         },
+         "on_activate[1]" : {
+            "part_all" : 11.561596976433496,
+            "part_max" : 5.9953383439903281,
+            "part_min" : 5.5662586324431667,
+            "samples" : 2,
+            "time_all" : 8566,
+            "time_max" : 4810,
+            "time_min" : 3756
+         }
+      },
+      "part_all" : 19.020449905484128,
+      "part_max" : 7.4997818743845741,
+      "part_min" : 0,
+      "samples" : 131,
+      "time_all" : 12986,
+      "time_max" : 6017,
+      "time_min" : 0
+   },
+   "signs_lib" : {
+      "instruments" : {
+         "LBM 'Restore sign text'" : {
+            "part_all" : 67.67475461970443,
+            "part_max" : 15.262610012302453,
+            "part_min" : 1.8478595626732368,
+            "samples" : 9,
+            "time_all" : 42169,
+            "time_max" : 9688,
+            "time_min" : 1680
+         },
+         "on_activate[1]" : {
+            "part_all" : 91.165699363999494,
+            "part_max" : 19.909151130879152,
+            "part_min" : 4.5631743258763198,
+            "samples" : 9,
+            "time_all" : 57510,
+            "time_max" : 10878,
+            "time_min" : 2572
+         }
+      },
+      "part_all" : 158.84045398370395,
+      "part_max" : 35.171761143181598,
+      "part_min" : 0,
+      "samples" : 156,
+      "time_all" : 99679,
+      "time_max" : 20566,
+      "time_min" : 0
+   },
+   "skinsdb" : {
+      "instruments" : {
+         "on_joinplayer[1]" : {
+            "part_all" : 0.12020395897555207,
+            "part_max" : 0.12020395897555207,
+            "part_min" : 0.12020395897555207,
+            "samples" : 1,
+            "time_all" : 124,
+            "time_max" : 124,
+            "time_min" : 124
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.067743706501925557,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 8,
+            "time_max" : 2,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 0.41570543112087177,
+            "part_max" : 0.31319910514541388,
+            "part_min" : 0.0077550941274549716,
+            "samples" : 5,
+            "time_all" : 39,
+            "time_max" : 13,
+            "time_min" : 3
+         }
+      },
+      "part_all" : 0.60365309659834943,
+      "part_max" : 0.35794183445190159,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 171,
+      "time_max" : 133,
+      "time_min" : 0
+   },
+   "skybox" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 803.23936621277744,
+            "part_max" : 78.441172366119389,
+            "part_min" : 0.00079294595280385695,
+            "samples" : 185,
+            "time_all" : 1059888,
+            "time_max" : 241700,
+            "time_min" : 1
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.0038775470637274858,
+            "part_max" : 0.0038775470637274858,
+            "part_min" : 0.0038775470637274858,
+            "samples" : 1,
+            "time_all" : 4,
+            "time_max" : 4,
+            "time_min" : 4
+         }
+      },
+      "part_all" : 803.24324375984122,
+      "part_max" : 78.441172366119389,
+      "part_min" : 0.00079294595280385695,
+      "samples" : 185,
+      "time_all" : 1059892,
+      "time_max" : 241700,
+      "time_min" : 1
+   },
+   "smartrenting" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.064031064957466674,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 7,
+            "time_max" : 2,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 0.064031064957466674,
+      "part_max" : 0.044742729306487698,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 7,
+      "time_max" : 2,
+      "time_min" : 0
+   },
+   "smartshop" : {
+      "instruments" : {
+         "get_staticdata[1]" : {
+            "part_all" : 0.048579240813392488,
+            "part_max" : 0.022712217280211982,
+            "part_min" : 0.011904053330158919,
+            "samples" : 3,
+            "time_all" : 28,
+            "time_max" : 12,
+            "time_min" : 6
+         },
+         "globalstep[1]" : {
+            "part_all" : 1.8238814288729679,
+            "part_max" : 0.22621022470215654,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 185,
+            "time_all" : 371,
+            "time_max" : 52,
+            "time_min" : 1
+         },
+         "on_activate[1]" : {
+            "part_all" : 0.061504275539154413,
+            "part_max" : 0.061504275539154413,
+            "part_min" : 0.061504275539154413,
+            "samples" : 1,
+            "time_all" : 31,
+            "time_max" : 31,
+            "time_min" : 31
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.064031064957466674,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 7,
+            "time_max" : 2,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 1.9979960101829812,
+      "part_max" : 0.22621022470215654,
+      "part_min" : 0.00032300054587092251,
+      "samples" : 186,
+      "time_all" : 437,
+      "time_max" : 52,
+      "time_min" : 1
+   },
+   "spacesuit" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 40.045091459730962,
+            "part_max" : 3.1530331290523135,
+            "part_min" : 0.00064600109174184502,
+            "samples" : 185,
+            "time_all" : 13020,
+            "time_max" : 863,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 40.045091459730962,
+      "part_max" : 3.1530331290523135,
+      "part_min" : 0.00064600109174184502,
+      "samples" : 185,
+      "time_all" : 13020,
+      "time_max" : 863,
+      "time_min" : 1
+   },
+   "stamina" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 47.377349265999435,
+            "part_max" : 4.6122508366070134,
+            "part_min" : 0.0012981575898406187,
+            "samples" : 185,
+            "time_all" : 10058,
+            "time_max" : 538,
+            "time_min" : 3
+         },
+         "on_dignode[1]" : {
+            "part_all" : 4.1911586415120796,
+            "part_max" : 0.61462814996926851,
+            "part_min" : 0.0077077231385848629,
+            "samples" : 38,
+            "time_all" : 1190,
+            "time_max" : 100,
+            "time_min" : 3
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.047499951530661701,
+            "part_max" : 0.047499951530661701,
+            "part_min" : 0.047499951530661701,
+            "samples" : 1,
+            "time_all" : 49,
+            "time_max" : 49,
+            "time_min" : 49
+         },
+         "on_placenode[1]" : {
+            "part_all" : 6.3175206481359689,
+            "part_max" : 0.6798579401319127,
+            "part_min" : 0.0047177600075484164,
+            "samples" : 47,
+            "time_all" : 1346,
+            "time_max" : 71,
+            "time_min" : 3
+         }
+      },
+      "part_all" : 57.93352850717816,
+      "part_max" : 4.801396769969446,
+      "part_min" : 0.0012981575898406187,
+      "samples" : 186,
+      "time_all" : 12643,
+      "time_max" : 538,
+      "time_min" : 3
+   },
+   "technic" : {
+      "instruments" : {
+         "ABM 'Machines: re-enable check'" : {
+            "part_all" : 15.725336905795725,
+            "part_max" : 2.119263776594277,
+            "part_min" : 0.12222057321448838,
+            "samples" : 29,
+            "time_all" : 9622,
+            "time_max" : 1536,
+            "time_min" : 119
+         },
+         "ABM 'Machines: reactor melt-down check'" : {
+            "part_all" : 7.4308271396624175,
+            "part_max" : 1.5345552940304317,
+            "part_min" : 0.65867017957429108,
+            "samples" : 7,
+            "time_all" : 5407,
+            "time_max" : 1039,
+            "time_min" : 553
+         },
+         "ABM 'Machines: run coal alloy furnace'" : {
+            "part_all" : 1.5897549758639171,
+            "part_max" : 0.26876390632916969,
+            "part_min" : 0.090193145320955612,
+            "samples" : 9,
+            "time_all" : 846,
+            "time_max" : 122,
+            "time_min" : 62
+         },
+         "ABM 'Machines: run power monitor'" : {
+            "part_all" : 1.8890166349019286,
+            "part_max" : 0.21468926553672316,
+            "part_min" : 0.0096900163761276751,
+            "samples" : 29,
+            "time_all" : 1014,
+            "time_max" : 78,
+            "time_min" : 17
+         },
+         "ABM 'Machines: timeout check'" : {
+            "part_all" : 37.861399055868837,
+            "part_max" : 3.7676123381568929,
+            "part_min" : 0.16699128221526693,
+            "samples" : 29,
+            "time_all" : 20741,
+            "time_max" : 2242,
+            "time_min" : 194
+         },
+         "ABM 'Radiation damage'" : {
+            "part_all" : 1.2706616885740218,
+            "part_max" : 0.28638776903927921,
+            "part_min" : 0.016005121638924456,
+            "samples" : 13,
+            "time_all" : 672,
+            "time_max" : 130,
+            "time_min" : 9
+         },
+         "ABM 'Switching Station'" : {
+            "part_all" : 921.09326671834719,
+            "part_max" : 58.909521928091671,
+            "part_min" : 10.66549102115289,
+            "samples" : 29,
+            "time_all" : 528429,
+            "time_max" : 35291,
+            "time_min" : 8809
+         },
+         "globalstep[1]" : {
+            "part_all" : 2.1167438726004622,
+            "part_max" : 0.11110449774814993,
+            "part_min" : 0.00064600109174184502,
+            "samples" : 185,
+            "time_all" : 503,
+            "time_max" : 63,
+            "time_min" : 1
+         },
+         "globalstep[2]" : {
+            "part_all" : 5.4050613549040731,
+            "part_max" : 0.71491100087540127,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 185,
+            "time_all" : 1512,
+            "time_max" : 272,
+            "time_min" : 1
+         },
+         "on_dignode[1]" : {
+            "part_all" : 3.2105437639930905,
+            "part_max" : 0.28657144136479651,
+            "part_min" : 0.0078798066820760654,
+            "samples" : 38,
+            "time_all" : 1052,
+            "time_max" : 64,
+            "time_min" : 3
+         },
+         "on_placenode[1]" : {
+            "part_all" : 3.8857789873759536,
+            "part_max" : 0.38557361490093722,
+            "part_min" : 0.0058163205955912289,
+            "samples" : 47,
+            "time_all" : 1080,
+            "time_max" : 68,
+            "time_min" : 3
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.11308785811209933,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 9,
+            "time_max" : 3,
+            "time_min" : 1
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 0.068345128805611624,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 8,
+            "time_max" : 3,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 1001.6598240848055,
+      "part_max" : 62.26348830062777,
+      "part_min" : 0.0012981575898406187,
+      "samples" : 186,
+      "time_all" : 570895,
+      "time_max" : 36825,
+      "time_min" : 2
+   },
+   "telemosaic" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 174.98606987848268,
+            "part_max" : 6.521416926041204,
+            "part_min" : 0.03991834588759903,
+            "samples" : 185,
+            "time_all" : 34841,
+            "time_max" : 1320,
+            "time_min" : 76
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.014540801488978074,
+            "part_max" : 0.014540801488978074,
+            "part_min" : 0.014540801488978074,
+            "samples" : 1,
+            "time_all" : 15,
+            "time_max" : 15,
+            "time_min" : 15
+         }
+      },
+      "part_all" : 175.00061067997166,
+      "part_max" : 6.521416926041204,
+      "part_min" : 0.03991834588759903,
+      "samples" : 185,
+      "time_all" : 34856,
+      "time_max" : 1320,
+      "time_min" : 76
+   },
+   "travelnet" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.064031064957466674,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 7,
+            "time_max" : 2,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 0.064031064957466674,
+      "part_max" : 0.044742729306487698,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 7,
+      "time_max" : 2,
+      "time_min" : 0
+   },
+   "unified_inventory" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 61.845698599276098,
+            "part_max" : 1.485813641033747,
+            "part_min" : 0.015181025655933359,
+            "samples" : 185,
+            "time_all" : 13222,
+            "time_max" : 593,
+            "time_min" : 31
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 18.893348068012177,
+            "part_max" : 18.893348068012177,
+            "part_min" : 18.893348068012177,
+            "samples" : 1,
+            "time_all" : 19490,
+            "time_max" : 19490,
+            "time_min" : 19490
+         },
+         "on_joinplayer[2]" : {
+            "part_all" : 0.4420403652649334,
+            "part_max" : 0.4420403652649334,
+            "part_min" : 0.4420403652649334,
+            "samples" : 1,
+            "time_all" : 456,
+            "time_max" : 456,
+            "time_min" : 456
+         },
+         "on_joinplayer[3]" : {
+            "part_all" : 0.0096938676593187161,
+            "part_max" : 0.0096938676593187161,
+            "part_min" : 0.0096938676593187161,
+            "samples" : 1,
+            "time_all" : 10,
+            "time_max" : 10,
+            "time_min" : 10
+         },
+         "on_joinplayer[4]" : {
+            "part_all" : 9.6444289342561902,
+            "part_max" : 9.6444289342561902,
+            "part_min" : 9.6444289342561902,
+            "samples" : 1,
+            "time_all" : 9949,
+            "time_max" : 9949,
+            "time_min" : 9949
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 30.836626749332794,
+            "part_max" : 30.064710957722173,
+            "part_min" : 0.010663254425250585,
+            "samples" : 5,
+            "time_all" : 7022,
+            "time_max" : 6969,
+            "time_min" : 11
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 0.24283054931309239,
+            "part_max" : 0.17897091722595079,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 22,
+            "time_max" : 9,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[3]" : {
+            "part_all" : 65.505491009821753,
+            "part_max" : 65.458612975391489,
+            "part_min" : 0.0038775470637274858,
+            "samples" : 5,
+            "time_all" : 1478,
+            "time_max" : 1463,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[4]" : {
+            "part_all" : 2.1603965005404064,
+            "part_max" : 1.029082774049217,
+            "part_min" : 0.005978179644298311,
+            "samples" : 5,
+            "time_all" : 368,
+            "time_max" : 219,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 189.58055464347677,
+      "part_max" : 67.337807606263979,
+      "part_min" : 0.015181025655933359,
+      "samples" : 186,
+      "time_all" : 52017,
+      "time_max" : 30090,
+      "time_min" : 31
+   },
+   "unified_inventory_plus" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.17412983324741682,
+            "part_max" : 0.13422818791946309,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 15,
+            "time_max" : 5,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 0.13370116778907409,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 15,
+            "time_max" : 6,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 0.30783100103649091,
+      "part_max" : 0.22371364653243847,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 30,
+      "time_max" : 11,
+      "time_min" : 0
+   },
+   "unifieddyes" : {
+      "instruments" : {
+         "on_placenode[1]" : {
+            "part_all" : 2.4118069942548672,
+            "part_max" : 0.29127223551440756,
+            "part_min" : 0.0023588800037742082,
+            "samples" : 47,
+            "time_all" : 747,
+            "time_max" : 56,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.067743706501925557,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 8,
+            "time_max" : 2,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 2.4795507007567927,
+      "part_max" : 0.29127223551440756,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 755,
+      "time_max" : 56,
+      "time_min" : 0
+   },
+   "vacuum" : {
+      "instruments" : {
+         "ABM 'airpump seed'" : {
+            "part_all" : 0.28189987678582912,
+            "part_max" : 0.021557402572516707,
+            "part_min" : 0.0035530060045801475,
+            "samples" : 22,
+            "time_all" : 170,
+            "time_max" : 14,
+            "time_min" : 3
+         },
+         "ABM 'airpump'" : {
+            "part_all" : 7.5999657514704575,
+            "part_max" : 3.1651960138724262,
+            "part_min" : 0.59913801434065828,
+            "samples" : 6,
+            "time_all" : 2927,
+            "time_max" : 721,
+            "time_min" : 310
+         },
+         "on_dignode[1]" : {
+            "part_all" : 3.0521729525918522,
+            "part_max" : 0.30687610527410797,
+            "part_min" : 0.007106012009160295,
+            "samples" : 38,
+            "time_all" : 845,
+            "time_max" : 66,
+            "time_min" : 8
+         }
+      },
+      "part_all" : 10.93403858084814,
+      "part_max" : 3.1651960138724262,
+      "part_min" : 0,
+      "samples" : 183,
+      "time_all" : 3942,
+      "time_max" : 721,
+      "time_min" : 0
+   },
+   "watchdog" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 2.930535301431529,
+            "part_max" : 0.73822530636350214,
+            "part_min" : 0.00064600109174184502,
+            "samples" : 185,
+            "time_all" : 602,
+            "time_max" : 100,
+            "time_min" : 1
+         },
+         "globalstep[2]" : {
+            "part_all" : 2.1454736829364736,
+            "part_max" : 0.6256365488142005,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 185,
+            "time_all" : 327,
+            "time_max" : 43,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 5.0760089843679994,
+      "part_max" : 0.74560755942713708,
+      "part_min" : 0.00096900163761276764,
+      "samples" : 185,
+      "time_all" : 929,
+      "time_max" : 101,
+      "time_min" : 2
+   },
+   "wieldview" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 72.119009815558243,
+            "part_max" : 16.602062876789304,
+            "part_min" : 0.00079294595280385695,
+            "samples" : 185,
+            "time_all" : 74793,
+            "time_max" : 17432,
+            "time_min" : 1
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.0038775470637274858,
+            "part_max" : 0.0038775470637274858,
+            "part_min" : 0.0038775470637274858,
+            "samples" : 1,
+            "time_all" : 4,
+            "time_max" : 4,
+            "time_min" : 4
+         }
+      },
+      "part_all" : 72.122887362621967,
+      "part_max" : 16.602062876789304,
+      "part_min" : 0.00079294595280385695,
+      "samples" : 185,
+      "time_all" : 74797,
+      "time_max" : 17432,
+      "time_min" : 1
+   },
+   "woodcutting" : {
+      "instruments" : {
+         "on_dignode[1]" : {
+            "part_all" : 5.7022693364135382,
+            "part_max" : 0.61344199167151747,
+            "part_min" : 0.011839643863512586,
+            "samples" : 38,
+            "time_all" : 1966,
+            "time_max" : 153,
+            "time_min" : 5
+         }
+      },
+      "part_all" : 5.7022693364135382,
+      "part_max" : 0.61344199167151747,
+      "part_min" : 0,
+      "samples" : 183,
+      "time_all" : 1966,
+      "time_max" : 153,
+      "time_min" : 0
+   },
+   "worldedit_commands" : {
+      "instruments" : {
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.10877379426395437,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 8,
+            "time_max" : 2,
+            "time_min" : 1
+         },
+         "on_punchnode[1]" : {
+            "part_all" : 0.3470919468148525,
+            "part_max" : 0.10147133434804667,
+            "part_min" : 0.0078798066820760654,
+            "samples" : 10,
+            "time_all" : 59,
+            "time_max" : 17,
+            "time_min" : 3
+         },
+         "on_punchnode[2]" : {
+            "part_all" : 0.22427118891363643,
+            "part_max" : 0.081177067478437337,
+            "part_min" : 0.0052532044547173775,
+            "samples" : 10,
+            "time_all" : 36,
+            "time_max" : 9,
+            "time_min" : 2
+         }
+      },
+      "part_all" : 0.68013692999244335,
+      "part_max" : 0.18264840182648401,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 103,
+      "time_max" : 27,
+      "time_min" : 0
+   },
+   "worldedit_gui" : {
+      "instruments" : {
+         "on_player_receive_fields[10]" : {
+            "part_all" : 0.65045306218839893,
+            "part_max" : 0.40268456375838929,
+            "part_min" : 0.012602027957114331,
+            "samples" : 5,
+            "time_all" : 86,
+            "time_max" : 24,
+            "time_min" : 9
+         },
+         "on_player_receive_fields[11]" : {
+            "part_all" : 1.1445652535943747,
+            "part_max" : 0.93959731543624159,
+            "part_min" : 0.029081602977956148,
+            "samples" : 5,
+            "time_all" : 99,
+            "time_max" : 30,
+            "time_min" : 10
+         },
+         "on_player_receive_fields[12]" : {
+            "part_all" : 0.64907487413522713,
+            "part_max" : 0.40268456375838929,
+            "part_min" : 0.040839056989047703,
+            "samples" : 5,
+            "time_all" : 120,
+            "time_max" : 60,
+            "time_min" : 9
+         },
+         "on_player_receive_fields[13]" : {
+            "part_all" : 0.55313192895580088,
+            "part_max" : 0.35794183445190159,
+            "part_min" : 0.012602027957114331,
+            "samples" : 5,
+            "time_all" : 71,
+            "time_max" : 20,
+            "time_min" : 8
+         },
+         "on_player_receive_fields[14]" : {
+            "part_all" : 0.60650278595857832,
+            "part_max" : 0.40268456375838929,
+            "part_min" : 0.012602027957114331,
+            "samples" : 5,
+            "time_all" : 74,
+            "time_max" : 21,
+            "time_min" : 9
+         },
+         "on_player_receive_fields[15]" : {
+            "part_all" : 0.60146517038812375,
+            "part_max" : 0.40268456375838929,
+            "part_min" : 0.012602027957114331,
+            "samples" : 5,
+            "time_all" : 73,
+            "time_max" : 21,
+            "time_min" : 9
+         },
+         "on_player_receive_fields[16]" : {
+            "part_all" : 0.70733111565349671,
+            "part_max" : 0.44742729306487694,
+            "part_min" : 0.011632641191182458,
+            "samples" : 5,
+            "time_all" : 92,
+            "time_max" : 36,
+            "time_min" : 10
+         },
+         "on_player_receive_fields[17]" : {
+            "part_all" : 0.65149135030868832,
+            "part_max" : 0.44742729306487694,
+            "part_min" : 0.0135714147230462,
+            "samples" : 5,
+            "time_all" : 76,
+            "time_max" : 21,
+            "time_min" : 10
+         },
+         "on_player_receive_fields[18]" : {
+            "part_all" : 0.66770966661316444,
+            "part_max" : 0.44742729306487694,
+            "part_min" : 0.017448961786773687,
+            "samples" : 5,
+            "time_all" : 83,
+            "time_max" : 23,
+            "time_min" : 10
+         },
+         "on_player_receive_fields[19]" : {
+            "part_all" : 0.72011113685001027,
+            "part_max" : 0.4921700223713647,
+            "part_min" : 0.016479575020841814,
+            "samples" : 5,
+            "time_all" : 85,
+            "time_max" : 25,
+            "time_min" : 11
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.11776988642249007,
+            "part_max" : 0.089485458612975396,
+            "part_min" : 0.0019387735318637429,
+            "samples" : 5,
+            "time_all" : 11,
+            "time_max" : 3,
+            "time_min" : 2
+         },
+         "on_player_receive_fields[20]" : {
+            "part_all" : 1.3980220269534063,
+            "part_max" : 0.9843400447427294,
+            "part_min" : 0.022295895616433047,
+            "samples" : 5,
+            "time_all" : 147,
+            "time_max" : 56,
+            "time_min" : 17
+         },
+         "on_player_receive_fields[2]" : {
+            "part_all" : 0.78425195402391867,
+            "part_max" : 0.53691275167785235,
+            "part_min" : 0.015510188254909943,
+            "samples" : 5,
+            "time_all" : 90,
+            "time_max" : 28,
+            "time_min" : 12
+         },
+         "on_player_receive_fields[3]" : {
+            "part_all" : 0.7063276767695984,
+            "part_max" : 0.40268456375838929,
+            "part_min" : 0.012602027957114331,
+            "samples" : 5,
+            "time_all" : 97,
+            "time_max" : 45,
+            "time_min" : 9
+         },
+         "on_player_receive_fields[4]" : {
+            "part_all" : 0.59892251548924191,
+            "part_max" : 0.35794183445190159,
+            "part_min" : 0.012602027957114331,
+            "samples" : 5,
+            "time_all" : 81,
+            "time_max" : 31,
+            "time_min" : 8
+         },
+         "on_player_receive_fields[5]" : {
+            "part_all" : 0.58887610704042082,
+            "part_max" : 0.35794183445190159,
+            "part_min" : 0.0135714147230462,
+            "samples" : 5,
+            "time_all" : 79,
+            "time_max" : 30,
+            "time_min" : 8
+         },
+         "on_player_receive_fields[6]" : {
+            "part_all" : 0.63422025865059461,
+            "part_max" : 0.40268456375838929,
+            "part_min" : 0.0135714147230462,
+            "samples" : 5,
+            "time_all" : 80,
+            "time_max" : 31,
+            "time_min" : 9
+         },
+         "on_player_receive_fields[7]" : {
+            "part_all" : 0.71567935618819789,
+            "part_max" : 0.40268456375838929,
+            "part_min" : 0.012602027957114331,
+            "samples" : 5,
+            "time_all" : 99,
+            "time_max" : 47,
+            "time_min" : 9
+         },
+         "on_player_receive_fields[8]" : {
+            "part_all" : 0.61417390409111838,
+            "part_max" : 0.40268456375838929,
+            "part_min" : 0.0135714147230462,
+            "samples" : 5,
+            "time_all" : 77,
+            "time_max" : 21,
+            "time_min" : 9
+         },
+         "on_player_receive_fields[9]" : {
+            "part_all" : 0.65781477870135752,
+            "part_max" : 0.40268456375838929,
+            "part_min" : 0.040839056989047703,
+            "samples" : 5,
+            "time_all" : 138,
+            "time_max" : 81,
+            "time_min" : 9
+         }
+      },
+      "part_all" : 13.767894808976207,
+      "part_max" : 9.0827740492170008,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 1758,
+      "time_max" : 524,
+      "time_min" : 0
+   },
+   "xban2" : {
+      "instruments" : {
+         "on_joinplayer[1]" : {
+            "part_all" : 16.796564493301538,
+            "part_max" : 16.796564493301538,
+            "part_min" : 16.796564493301538,
+            "samples" : 1,
+            "time_all" : 17327,
+            "time_max" : 17327,
+            "time_min" : 17327
+         },
+         "on_player_receive_fields[1]" : {
+            "part_all" : 0.064031064957466674,
+            "part_max" : 0.044742729306487698,
+            "part_min" : 0.00096938676593187145,
+            "samples" : 5,
+            "time_all" : 7,
+            "time_max" : 2,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 16.860595558259003,
+      "part_max" : 16.797533880067469,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 17334,
+      "time_max" : 17328,
+      "time_min" : 0
+   },
+   "xp_redo" : {
+      "instruments" : {
+         "globalstep[1]" : {
+            "part_all" : 13.498263430343449,
+            "part_max" : 6.8554104933744071,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 185,
+            "time_all" : 2910,
+            "time_max" : 1402,
+            "time_min" : 1
+         },
+         "globalstep[2]" : {
+            "part_all" : 162.324378443771,
+            "part_max" : 20.145243282498186,
+            "part_min" : 0.00064600109174184502,
+            "samples" : 185,
+            "time_all" : 74404,
+            "time_max" : 22192,
+            "time_min" : 1
+         },
+         "globalstep[3]" : {
+            "part_all" : 2.7247404967253464,
+            "part_max" : 0.93290614398793825,
+            "part_min" : 0.00032300054587092251,
+            "samples" : 185,
+            "time_all" : 483,
+            "time_max" : 99,
+            "time_min" : 1
+         },
+         "on_dignode[1]" : {
+            "part_all" : 2.2337819093675009,
+            "part_max" : 0.21788990825688076,
+            "part_min" : 0.0047358575454050341,
+            "samples" : 38,
+            "time_all" : 770,
+            "time_max" : 69,
+            "time_min" : 2
+         },
+         "on_dignode[2]" : {
+            "part_all" : 4.701022416390864,
+            "part_max" : 0.69108500345542501,
+            "part_min" : 0.002367928772702517,
+            "samples" : 38,
+            "time_all" : 1166,
+            "time_max" : 105,
+            "time_min" : 1
+         },
+         "on_joinplayer[1]" : {
+            "part_all" : 0.15897942961282693,
+            "part_max" : 0.15897942961282693,
+            "part_min" : 0.15897942961282693,
+            "samples" : 1,
+            "time_all" : 164,
+            "time_max" : 164,
+            "time_min" : 164
+         },
+         "on_placenode[1]" : {
+            "part_all" : 4.8683613903993601,
+            "part_max" : 0.86250634195839671,
+            "part_min" : 0.0035383200056613119,
+            "samples" : 47,
+            "time_all" : 1118,
+            "time_max" : 118,
+            "time_min" : 3
+         },
+         "on_placenode[2]" : {
+            "part_all" : 17.928134744345201,
+            "part_max" : 10.840304313401495,
+            "part_min" : 0.0011794400018871041,
+            "samples" : 47,
+            "time_all" : 4350,
+            "time_max" : 3149,
+            "time_min" : 1
+         }
+      },
+      "part_all" : 208.43766226095553,
+      "part_max" : 20.148874364560641,
+      "part_min" : 0.0019472363847609282,
+      "samples" : 186,
+      "time_all" : 85365,
+      "time_max" : 22196,
+      "time_min" : 3
+   },
+   "xp_redo_ranks_ores" : {
+      "instruments" : {
+         "on_step[12]" : {
+            "part_all" : 7.1882658488775384,
+            "part_max" : 0.85206092235594855,
+            "part_min" : 0.0012981575898406187,
+            "samples" : 185,
+            "time_all" : 1327,
+            "time_max" : 80,
+            "time_min" : 3
+         },
+         "on_step[18]" : {
+            "part_all" : 5.438743866416103,
+            "part_max" : 0.3863922721545569,
+            "part_min" : 0.00097361819238046409,
+            "samples" : 185,
+            "time_all" : 1132,
+            "time_max" : 92,
+            "time_min" : 3
+         },
+         "on_step[21]" : {
+            "part_all" : 12.524294375244697,
+            "part_max" : 1.6443563047430176,
+            "part_min" : 0.0022717757822210828,
+            "samples" : 185,
+            "time_all" : 2289,
+            "time_max" : 199,
+            "time_min" : 5
+         },
+         "on_step[30]" : {
+            "part_all" : 7.9770776186386074,
+            "part_max" : 0.47545030629971657,
+            "part_min" : 0.0022717757822210828,
+            "samples" : 185,
+            "time_all" : 1605,
+            "time_max" : 79,
+            "time_min" : 4
+         },
+         "on_step[35]" : {
+            "part_all" : 4.7264489377853165,
+            "part_max" : 0.15699884316641877,
+            "part_min" : 0.00129200218348369,
+            "samples" : 185,
+            "time_all" : 923,
+            "time_max" : 19,
+            "time_min" : 2
+         },
+         "on_step[39]" : {
+            "part_all" : 5.3025610731091684,
+            "part_max" : 0.31297944154648666,
+            "part_min" : 0.0012981575898406187,
+            "samples" : 185,
+            "time_all" : 1092,
+            "time_max" : 76,
+            "time_min" : 3
+         },
+         "on_step[40]" : {
+            "part_all" : 7.1501951359489988,
+            "part_max" : 0.39032006245120998,
+            "part_min" : 0.00129200218348369,
+            "samples" : 185,
+            "time_all" : 1369,
+            "time_max" : 47,
+            "time_min" : 4
+         },
+         "on_step[46]" : {
+            "part_all" : 4.0721853628384732,
+            "part_max" : 0.07555723460521345,
+            "part_min" : 0.00129200218348369,
+            "samples" : 185,
+            "time_all" : 849,
+            "time_max" : 46,
+            "time_min" : 3
+         },
+         "on_step[6]" : {
+            "part_all" : 6.8628421878415216,
+            "part_max" : 0.50679099939185079,
+            "part_min" : 0.0031026168356854122,
+            "samples" : 134,
+            "time_all" : 1319,
+            "time_max" : 150,
+            "time_min" : 5
+         }
+      },
+      "part_all" : 61.24261440670039,
+      "part_max" : 2.4128243265575935,
+      "part_min" : 0.01388902347244967,
+      "samples" : 185,
+      "time_all" : 11905,
+      "time_max" : 292,
+      "time_min" : 35
+   },
+   "xpanes" : {
+      "instruments" : {
+         "on_dignode[1]" : {
+            "part_all" : 44.295786492654351,
+            "part_max" : 4.717569957349423,
+            "part_min" : 0.031519226728304262,
+            "samples" : 38,
+            "time_all" : 15867,
+            "time_max" : 1033,
+            "time_min" : 12
+         },
+         "on_placenode[1]" : {
+            "part_all" : 59.420953308404414,
+            "part_max" : 6.0256172266567658,
+            "part_min" : 0.029486000047177604,
+            "samples" : 47,
+            "time_all" : 19590,
+            "time_max" : 1623,
+            "time_min" : 16
+         }
+      },
+      "part_all" : 103.71673980105874,
+      "part_max" : 9.1386663892645377,
+      "part_min" : 0,
+      "samples" : 186,
+      "time_all" : 35457,
+      "time_max" : 2053,
+      "time_min" : 0
+   }
+}
