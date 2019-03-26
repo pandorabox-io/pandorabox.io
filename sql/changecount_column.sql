@@ -1,5 +1,7 @@
 alter table blocks add column changecount bigint not null default 0;
 
+create index blocks_changecount_index on blocks(changecount);
+
 create or replace function on_blocks_change_count() returns trigger as
 $BODY$
 BEGIN
