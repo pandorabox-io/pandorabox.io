@@ -4,7 +4,7 @@ version: "2"
 
 services:
  minetest:
-  image: registry.rudin.io/x86/minetest:5.0.0
+  image: registry.rudin.io/x86/minetest:5.0.0-fix
   restart: always
   ports:
    - "30000:30000/udp"
@@ -15,6 +15,15 @@ services:
    - "./data/minetest/debug.txt:/usr/local/debug.txt"
   working_dir: /data
   command: minetestserver --config /data/minetest.conf --world /data/world/ --quiet
+  logging:
+   options:
+    max-size: 50m
+
+ logrotate:
+  image: itsthenetwork/alpine-logrotate
+  volumes:
+   - "./data/logrotate.conf:/etc/logrotate.conf"
+   - "./data/minetest:/logs"
   logging:
    options:
     max-size: 50m
