@@ -35,6 +35,11 @@ Set up with `docker-compose`
 * New Repository: https://github.com/thomasrudin-mt/mail
 * Tech-stack: nodejs, html, javascript, lua
 
+### Portainer
+
+* Container management
+* https://portainer.io
+
 ## FAQ
 
 ### Can i contribute?
