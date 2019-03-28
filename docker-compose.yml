@@ -4,7 +4,7 @@ version: "2"
 
 services:
  minetest:
-  image: registry.rudin.io/x86/minetest:5.0.0-fix
+  image: registry.rudin.io/x86/minetest:pandorabox
   restart: always
   ports:
    - "30000:30000/udp"
