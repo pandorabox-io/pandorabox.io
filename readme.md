@@ -19,8 +19,7 @@ Set up with `docker-compose`
 ### Mapserver
 
 * URL: https://pandorabox.io/map
-* Repository: https://github.com/thomasrudin-mt/minetest-tile-server (phase out)
-* New Repository: https://github.com/thomasrudin-mt/mapserver (not yet live)
+* Repository: https://github.com/thomasrudin-mt/mapserver
 * Tech-stack: go, html, javascript, sql
 
 ### Highscore
