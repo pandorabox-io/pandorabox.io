@@ -4,7 +4,7 @@ version: "2"
 
 services:
  minetest:
-  image: registry.rudin.io/x86/minetest:5.0.0-fix
+  image: registry.rudin.io/x86/minetest:pandorabox
   restart: always
   ports:
    - "30000:30000/udp"
@@ -15,31 +15,6 @@ services:
    - "./data/minetest/debug.txt:/usr/local/debug.txt"
   working_dir: /data
   command: minetestserver --config /data/minetest.conf --world /data/world/ --quiet
-  logging:
-   options:
-    max-size: 50m
-
- logrotate:
-  image: itsthenetwork/alpine-logrotate
-  volumes:
-   - "./data/logrotate.conf:/etc/logrotate.conf"
-   - "./data/minetest:/logs"
-  logging:
-   options:
-    max-size: 50m
-
- tileserver:
-  image: registry.rudin.io/x86/minetest-tileserver
-  restart: always
-  networks:
-   - default
-  depends_on:
-   - "postgres"
-   - "postgres-tiles"
-  volumes:
-   - "./data/tileserver.properties:/tileserver.properties"
-   - "./data/tileserver.layers.json:/layers.json"
-   - "./data/tiles:/tiles"
   logging:
    options:
     max-size: 50m
@@ -58,6 +33,22 @@ services:
    options:
     max-size: 50m
 
+ mapserver:
+  image: registry.rudin.io/x86/mapserver
+  restart: always
+  ports:
+   - "8080:8080"
+  networks:
+   - default
+  depends_on:
+   - "postgres"
+  volumes:
+   - "./data/minetest/world:/minetest"
+  working_dir: "/minetest"
+  logging:
+   options:
+    max-size: 50m
+
  portainer:
   image: portainer/portainer
   restart: always
@@ -65,14 +56,6 @@ services:
     - /var/run/docker.sock:/var/run/docker.sock
     - /opt/portainer/data:/data
 
- postgres-tiles:
-  image: postgres
-  restart: always
-  shm_size: '2gb'
-  environment:
-   POSTGRES_PASSWORD: enter
-  volumes:
-   - "./data/postgres-tiles:/var/lib/postgresql/data"
 
  nginx:
   image: nginx
@@ -83,7 +66,7 @@ services:
   depends_on:
    - highscore
    - grafana
-   - tileserver
+   - mapserver
    - portainer
   environment:
    VIRTUAL_PORT: 80
@@ -130,17 +113,6 @@ services:
    - "postgres"
   environment:
    DATA_SOURCE_NAME: postgresql://postgres:enter@postgres:5432/?sslmode=disable
-  logging:
-   options:
-    max-size: 50m
-
- postgres-tiles-exporter:
-  image: wrouesnel/postgres_exporter
-  restart: always
-  depends_on:
-   - "postgres-tiles"
-  environment:
-   DATA_SOURCE_NAME: postgresql://postgres-tiles:enter@postgres:5432/?sslmode=disable
   logging:
    options:
     max-size: 50m
