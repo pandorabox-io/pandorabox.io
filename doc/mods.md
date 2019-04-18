@@ -12,7 +12,7 @@ For the forked repos the installed/running branch *should* always be `pandorabox
 * [areas](https://github.com/minetest-mods/areas)
 * [bakedclay](https://notabug.org/TenPlus1/bakedclay)
 * [banners](https://github.com/pandorabox-io/banners.git)
-* [basic_materials](git@gitlab.com:thomasrudin/basic_materials.git)
+* [basic_materials](https://gitlab.com/thomasrudin/basic_materials.git)
 * [beacon](https://github.com/pandorabox-io/beacon.git)
 * [beerchat](https://github.com/pandorabox-io/beerchat.git)
 * [bedrock](https://github.com/Calinou/bedrock)
