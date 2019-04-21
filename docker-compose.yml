@@ -77,8 +77,8 @@ services:
    - portainer
   environment:
    VIRTUAL_PORT: 80
-   VIRTUAL_HOST: pandorabox.io
-   LETSENCRYPT_HOST: pandorabox.io
+   VIRTUAL_HOST: test.pandorabox.io
+   LETSENCRYPT_HOST: test.pandorabox.io
    LETSENCRYPT_EMAIL: thomas@rudin.io
   volumes:
    - "./data/nginx/nginx.conf:/etc/nginx/nginx.conf:ro"
