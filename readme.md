@@ -3,6 +3,12 @@
 Github repository for server configuration
 Set up with `docker-compose`
 
+## Links
+
+* [Mod-list](doc/mods.md)
+* [Settings](doc/settings.md)
+
+
 ## Overview
 
 ### Website
@@ -53,4 +59,3 @@ Set up with `docker-compose`
 ### What happens with the map if the server closes someday
 * I intend to provide a public download when the day comes: #76
 * Alternatively, if you want to provide an offsite mirror please contact me ingame or with the webmail feature (player: "admin")
-
