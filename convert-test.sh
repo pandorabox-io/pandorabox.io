@@ -12,4 +12,7 @@ sed -i 's/pandorabox.io/test.pandorabox.io/' data/minetest/minetest.conf
 sed -i 's/Pandorabox/Pandorabox-TEST/' data/minetest/minetest.conf
 sed -i 's/pandorabox.io/test.pandorabox.io/' data/grafana.ini 
 
+echo docker-compose.yml >> .gitignore
+echo granafa.ini >> data/.gitignore
+
 echo "Pandorabox TEST-Server, don't build here!!!" > data/minetest/world/news.txt
