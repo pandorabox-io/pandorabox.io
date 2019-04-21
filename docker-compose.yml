@@ -27,8 +27,6 @@ services:
    POSTGRES_PASSWORD: enter
   volumes:
    - "./data/postgres-minetest:/var/lib/postgresql/data"
-   - "./data/postgres-minetest-backup:/backup"
-   - "./data/postgres-minetest-restore:/restore"
   logging:
    options:
     max-size: 50m
@@ -45,6 +43,15 @@ services:
   volumes:
    - "./data/minetest/world:/minetest"
   working_dir: "/minetest"
+  logging:
+   options:
+    max-size: 50m
+
+ wiki:
+  image: registry.rudin.io/x86/php-pandorabox
+  restart: always
+  volumes:
+   - "./data/wiki:/var/www/html/wiki"
   logging:
    options:
     max-size: 50m
@@ -70,8 +77,8 @@ services:
    - portainer
   environment:
    VIRTUAL_PORT: 80
-   VIRTUAL_HOST: test.pandorabox.io
-   LETSENCRYPT_HOST: test.pandorabox.io
+   VIRTUAL_HOST: pandorabox.io
+   LETSENCRYPT_HOST: pandorabox.io
    LETSENCRYPT_EMAIL: thomas@rudin.io
   volumes:
    - "./data/nginx/nginx.conf:/etc/nginx/nginx.conf:ro"
