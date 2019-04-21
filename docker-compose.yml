@@ -34,8 +34,6 @@ services:
  mapserver:
   image: registry.rudin.io/x86/mapserver
   restart: always
-  ports:
-   - "8080:8080"
   networks:
    - default
   depends_on:
