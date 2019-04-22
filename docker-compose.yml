@@ -31,6 +31,9 @@ services:
    options:
     max-size: 50m
 
+ auth-proxy:
+  image: registry.rudin.io/x86/mt-auth-proxy:latest
+
  mapserver:
   image: registry.rudin.io/x86/mapserver
   restart: always
