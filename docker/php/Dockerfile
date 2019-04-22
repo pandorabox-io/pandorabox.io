@@ -18,3 +18,5 @@ RUN apt-get update \
     && docker-php-ext-enable xdebug \
     && pecl install memcached \
     && docker-php-ext-enable memcached
+
+COPY php.ini $PHP_INI_DIR/conf.d/custom.ini
