@@ -31,6 +31,12 @@ services:
    options:
     max-size: 50m
 
+ geoip:
+  image: klauspost/geoip-service
+  restart: always
+  volumes:
+   - "./data/GeoLite2-City.mmdb:/data/geodb.mmdb"
+
  auth-proxy:
   image: registry.rudin.io/x86/mt-auth-proxy:latest
 
@@ -129,7 +135,7 @@ services:
   image: prom/prometheus:v2.6.1
   volumes:
    - ./data/prometheus.yml:/etc/prometheus/prometheus.yml
-   - ./data/prometheus:/prometheus/data
+   - ./data/prometheus:/prometheus
   depends_on:
    - "pushgateway"
   command:
