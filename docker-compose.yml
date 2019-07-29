@@ -158,6 +158,11 @@ services:
    options:
     max-size: 50m
 
+ webdis:
+  image: anapsix/webdis
+  restart: always
+  environment:
+   - LOCAL_REDIS=true
 
 networks:
  terminator:
