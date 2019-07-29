@@ -158,7 +158,7 @@ services:
    options:
     max-size: 50m
 
- webdis:
+ kv:
   image: anapsix/webdis
   restart: always
   environment:
