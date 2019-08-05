@@ -132,7 +132,7 @@ services:
     max-size: 50m
 
  prometheus:
-  image: prom/prometheus:v2.6.1
+  image: prom/prometheus:v2.11.1
   volumes:
    - ./data/prometheus.yml:/etc/prometheus/prometheus.yml
    - ./data/prometheus:/prometheus
