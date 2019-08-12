@@ -21,6 +21,7 @@ Thanks to all the various contributors:
 * int / @int-ua
 * SX / @S-S-X
 * @6r1d
+* @OgelGames
 
 ### Moderation / ingame assistance
 
