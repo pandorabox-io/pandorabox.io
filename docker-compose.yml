@@ -39,6 +39,15 @@ services:
 
  auth-proxy:
   image: registry.rudin.io/x86/mt-auth-proxy:latest
+  restart: always
+
+ beerchat-proxy:
+  image: registry.rudin.io/x86/beerchat_proxy:latest
+  restart: always
+  environment:
+   IRC_HOST: chat.freenode.net
+   IRC_CHANNEL: pandorabox
+   IRC_USERNAME: pandorabot
 
  mapserver:
   image: registry.rudin.io/x86/mapserver
@@ -139,7 +148,7 @@ services:
   depends_on:
    - "pushgateway"
   command:
-   - '--config.file=/etc/prometheus/prometheus.yml'
+   - '--config.file=/etc/prometheus/prometheus.yml --storage.tsdb.retention.time=2d'
   logging:
    options:
     max-size: 50m
