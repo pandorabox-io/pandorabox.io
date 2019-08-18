@@ -5,57 +5,37 @@ Set up with `docker-compose`
 
 ## Links
 
-* [Mod-list](doc/mods.md)
-* [Settings](doc/settings.md)
+* [Mod-list](doc/mods.md) a rough mod-overview (manually maintained, may be out of date)
+* [Settings](doc/settings.md) `minetest.conf` extract
+* [Services](doc/services.md) List of (micro-)services used by the server
+* [FAQ](doc/faq.md) Frequently asked questions (code/server related)
 
+## Contributors
 
-## Overview
+Thanks to all the various contributors:
+(feel free to submit a PR or open an issue if i forgot you or you don't wanna be on here)
 
-### Website
+### Code
 
-* URL: https://pandorabox.io
-* Repository: https://github.com/pandorabox-io/pandorabox-website
-* Tech-stack: html, javascript
+* coil / @coil0
+* int / @int-ua
+* SX / @S-S-X
+* @6r1d
+* AceRichman / @OgelGames
 
-### Mods
+### Moderation / ingame assistance
 
-* Repositories: https://github.com/pandorabox-io
-* Tech-stack: lua
+* Adventurer
+* Ruggila
+* int
+* SwissalpS
 
-### Mapserver
+(/mail me if i forgot you, it happens...)
 
-* URL: https://pandorabox.io/map
-* Repository: https://github.com/thomasrudin-mt/mapserver
-* Tech-stack: go, html, javascript, sql
+### Building
 
-### Highscore
-
-* URL: https://pandorabox.io/highscore
-* Repository: https://git.rudin.io/minetest/xp-highscore
-* Tech-stack: nodejs, html, javascript, sql
-
-### Webmail
-
-* URL: https://pandorabox.io/webmail
-* New Repository: https://github.com/thomasrudin-mt/mail
-* Tech-stack: nodejs, html, javascript, lua
-
-### Portainer
-
-* Container management
-* https://portainer.io
-
-## FAQ
-
-### Can i contribute?
-* Of course, open an **issue** or submit a **PR** if you have an idea
-
-### Where can i help?
-* Take a look at the **issues** and pick one :smile:
-
-### Can i help with admin stuff?
-* Sure, but please provide some infos about you and your know-how first...
-
-### What happens with the map if the server closes someday
-* I intend to provide a public download when the day comes: #76
-* Alternatively, if you want to provide an offsite mirror please contact me ingame or with the webmail feature (player: "admin")
+* Warden (rework of my "boring" spawn platform)
+* Pixalou (Streets with light in new-town)
+* Ruggila (technic tutorial)
+* SX (digiline tutorial)
+* parasite / @parasitoid (mesecons tutorial)
