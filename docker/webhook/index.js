@@ -12,5 +12,7 @@ app.post('/', jsonParser, function(req, res){
 	res.end();
 });
 
+process.on("SIGTERM", () => process.exit(1))
+process.on("SIGINT", () => process.exit(1))
 
 app.listen(8080, () => console.log('Listening on http://127.0.0.1:8080'));
