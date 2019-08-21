@@ -1,0 +1,16 @@
+version: "2"
+
+
+
+services:
+  environment:
+   IRC_HOST: chat.freenode.net
+   IRC_CHANNEL: pandorabox-test
+   IRC_USERNAME: pandorabot-test
+
+ nginx:
+  environment:
+   VIRTUAL_HOST: test.pandorabox.io
+   LETSENCRYPT_HOST: test.pandorabox.io
+
+ 
