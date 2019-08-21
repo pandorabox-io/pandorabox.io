@@ -31,6 +31,10 @@ services:
    options:
     max-size: 50m
 
+ webhook:
+  image: registry.rudin.io/x86/webhook-git-updater
+  restart: always
+
  geoip:
   image: klauspost/geoip-service
   restart: always
@@ -90,6 +94,8 @@ services:
    - highscore
    - grafana
    - mapserver
+   - webmail
+   - webhook
    - portainer
   environment:
    VIRTUAL_PORT: 80
