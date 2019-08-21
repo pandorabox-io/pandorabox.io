@@ -148,7 +148,8 @@ services:
   depends_on:
    - "pushgateway"
   command:
-   - '--config.file=/etc/prometheus/prometheus.yml --storage.tsdb.retention.time=2d'
+   - "--config.file=/etc/prometheus/prometheus.yml"
+   - "--storage.tsdb.retention.time=2d"
   logging:
    options:
     max-size: 50m
