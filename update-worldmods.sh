@@ -1,5 +1,6 @@
 #!/bin/sh
 
+cd $(dirname $0)
 cd data/minetest/world/worldmods
 
 git remote update
