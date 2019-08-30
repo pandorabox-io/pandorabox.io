@@ -31,10 +31,6 @@ services:
    options:
     max-size: 50m
 
- webhook:
-  image: registry.rudin.io/x86/webhook-git-updater
-  restart: always
-
  geoip:
   image: klauspost/geoip-service
   restart: always
