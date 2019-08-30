@@ -91,7 +91,6 @@ services:
    - grafana
    - mapserver
    - webmail
-   - webhook
    - portainer
   environment:
    VIRTUAL_PORT: 80
