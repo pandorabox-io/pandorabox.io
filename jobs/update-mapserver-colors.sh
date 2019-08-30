@@ -1,13 +1,12 @@
 #!/bin/sh
 
 cd $(dirname $0)
-cd data/minetest/world/worldmods
+cd ../data/Colors.txt
 
 git remote update
 git diff --exit-code HEAD origin/master && exit 0
 
 git pull
-git submodule init
-git submodule sync
-git submodule update
+cp colors.txt ../minetest/world/
 
+docker-compose restart mapserver
