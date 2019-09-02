@@ -17,3 +17,6 @@ git submodule sync
 # updated commits
 git submodule update
 
+# removed directories
+git clean -dff
+
