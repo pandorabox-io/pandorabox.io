@@ -22,6 +22,7 @@ Thanks to all the various contributors:
 * SX / @S-S-X
 * @6r1d
 * AceRichman / @OgelGames
+* MilesDyson / @MilesBDyson
 
 ### Moderation / ingame assistance
 
