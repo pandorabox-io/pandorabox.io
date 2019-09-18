@@ -56,9 +56,6 @@ RUN groupadd minetest && useradd -m -g minetest -d /var/lib/minetest minetest &&
 
 WORKDIR /var/lib/minetest
 
-RUN echo 109.106.51.238 monitoring.minetest.land >> /etc/hosts
-RUN echo 185.107.80.107 servers.minetest.net >> /etc/hosts
-
 COPY --from=0 /usr/local/share/minetest /usr/local/share/minetest
 COPY --from=0 /usr/local/bin/minetestserver /usr/local/bin/minetestserver
 COPY --from=0 /usr/local/lib/libprometheus-cpp-*.so /lib/x86_64-linux-gnu/
