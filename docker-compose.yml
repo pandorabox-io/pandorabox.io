@@ -66,6 +66,8 @@ services:
  wiki:
   image: registry.rudin.io/x86/php-pandorabox
   restart: always
+  depends_on:
+   - "postgres"
   volumes:
    - "./data/wiki:/var/www/html/wiki"
   logging:
@@ -92,6 +94,7 @@ services:
    - mapserver
    - webmail
    - portainer
+   - wiki
   environment:
    VIRTUAL_PORT: 80
    VIRTUAL_HOST: pandorabox.io
