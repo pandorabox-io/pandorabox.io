@@ -3,7 +3,7 @@ FROM ubuntu:19.10
 
 ENV ENGINE_BRANCH=pandorabox
 ENV ENGINE_REPO=https://github.com/pandorabox-io/minetest.git
-ENV GAME_BRANCH=5.0.1
+ENV GAME_BRANCH=5.1.0
 ENV GAME_REPO=https://github.com/minetest/minetest_game.git
 
 
