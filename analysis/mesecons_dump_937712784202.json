@@ -1,1 +1,0 @@
-[{"func":"change","owcheck":["change",{"x":1,"y":0,"z":0}],"params":[{"x":1,"y":0,"z":0},"off"],"pos":{"x":-2890,"y":11,"z":2476},"priority":0.5,"time":0},{"func":"receptor_off","owcheck":[{"x":-1,"y":0,"z":-0}],"params":[[{"x":-1,"y":0,"z":-0}]],"pos":{"x":-2903,"y":11,"z":2476},"priority":1,"time":0}]
