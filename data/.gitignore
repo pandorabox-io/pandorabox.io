@@ -5,3 +5,4 @@ grafana
 prometheus
 postgres*
 Colors.txt
+filebrowser.db
