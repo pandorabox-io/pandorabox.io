@@ -40,4 +40,4 @@ Thanks to all the various contributors:
 * Ruggila (technic tutorial)
 * SX (digiline tutorial)
 * parasite / @parasitoid (mesecons tutorial)
-* Korlen (proper travelhub / marketplace)
+* Korlen (HiFi City)
