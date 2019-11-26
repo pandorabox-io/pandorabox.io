@@ -64,7 +64,7 @@ services:
    IRC_USERNAME: pandorabot
 
  mapserver:
-  image: registry.rudin.io/x86/mapserver
+  image: minetesttools/mapserver:latest
   restart: always
   networks:
    - default
