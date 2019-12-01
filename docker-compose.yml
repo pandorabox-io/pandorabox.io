@@ -65,9 +65,10 @@ services:
 
  mapserver:
   image: registry.rudin.io/x86/mapserver
+  #image: minetestmapserver/mapserver:latest
   restart: always
-  networks:
-   - default
+  labels:
+   com.centurylinklabs.watchtower.enable: "true"
   depends_on:
    - "postgres"
   volumes:
