@@ -140,8 +140,10 @@ services:
    PGPORT: 5432
 
  webmail:
-  image: registry.rudin.io/x86/minetest-webmail
+  image: minetestmail/mail
   restart: always
+  labels:
+   com.centurylinklabs.watchtower.enable: "true"
   depends_on:
    - minetest
 
