@@ -52,11 +52,15 @@ services:
    - "./data/GeoLite2-City.mmdb:/data/geodb.mmdb"
 
  auth-proxy:
-  image: registry.rudin.io/x86/mt-auth-proxy:latest
+  image: minetestauth/minetest-auth-proxy
+  labels:
+    com.centurylinklabs.watchtower.enable: "true"
   restart: always
 
  beerchat-proxy:
-  image: registry.rudin.io/x86/beerchat_proxy:latest
+  image: beerchat/beerchat
+  labels:
+    com.centurylinklabs.watchtower.enable: "true"
   restart: always
   environment:
    IRC_HOST: chat.freenode.net
@@ -64,8 +68,8 @@ services:
    IRC_USERNAME: pandorabot
 
  mapserver:
-  image: registry.rudin.io/x86/mapserver
-  #image: minetestmapserver/mapserver:latest
+         #image: registry.rudin.io/x86/mapserver
+  image: minetestmapserver/mapserver:latest
   restart: always
   labels:
    com.centurylinklabs.watchtower.enable: "true"
