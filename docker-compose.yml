@@ -83,7 +83,7 @@ services:
     max-size: 50m
 
  wiki:
-  image: registry.rudin.io/x86/php-pandorabox
+  image: buckaroobanzay/php
   restart: always
   depends_on:
    - "postgres"
