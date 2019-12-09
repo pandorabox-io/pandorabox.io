@@ -194,6 +194,17 @@ services:
    options:
     max-size: 50m
 
+ worldmodupdater:
+  image: alpine/git
+  restart: always
+  volumes:
+   - "./:/project"
+   - "/root/.ssh:/root/.ssh"
+  entrypoint: "/project/jobs/update-worldmods.sh"
+  logging:
+   options:
+    max-size: 50m
+
  kv:
   image: anapsix/webdis
   restart: always
