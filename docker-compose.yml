@@ -59,16 +59,13 @@ services:
 
  beerchat-proxy:
   image: beerchat/beerchat
+  volumes:
+   - "./data/beerchat.json:/data/beerchat.json:ro"
   labels:
     com.centurylinklabs.watchtower.enable: "true"
   restart: always
-  environment:
-   IRC_HOST: chat.freenode.net
-   IRC_CHANNEL: pandorabox
-   IRC_USERNAME: pandorabot
 
  mapserver:
-         #image: registry.rudin.io/x86/mapserver
   image: minetestmapserver/mapserver:latest
   restart: always
   labels:
