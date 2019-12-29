@@ -202,6 +202,14 @@ services:
    options:
     max-size: 50m
 
+ logpublish:
+  image: alpine
+  restart: always
+  volumes:
+   - "./data:/data"
+  working_dir: "/data"
+  command: sh -c "tail -f /data/minetest/debug.txt | grep 'ERROR\[Main\]' > /data/nginx/html/error-log.txt"
+
  kv:
   image: anapsix/webdis
   restart: always
