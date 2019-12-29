@@ -15,6 +15,10 @@ Set up with `docker-compose`
 Thanks to all the various contributors:
 (feel free to submit a PR or open an issue if i forgot you or you don't wanna be on here)
 
+## Error logs
+
+See: https://pandorabox.io/error-log.txt
+
 ### Code
 
 * coil / @coil0
