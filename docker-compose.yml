@@ -37,14 +37,6 @@ services:
    options:
     max-size: 50m
 
- filebrowser:
-  image: filebrowser/filebrowser
-  volumes:
-   - "./data/minetest/:/srv"
-   - "./data/filebrowser.db:/database.db"
-   - "./data/filebrowser.json:/.filebrowser.json"
-
-
  geoip:
   image: klauspost/geoip-service
   restart: always
