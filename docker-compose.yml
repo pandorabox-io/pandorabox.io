@@ -82,14 +82,6 @@ services:
    options:
     max-size: 50m
 
- portainer:
-  image: portainer/portainer
-  restart: always
-  volumes:
-    - /var/run/docker.sock:/var/run/docker.sock
-    - /opt/portainer/data:/data
-
-
  nginx:
   image: nginx
   networks:
@@ -97,12 +89,10 @@ services:
    - default
   restart: always
   depends_on:
-   - filebrowser
    - highscore
    - grafana
    - mapserver
    - webmail
-   - portainer
    - wiki
   environment:
    VIRTUAL_PORT: 80
