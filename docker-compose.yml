@@ -90,7 +90,6 @@ services:
   restart: always
   depends_on:
    - highscore
-   - grafana
    - mapserver
    - webmail
    - wiki
@@ -129,49 +128,6 @@ services:
    com.centurylinklabs.watchtower.enable: "true"
   depends_on:
    - minetest
-
- pushgateway:
-  image: prom/pushgateway
-  restart: always
-
- postgres-exporter:
-  image: wrouesnel/postgres_exporter
-  restart: always
-  depends_on:
-   - "postgres"
-  environment:
-   DATA_SOURCE_NAME: postgresql://postgres:enter@postgres:5432/?sslmode=disable
-  logging:
-   options:
-    max-size: 50m
-
- prometheus:
-  image: prom/prometheus:v2.11.1
-  volumes:
-   - ./data/prometheus.yml:/etc/prometheus/prometheus.yml
-   - ./data/prometheus:/prometheus
-  depends_on:
-   - "pushgateway"
-  command:
-   - "--config.file=/etc/prometheus/prometheus.yml"
-   - "--storage.tsdb.retention.time=2d"
-  logging:
-   options:
-    max-size: 50m
-
- grafana:
-  image: grafana/grafana
-  restart: always
-  environment:
-   - GF_SECURITY_ADMIN_PASSWORD=enter
-  depends_on:
-   - prometheus
-  volumes:
-   - "./data/grafana:/var/lib/grafana"
-   - "./data/grafana.ini:/etc/grafana/grafana.ini"
-  logging:
-   options:
-    max-size: 50m
 
  manager:
   image: buckaroobanzay/minetest_manager
