@@ -173,24 +173,20 @@ services:
    options:
     max-size: 50m
 
- worldmodupdater:
-  image: alpine/git
-  restart: always
-  volumes:
-   - "./:/project"
-   - "/root/.ssh:/root/.ssh"
-  entrypoint: "/project/jobs/update-worldmods.sh"
-  logging:
-   options:
-    max-size: 50m
-
- logpublish:
-  image: alpine
+ manager:
+  image: buckaroobanzay/minetest_manager
   restart: always
   volumes:
    - "./data:/data"
-  working_dir: "/data"
-  command: sh -c "tail -f /data/minetest/debug.txt | grep --line-buffered 'ERROR\[Main\]' >> /data/nginx/html/error-log.txt"
+  environment:
+   - WORLDMODS_DIR=/data/minetest/world/worldmods
+   - WORLDMODS_BRANCH=master
+   - MEDIADIR=/data/nginx/html/media
+   - DEBUG_LOG=/data/minetest/debug.txt
+   - ERROR_LOG_OUTPUT=/data/nginx/html/error-log.txt
+  logging:
+   options:
+    max-size: 50m
 
  kv:
   image: anapsix/webdis
