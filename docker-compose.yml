@@ -102,6 +102,7 @@ services:
    - "./data/nginx/routes:/routes"
    - "./data/nginx/html:/html"
    - "./data/minetest/world/news.txt:/html/news.txt"
+   - "./data/crashlogs:/crashlogs"
   logging:
    options:
     max-size: 50m

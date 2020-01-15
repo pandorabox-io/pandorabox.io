@@ -17,7 +17,7 @@ Thanks to all the various contributors:
 
 ## Error logs
 
-See: https://pandorabox.io/error-log.txt
+See: https://pandorabox.io/crashlogs/
 
 ### Code
 
