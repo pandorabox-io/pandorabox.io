@@ -4,7 +4,7 @@ version: "2"
 
 services:
  minetest:
-  image: registry.rudin.io/x86/minetest:latest
+  image: buckaroobanzay/minetest:backport-5
   restart: always
   ports:
    - "30000:30000/udp"
@@ -12,9 +12,8 @@ services:
    - "postgres"
   volumes:
    - "./data/minetest:/data"
+   - "./data/crashlogs:/crashlogs"
    - "./data/minetest/debug.txt:/root/.minetest/debug.txt"
-  working_dir: /data
-  command: minetestserver --config /data/minetest.conf --world /data/world/ --quiet
   logging:
    options:
     max-size: 50m
