@@ -52,6 +52,8 @@ services:
   image: beerchat/beerchat
   volumes:
    - "./data/beerchat.json:/data/beerchat.json:ro"
+  labels:
+   com.centurylinklabs.watchtower.enable: "true"
   restart: always
 
  mapserver:
