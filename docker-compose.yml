@@ -108,8 +108,10 @@ services:
     max-size: 50m
 
  highscore:
-  image: registry.rudin.io/x86/minetest-xp-highscore
+  image: buckaroobanzay/xphighscore
   restart: always
+  labels:
+   com.centurylinklabs.watchtower.enable: "true"
   volumes:
    - "./data/minetest/world:/data/world:ro"
   depends_on:
