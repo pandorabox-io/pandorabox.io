@@ -6,7 +6,7 @@ mkdir export
 docker-compose up -d postgres
 sleep 10
 docker-compose exec postgres pg_dump -U postgres postgres | gzip > export/blocks.sql.gz
-docker-compose exec postgres pg_dump -U postgres wiki | gzip > export/wiki.sql.gz
+docker-compose exec postgres pg_dump -U postgres -n mediawiki wiki | gzip > export/wiki.sql.gz
 docker-compose down
 
 # tar archive of the world files
