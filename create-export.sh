@@ -2,8 +2,14 @@
 
 mkdir export
 
+# export blocks and wiki-db as gzipped sql dump
+docker-compose up -d postgres
+sleep 10
 docker-compose exec postgres pg_dump -U postgres postgres | gzip > export/blocks.sql.gz
+docker-compose exec postgres pg_dump -U postgres wiki | gzip > export/wiki.sql.gz
+docker-compose down
 
-cd data/minetest/world && tar cvjf ../../../export/world.tar.bz2 --exclude .git --exclude monitoring --exclude webmail advtrains* areas.dat atm_* beds_spawns datastorage/ elevator env_meta.txt force_loaded.txt locator_beacons.txt map_meta.txt mod_travelnet.data planets.json pvp_areas_store.dat teleport_tubes world.mt worldmods*
-
-cat data/minetest/minetest.conf | grep -v key > export/minetest.conf
+# tar archive of the world files
+cd data/minetest/world && tar cvjf ../../../export/world.tar.bz2 --exclude mails --exclude mapserver.tiles --exclude mapserver.json *
+# tar archive of the mediawiki
+cd data/wiki && tar cvjf ../../export/wiki.tar.bz2 *
