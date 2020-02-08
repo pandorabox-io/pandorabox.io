@@ -12,4 +12,4 @@ docker-compose down
 # tar archive of the world files
 cd data/minetest/world && tar cvjf ../../../export/world.tar.bz2 --exclude mails --exclude mapserver.tiles --exclude mapserver.json *
 # tar archive of the mediawiki
-cd data/wiki && tar cvjf ../../export/wiki.tar.bz2 *
+cd data/wiki && tar cvjf ../../export/wiki.tar.bz2 --exclude LocalSettings.secrets.php *
