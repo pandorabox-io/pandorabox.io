@@ -3,6 +3,9 @@
 Github repository for server configuration
 Set up with `docker-compose`
 
+![](https://github.com/pandorabox-io/pandorabox.io/workflows/docker-compose-validate/badge.svg)
+
+
 ## Links
 
 * [Services](doc/services.md) List of (micro-)services used by the server
