@@ -76,7 +76,7 @@ services:
   depends_on:
    - "postgres"
   volumes:
-   - "./data/wiki:/var/www/html/wiki"
+   - "./data/wiki:/var/www/html"
   logging:
    options:
     max-size: 50m
