@@ -5,8 +5,6 @@ Set up with `docker-compose`
 
 ## Links
 
-* [Mod-list](doc/mods.md) a rough mod-overview (manually maintained, may be out of date)
-* [Settings](doc/settings.md) `minetest.conf` extract
 * [Services](doc/services.md) List of (micro-)services used by the server
 * [FAQ](doc/faq.md) Frequently asked questions (code/server related)
 
