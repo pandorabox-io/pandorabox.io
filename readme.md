@@ -4,7 +4,8 @@ Github repository for server configuration
 Set up with `docker-compose`
 
 ![](https://github.com/pandorabox-io/pandorabox.io/workflows/docker-compose-validate/badge.svg)
-
+![GitHub issues](https://img.shields.io/github/issues/pandorabox-io/pandorabox.io)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/pandorabox-io/pandorabox.io)
 
 ## Links
 
