@@ -36,12 +36,6 @@ services:
    options:
     max-size: 50m
 
- geoip:
-  image: klauspost/geoip-service
-  restart: always
-  volumes:
-   - "./data/GeoLite2-City.mmdb:/data/geodb.mmdb"
-
  auth-proxy:
   image: minetestauth/minetest-auth-proxy
   labels:
