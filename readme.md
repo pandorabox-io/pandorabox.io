@@ -6,6 +6,7 @@ Set up with `docker-compose`
 ![](https://github.com/pandorabox-io/pandorabox.io/workflows/docker-compose-validate/badge.svg)
 ![GitHub issues](https://img.shields.io/github/issues/pandorabox-io/pandorabox.io)
 ![GitHub closed issues](https://img.shields.io/github/issues-closed/pandorabox-io/pandorabox.io)
+![Discord](https://img.shields.io/discord/513329453741637637)
 
 ## Links
 
