@@ -4,7 +4,7 @@ version: "2"
 
 services:
  minetest:
-  image: buckaroobanzay/minetest:stable-5
+  image: buckaroobanzay/minetest:5.2.0-ricer
   restart: always
   ports:
    - "30000:30000/udp"
