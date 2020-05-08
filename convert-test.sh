@@ -14,5 +14,6 @@ sed -i 's/pandorabox.io/test.pandorabox.io/' data/grafana.ini
 
 echo docker-compose.yml >> .gitignore
 echo granafa.ini >> data/.gitignore
+touch .nobackup
 
 echo "Pandorabox TEST-Server, don't build here!!!" > data/minetest/world/news.txt
