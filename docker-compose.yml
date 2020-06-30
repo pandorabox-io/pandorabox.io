@@ -36,6 +36,16 @@ services:
    options:
     max-size: 50m
 
+ postgres-exporter:
+  image: wrouesnel/postgres_exporter:v0.8.0
+  restart: always
+  environment:
+   - DATA_SOURCE_URI=postgres:5432/postgres?sslmode=disable
+   - DATA_SOURCE_USER=postgres
+   - DATA_SOURCE_PASS=enter
+  depends_on:
+   - postgres
+
  auth-proxy:
   image: minetestauth/minetest-auth-proxy
   labels:

@@ -3,7 +3,7 @@ forum
 tiles
 grafana
 prometheus
-postgres*
+postgres
 Colors.txt
 filebrowser.db
 beerchat.json
