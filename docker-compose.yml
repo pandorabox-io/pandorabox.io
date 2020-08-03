@@ -102,6 +102,7 @@ services:
    - webmail
    - wiki
    - kv
+   - nodered
   environment:
    VIRTUAL_PORT: 80
    VIRTUAL_HOST: pandorabox.io
@@ -109,6 +110,7 @@ services:
    LETSENCRYPT_EMAIL: thomas@rudin.io
   volumes:
    - "./data/nginx/nginx.conf:/etc/nginx/nginx.conf:ro"
+   - "./data/nginx/htpasswd:/etc/nginx/htpasswd:ro"
    - "./data/nginx/routes:/routes"
    - "./data/nginx/html:/html"
    - "./data/crashlogs:/crashlogs"
@@ -160,6 +162,17 @@ services:
   restart: always
   environment:
    - LOCAL_REDIS=true
+
+ nodered:
+  image: nodered/node-red:1.1.2-12
+  restart: always
+  environment:
+  - TZ=Europe/Zurich
+  volumes:
+   - "./data/nodered:/data"
+  logging:
+   options:
+    max-size: 50m
 
 networks:
  terminator:
