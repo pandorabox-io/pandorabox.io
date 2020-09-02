@@ -1,4 +1,4 @@
-name: docker-compose-validate
+name: validate
 
 on: [push, pull_request]
 
