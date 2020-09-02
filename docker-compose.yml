@@ -19,7 +19,7 @@ services:
     max-size: 50m
 
  postgres:
-  image: postgres:11
+  image: postgres:11.9
   restart: always
   shm_size: '2gb'
   environment:
@@ -91,7 +91,7 @@ services:
     max-size: 50m
 
  nginx:
-  image: nginx
+  image: nginx:1.19.2
   networks:
    - terminator
    - default
@@ -177,5 +177,3 @@ services:
 networks:
  terminator:
   external: true
-
- 
