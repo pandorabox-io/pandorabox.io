@@ -1,0 +1,27 @@
+name: deployment
+
+on:
+  repository_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: update compose deployment
+      run: |
+        # validate config
+        docker-compose config -q
+        # set up ssh
+        eval $(ssh-agent -s)
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' | ssh-add -
+        mkdir -p ~/.ssh
+        chmod 700 ~/.ssh
+        touch ~/.ssh/known_hosts
+        chmod 644 ~/.ssh/known_hosts
+        ssh-keyscan pandorabox.io >> ~/.ssh/known_hosts
+        # execute commands
+        ssh root@pandorabox.io "cd /data/pandorabox.io && docker-compose pull && docker-compose up -d && docker image prune -af"
