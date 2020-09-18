@@ -4,7 +4,7 @@ version: "2"
 
 services:
  minetest:
-  image: buckaroobanzay/minetest:5.3.0-r4
+  image: buckaroobanzay/minetest:5.3.0-r5
   restart: always
   ports:
    - "30000:30000/udp"
@@ -97,6 +97,7 @@ services:
    - default
   restart: always
   depends_on:
+   - minetest
    - highscore
    - mapserver
    - webmail
