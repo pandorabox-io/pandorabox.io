@@ -14,6 +14,7 @@ services:
    - "./data/minetest:/data"
    - "./data/crashlogs:/crashlogs"
    - "./data/minetest/debug.txt:/root/.minetest/debug.txt"
+   - "./config/metatool.cfg:/data/minetest/world/metatool.cfg"
   logging:
    options:
     max-size: 50m
