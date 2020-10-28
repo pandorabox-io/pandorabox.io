@@ -14,14 +14,14 @@ Set up with `docker-compose`
 * [Services](doc/services.md) List of (micro-)services used by the server
 * [FAQ](doc/faq.md) Frequently asked questions (code/server related)
 
+## Error logs
+
+See: https://pandorabox.io/crashlogs/
+
 ## Contributors
 
 Thanks to all the various contributors:
 (feel free to submit a PR or open an issue if i forgot you or you don't wanna be on here)
-
-## Error logs
-
-See: https://pandorabox.io/crashlogs/
 
 ### Code
 
