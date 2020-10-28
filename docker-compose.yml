@@ -49,12 +49,16 @@ services:
 
  auth-proxy:
   image: minetestauth/minetest-auth-proxy
+  depends_on:
+   - "minetest"
   labels:
     com.centurylinklabs.watchtower.enable: "true"
   restart: always
 
  beerchat-proxy:
   image: beerchat/beerchat
+  depends_on:
+   - "minetest"
   volumes:
    - "./data/beerchat.json:/data/beerchat.json:ro"
   labels:
@@ -68,6 +72,7 @@ services:
    com.centurylinklabs.watchtower.enable: "true"
   depends_on:
    - "postgres"
+   - "minetest"
   volumes:
    - "./data/minetest/world:/minetest"
   working_dir: "/minetest"
@@ -98,7 +103,6 @@ services:
    - default
   restart: always
   depends_on:
-   - minetest
    - highscore
    - mapserver
    - webmail
@@ -146,6 +150,8 @@ services:
 
  manager:
   image: buckaroobanzay/minetest_manager
+  depends_on:
+   - minetest
   restart: always
   volumes:
    - "./data:/data"
@@ -167,6 +173,9 @@ services:
 
  nodered:
   image: nodered/node-red:1.2.2-12-minimal
+  depends_on:
+   - postgres
+   - beerchat-proxy
   restart: always
   environment:
   - TZ=Europe/Zurich
