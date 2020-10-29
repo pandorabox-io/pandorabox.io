@@ -2,6 +2,7 @@ name: deployment
 
 on:
   repository_dispatch:
+    types: [update_deployment]
   push:
     branches:
       - master
