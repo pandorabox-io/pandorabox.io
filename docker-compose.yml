@@ -37,6 +37,19 @@ services:
    options:
     max-size: 50m
 
+ mapcleaner:
+  image: buckaroobanzay/mapcleaner
+  volumes:
+   - "./data/minetest/world/areas.dat:/areas.dat"
+  environment:
+   PGHOST: postgres
+   PGUSER: postgres
+   PGDATABASE: postgres
+   PGPASSWORD: enter
+   PGPORT: 5432
+   AREAS_FILE: /areas.dat
+  restart: "no"
+
  postgres-exporter:
   image: wrouesnel/postgres_exporter:v0.8.0
   restart: always
