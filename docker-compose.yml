@@ -172,7 +172,7 @@ services:
    - LOCAL_REDIS=true
 
  nodered:
-  image: nodered/node-red:1.2.2-12-minimal
+  image: nodered/node-red:1.2.3-12-minimal
   depends_on:
    - postgres
    - beerchat-proxy
