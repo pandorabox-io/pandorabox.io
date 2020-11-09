@@ -48,6 +48,7 @@ services:
    PGPASSWORD: enter
    PGPORT: 5432
    AREAS_FILE: /areas.dat
+   STARTYCHUNK: -387
   restart: "no"
 
  postgres-exporter:
