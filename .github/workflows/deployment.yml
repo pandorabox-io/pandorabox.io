@@ -25,4 +25,4 @@ jobs:
         chmod 644 ~/.ssh/known_hosts
         ssh-keyscan pandorabox.io >> ~/.ssh/known_hosts
         # execute deployment script
-        cat scripts/deploy.sh | ssh root@pandorabox.io "cd /data/pandorabox.io && /bin/sh -"
+        cat scripts/deploy.sh | ssh root@pandorabox.io "cd /data/pandorabox.io && /bin/bash -"
