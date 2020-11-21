@@ -74,7 +74,7 @@ services:
   depends_on:
    - "minetest"
   volumes:
-   - "./data/beerchat.json:/data/beerchat.json:ro"
+   - "./data/beerchat.js:/data/beerchat.js:ro"
   labels:
    com.centurylinklabs.watchtower.enable: "true"
   restart: always
