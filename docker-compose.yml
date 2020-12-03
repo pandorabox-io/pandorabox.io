@@ -180,6 +180,14 @@ services:
    options:
     max-size: 50m
 
+ autoupdate-textures:
+  image: buckaroobanzay/git_autoupdate
+  restart: always
+  volumes:
+   - "./data/pandorabox-textures:/git"
+  environment:
+   - GIT_DIR=/git
+
  kv:
   image: anapsix/webdis
   restart: always
