@@ -15,7 +15,7 @@ services:
    - "./data/crashlogs:/crashlogs"
    - "./data/minetest/debug.txt:/root/.minetest/debug.txt"
    - "./config/metatool.cfg:/data/world/metatool.cfg"
-   - "./data/pandorabox-textures:/usr/local/share/minetest/games/minetest_game/textures"
+   - "./data/pandorabox-textures:/root/.minetest/textures/server"
   logging:
    options:
     max-size: 50m
