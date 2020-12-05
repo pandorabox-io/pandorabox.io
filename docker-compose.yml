@@ -16,6 +16,7 @@ services:
    - "./data/minetest/debug.txt:/root/.minetest/debug.txt"
    - "./config/metatool.cfg:/data/world/metatool.cfg"
    - "./data/pandorabox-textures:/root/.minetest/textures/server"
+   - "postgres_socket:/var/run/postgresql"
   logging:
    options:
     max-size: 50m
@@ -28,6 +29,7 @@ services:
    POSTGRES_PASSWORD: enter
   volumes:
    - "./data/postgres:/var/lib/postgresql/data"
+   - "postgres_socket:/var/run/postgresql"
   command:
    - "postgres"
    - "-c"
@@ -207,6 +209,9 @@ services:
   logging:
    options:
     max-size: 50m
+
+volumes:
+  postgres_socket: {}
 
 networks:
  terminator:
