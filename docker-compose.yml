@@ -92,6 +92,7 @@ services:
    - "minetest"
   volumes:
    - "./data/minetest/world:/minetest"
+   - "postgres_socket:/var/run/postgresql"
   working_dir: "/minetest"
   logging:
    options:
