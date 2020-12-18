@@ -21,7 +21,7 @@ List of services used by the server
 ### Highscore
 
 * URL: https://pandorabox.io/highscore
-* Repository: https://github.com/thomasrudin-mt/xp-highscore/
+* Repository: https://github.com/BuckarooBanzay/xp-highscore/
 * Tech-stack: nodejs, html, javascript, sql
 
 ### Webmail
@@ -29,4 +29,3 @@ List of services used by the server
 * URL: https://pandorabox.io/webmail
 * New Repository: https://github.com/minetest-mail/mail
 * Tech-stack: nodejs, html, javascript, lua
-

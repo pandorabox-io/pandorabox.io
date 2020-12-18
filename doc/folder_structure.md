@@ -29,10 +29,6 @@ As the name suggests, restarts the minetest-server
 Converts the server to the test-instance (url's, announce-name, /news)
 **WARNING** Don't do this on the main server! This is intended to execute on a restored backup only!
 
-## psql.sh
-
-Starts a sql-shell on the main database (blocks, players)
-
 ## /data/minetest/world
 
 The main directory for all things minetesty..
