@@ -208,6 +208,7 @@ services:
   - TZ=Europe/Zurich
   volumes:
    - "./data/nodered:/data"
+   - "./config/nodered.js:/data/settings.js"
   logging:
    options:
     max-size: 50m
