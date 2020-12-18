@@ -1,6 +1,2 @@
-data/minetest
-data/postgres
-images
 docker-compose.override.yml
-data/GeoLite2-City.mmdb
 minetest.conf.keys
