@@ -65,7 +65,7 @@ services:
    - postgres
 
  auth-proxy:
-  image: minetestauth/minetest-auth-proxy
+  image: minetestauth/minetest-auth-proxy:1.0
   depends_on:
    - "minetest"
   labels:
@@ -73,7 +73,7 @@ services:
   restart: always
 
  beerchat-proxy:
-  image: beerchat/beerchat
+  image: beerchat/beerchat:1.0
   depends_on:
    - "minetest"
   volumes:
@@ -83,7 +83,7 @@ services:
   restart: always
 
  mapserver:
-  image: minetestmapserver/mapserver:latest
+  image: minetestmapserver/mapserver:4.2
   restart: always
   labels:
    com.centurylinklabs.watchtower.enable: "true"
@@ -160,7 +160,7 @@ services:
    PGPORT: 5432
 
  webmail:
-  image: minetestmail/mail
+  image: minetestmail/mail:1.1
   restart: always
   labels:
    com.centurylinklabs.watchtower.enable: "true"
