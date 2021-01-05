@@ -160,7 +160,7 @@ services:
    PGPORT: 5432
 
  webmail:
-  image: minetestmail/mail:1.1
+  image: minetestmail/mail:1.2
   restart: always
   labels:
    com.centurylinklabs.watchtower.enable: "true"
