@@ -83,7 +83,7 @@ services:
   restart: always
 
  mapserver:
-  image: minetestmapserver/mapserver:4.2
+  image: minetestmapserver/mapserver:4.3
   restart: always
   labels:
    com.centurylinklabs.watchtower.enable: "true"
