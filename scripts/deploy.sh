@@ -12,11 +12,11 @@ git pull
 # generate config from secret and public variables
 ./scripts/generate-config.sh
 
-# pull latest versions of services
-docker-compose pull auth-proxy beerchat-proxy mapserver wiki highscore webmail manager
+# pull latest versions of services (only those which track latest/master)
+docker-compose pull wiki highscore manager
 
 # update deployment
-docker-compose up -d
+docker-compose up -d --remove-orphans
 
 # cleanup old/stale images
 docker image prune -af
