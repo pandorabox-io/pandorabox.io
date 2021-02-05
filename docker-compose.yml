@@ -6,6 +6,9 @@ services:
  minetest:
   image: buckaroobanzay/minetest:5.3.0-r5
   restart: always
+  networks:
+   - terminator
+   - default
   ports:
    - "30000:30000/udp"
   depends_on:
