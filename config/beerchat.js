@@ -30,6 +30,7 @@ module.exports = {
 			"audit": "audit",
 			"mod": "mod",
 			"de": "de",
+			"en": "en",
 			"fr": "fr",
 			"es": "es",
 			"lag": "lag",
