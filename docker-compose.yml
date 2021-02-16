@@ -116,6 +116,7 @@ services:
    - wiki
    - kv
    - nodered
+   - postgres-exporter
   environment:
    VIRTUAL_PORT: 80
    VIRTUAL_HOST: pandorabox.io
@@ -190,7 +191,6 @@ services:
   image: nodered/node-red:1.2.9-12-minimal
   depends_on:
    - postgres
-   - beerchat-proxy
   restart: always
   environment:
   - TZ=Europe/Zurich
