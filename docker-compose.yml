@@ -4,7 +4,7 @@ version: "2"
 
 services:
  minetest:
-  image: buckaroobanzay/minetest:5.4.0-r1
+  image: buckaroobanzay/minetest:5.4.0-r2
   restart: always
   networks:
    - terminator
