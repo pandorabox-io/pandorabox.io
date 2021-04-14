@@ -57,8 +57,6 @@ services:
   image: minetestauth/minetest-auth-proxy:1.0
   depends_on:
    - "minetest"
-  labels:
-    com.centurylinklabs.watchtower.enable: "true"
   restart: always
 
  beerchat-proxy:
@@ -67,15 +65,11 @@ services:
    - "minetest"
   volumes:
    - "./config/beerchat.js:/data/beerchat.js:ro"
-  labels:
-   com.centurylinklabs.watchtower.enable: "true"
   restart: always
 
  mapserver:
   image: minetestmapserver/mapserver:4.3
   restart: always
-  labels:
-   com.centurylinklabs.watchtower.enable: "true"
   depends_on:
    - "postgres"
    - "minetest"
@@ -135,8 +129,6 @@ services:
  highscore:
   image: buckaroobanzay/xphighscore
   restart: always
-  labels:
-   com.centurylinklabs.watchtower.enable: "true"
   volumes:
    - "./data/minetest/world:/data/world:ro"
   depends_on:
@@ -151,8 +143,6 @@ services:
  webmail:
   image: minetestmail/mail:1.2
   restart: always
-  labels:
-   com.centurylinklabs.watchtower.enable: "true"
   depends_on:
    - minetest
 
