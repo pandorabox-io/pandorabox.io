@@ -17,7 +17,8 @@ module.exports = {
 			"lag": "pandorabox-lag",
 			"bot": "pandorabox-bot",
 			"events": "pandorabox-events",
-			"offtopic": "pandorabox-offtopic"
+			"offtopic": "pandorabox-offtopic",
+			"nsfw": "pandorabox-nsfw"
 		}
 	},{
 		"name": "Discord",
