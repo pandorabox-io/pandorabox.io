@@ -54,7 +54,7 @@ services:
    - postgres
 
  auth-proxy:
-  image: minetestauth/minetest-auth-proxy:1.0
+  image: minetestauth/minetest-auth-proxy:1.1
   depends_on:
    - "minetest"
   restart: always
