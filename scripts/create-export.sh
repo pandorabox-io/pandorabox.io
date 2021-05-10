@@ -1,21 +1,35 @@
-#!/bin/sh
+#!/bin/bash
 
 mkdir export
 
-# export blocks and wiki-db as gzipped sql dump
+# start database
 docker-compose up -d postgres
 sleep 10
-docker-compose exec postgres pg_dump -U postgres -t blocks postgres | gzip > export/blocks.sql.gz
-docker-compose exec postgres pg_dump -U postgres -n mediawiki wiki | gzip > export/wiki.sql.gz
+
+# migrate players and map to slite3
+docker-compose run --rm minetest minetestserver --migrate-players sqlite3 --world /data/world
+docker-compose run --rm minetest minetestserver --migrate sqlite3 --world /data/world
+
+# write "normalized" world.mt
+cat > data/minetest/world/world.mt << EOF
+gameid = minetest
+backend = sqlite3
+creative_mode = false
+enable_damage = true
+player_backend = sqlite3
+auth_backend = sqlite3
+EOF
+
+# copy minetest.conf (for completeness)
+cp minetest.conf data/minetest/world/
+
+# stop database
 docker-compose down
 
 # tar archive of the world files
-cd data/minetest/world && tar cvjf ../../../export/world.tar.bz2 \
+cd data/minetest/world && tar cvjf ../../../export/pandorabox.tar.bz2 \
  --exclude mails \
  --exclude mapserver.tiles \
  --exclude mapserver.json \
  --exclude xban.db \
  --exclude mod_storage *
-
-# tar archive of the mediawiki
-cd data/wiki && tar cvjf ../../export/wiki.tar.bz2 --exclude LocalSettings.secrets.php *
