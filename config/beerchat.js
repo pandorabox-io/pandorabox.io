@@ -18,7 +18,8 @@ module.exports = {
 			"bot": "pandorabox-bot",
 			"events": "pandorabox-events",
 			"offtopic": "pandorabox-offtopic",
-			"nsfw": "pandorabox-nsfw"
+			"nsfw": "pandorabox-nsfw",
+			"ideas": "pandorabox-ideas"
 		}
 	},{
 		"name": "Discord",
@@ -41,7 +42,8 @@ module.exports = {
 			"nsfw": "nsfw",
 			"grounded": "grounded",
 			"bot": "bot",
-			"events": "events-chat"
+			"events": "events-chat",
+			"ideas": "💡ideas"
 		}
 	}]
 };
