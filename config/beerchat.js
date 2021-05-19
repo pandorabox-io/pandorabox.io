@@ -6,7 +6,6 @@ module.exports = {
 		"host": "chat.freenode.net",
 		"username": "pandorabot",
 		"password": process.env.BEERCHAT_IRC_PASSWORD,
-		"debug": true,
 		"system_channel": "main",
 		"channels": {
 			"main": "pandorabox",
@@ -22,9 +21,20 @@ module.exports = {
 			"ideas": "pandorabox-ideas"
 		}
 	},{
+		"name": "Libera",
+		"type": "irc",
+		"host": "irc.libera.chat",
+		"username": "pandorabot",
+		"password": process.env.BEERCHAT_LIBERA_PASSWORD,
+		"system_channel": "main",
+		"channels": {
+			"main": "pandorabox",
+			"mod": "pandorabox-mod",
+			"offtopic": "pandorabox-offtopic"
+		}
+	},{
 		"name": "Discord",
 		"type": "discord",
-		"debug": true,
 		"token": process.env.BEERCHAT_DISCORD_TOKEN,
 		"system_channel": "main",
 		"channels": {
