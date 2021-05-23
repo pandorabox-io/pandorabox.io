@@ -13,7 +13,7 @@ sed -i 's/Pandorabox/Pandorabox-TEST/' data/minetest/minetest.conf
 sed -i 's/pandorabox.io/test.pandorabox.io/' data/grafana.ini
 
 # copy test beerchat config
-cp data/beerchat.test.js data/beerchat.js
+cp config/beerchat.test.js config/beerchat.js
 
 echo docker-compose.yml >> .gitignore
 echo granafa.ini >> data/.gitignore
