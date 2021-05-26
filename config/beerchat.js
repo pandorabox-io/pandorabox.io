@@ -12,7 +12,7 @@ module.exports = {
 			"mod": "pandorabox-mod",
 			"offtopic": "pandorabox-offtopic",
 			"fr": "pandorabox-fr",
-		    "de": "pandorabox-de",
+			"de": "pandorabox-de",
 			"es": "pandorabox-es",
 			"lag": "pandorabox-lag",
 			"bot": "pandorabox-bot",
