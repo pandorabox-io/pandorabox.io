@@ -3,26 +3,6 @@ module.exports = {
 	"remotes": [{
 		"name": "IRC",
 		"type": "irc",
-		"host": "chat.freenode.net",
-		"username": "pandorabot",
-		"password": process.env.BEERCHAT_IRC_PASSWORD,
-		"system_channel": "main",
-		"channels": {
-			"main": "pandorabox",
-			"fr": "pandorabox-fr",
-		    	"de": "pandorabox-de",
-			"es": "pandorabox-es",
-			"mod": "pandorabox-mod",
-			"lag": "pandorabox-lag",
-			"bot": "pandorabox-bot",
-			"events": "pandorabox-events",
-			"offtopic": "pandorabox-offtopic",
-			"nsfw": "pandorabox-nsfw",
-			"ideas": "pandorabox-ideas"
-		}
-	},{
-		"name": "Libera",
-		"type": "irc",
 		"host": "irc.libera.chat",
 		"username": "pandorabot",
 		"password": process.env.BEERCHAT_LIBERA_PASSWORD,
@@ -30,7 +10,15 @@ module.exports = {
 		"channels": {
 			"main": "pandorabox",
 			"mod": "pandorabox-mod",
-			"offtopic": "pandorabox-offtopic"
+			"offtopic": "pandorabox-offtopic",
+			"fr": "pandorabox-fr",
+		    "de": "pandorabox-de",
+			"es": "pandorabox-es",
+			"lag": "pandorabox-lag",
+			"bot": "pandorabox-bot",
+			"events": "pandorabox-events",
+			"nsfw": "pandorabox-nsfw",
+			"ideas": "pandorabox-ideas"
 		}
 	},{
 		"name": "Discord",
