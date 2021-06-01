@@ -18,5 +18,8 @@ docker-compose pull wiki highscore manager
 # update deployment
 docker-compose up -d --remove-orphans
 
+# reload nginx config
+docker-compose exec nginx nginx -s reload
+
 # cleanup old/stale images
 docker image prune -af
