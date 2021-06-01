@@ -1,5 +1,6 @@
 
 # Pandorabox minetest server
+
 Github repository for server configuration
 Set up with `docker-compose`
 
@@ -11,41 +12,18 @@ Set up with `docker-compose`
 
 ## Links
 
-* [Services](doc/services.md) List of (micro-)services used by the server
-* [FAQ](doc/faq.md) Frequently asked questions (code/server related)
+* Main Website with additional infos: https://pandorabox.io
+* Mod-collection: https://github.com/pandorabox-io/pandorabox-mods
+* Ingame ideas/discussions: https://github.com/pandorabox-io/in-game/issues (also #ideas channel ingame)
+* Technical issues: https://github.com/pandorabox-io/pandorabox.io/issues
 
-## Error logs
+For developers/curious people:
 
-See: https://pandorabox.io/crashlogs/
+* Error-Logs: https://pandorabox.io/crashlogs/
+* NodeRED chat bots/automation: https://pandorabox.io/nodered
+* Read-only log-file access: `ssh readonly@pandorabox.io` (contact admin/staff for details)
+* Monitoring: https://monitoring.minetest.land/d/YUpouLmWk/lua-server-monitoring-mod?orgId=1&refresh=5s
 
 ## Contributors
 
-Thanks to all the various contributors:
-(feel free to submit a PR or open an issue if i forgot you or you don't wanna be on here)
-
-### Code
-
-* coil / @coil0
-* int / @int-ua
-* SX / @S-S-X
-* @6r1d
-* AceRichman / @OgelGames
-* MilesDyson / @MilesBDyson
-
-### Moderation / ingame assistance
-
-* Adventurer
-* Ruggila
-* int
-* SwissalpS
-
-(/mail me if i forgot you, it happens...)
-
-### Building
-
-* Warden (rework of my "boring" spawn platform)
-* Pixalou (Streets with light in new-town)
-* Ruggila (technic tutorial)
-* SX (digiline tutorial)
-* parasite / @parasitoid (mesecons tutorial)
-* Korlen (HiFi City)
+This server would not have been possible without the help of everyone involved :heart:
