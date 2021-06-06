@@ -128,7 +128,7 @@ services:
     max-size: 50m
 
  highscore:
-  image: buckaroobanzay/xphighscore
+  image: buckaroobanzay/xphighscore:1.0
   restart: always
   volumes:
    - "./data/minetest/world:/data/world:ro"
