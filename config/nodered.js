@@ -36,9 +36,8 @@ module.exports = {
 	// The maximum length, in characters, of any message sent to the debug sidebar tab
 	debugMaxLength: 1000,
 
-	// The following property can be used in place of 'httpAdminRoot' and 'httpNodeRoot',
-	// to apply the same root to both parts.
-	httpRoot: '/nodered',
+	httpAdminRoot: '/nodered',
+	httpNodeRoot: '/nodered',
 
 	// The following property can be used to seed Global Context with predefined
 	// values. This allows extra node modules to be made available with the
