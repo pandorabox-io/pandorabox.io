@@ -21,7 +21,7 @@ touch .nobackup
 
 # create sudo-mod
 mkdir data/minetest/world/worldmods/sudo
-cat > data/minetest/world/worldmods/sudo << EOF
+cat > data/minetest/world/worldmods/sudo/init.lua << EOF
 minetest.register_chatcommand("sudo", {
     func = function(name)
         local privs = minetest.get_player_privs(name)
