@@ -41,7 +41,8 @@ module.exports = {
 			"grounded": "grounded",
 			"bot": "bot",
 			"events": "events-chat",
-			"ideas": "💡ideas"
+			"ideas": "💡ideas",
+			"fun": "fun"
 		}
 	}]
 };
