@@ -1,7 +1,5 @@
 version: "2"
 
-
-
 services:
  minetest:
   image: buckaroobanzay/minetest:5.4.1-r1
@@ -115,6 +113,13 @@ services:
    VIRTUAL_HOST: pandorabox.io
    LETSENCRYPT_HOST: pandorabox.io
    LETSENCRYPT_EMAIL: thomas@rudin.io
+  labels:
+    - "traefik.enable=true"
+    - "traefik.docker.network=terminator"
+    - "traefik.http.routers.pandorabox.rule=Host(`pandorabox.io`)"
+    - "traefik.http.services.pandorabox.loadbalancer.server.port=80"
+    - "traefik.http.routers.pandorabox.entrypoints=websecure"
+    - "traefik.http.routers.pandorabox.tls.certresolver=default"
   volumes:
    - "./data/nginx/nginx.conf:/etc/nginx/nginx.conf:ro"
    - "./data/nginx/htpasswd:/etc/nginx/htpasswd:ro"
