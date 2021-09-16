@@ -42,7 +42,8 @@ module.exports = {
 			"bot": "bot",
 			"events": "events-chat",
 			"ideas": "💡ideas",
-			"fun": "fun"
+			"fun": "fun",
+			"reports": "reports"
 		}
 	}]
 };
