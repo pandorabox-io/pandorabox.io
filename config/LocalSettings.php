@@ -128,7 +128,8 @@ $wgGroupPermissions['*']['sendemail'] = true;
 ## names, ie 'vector', 'monobook':
 $wgDefaultSkin = "vector";
 
-$wgUseFileCache = true;
+# NOTE: file-cache has issues with stale category-pages (added/removed pages not showing up)
+$wgUseFileCache = false;
 $wgFileCacheDirectory = "$IP/cache";
 
 # Enabled skins.
