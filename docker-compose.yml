@@ -58,7 +58,7 @@ services:
   restart: always
 
  beerchat-proxy:
-  image: beerchat/beerchat:1.2
+  image: beerchat/beerchat:1.3
   depends_on:
    - "minetest"
   volumes:
