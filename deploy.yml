@@ -1,0 +1,29 @@
+---
+- hosts: all
+  remote_user: root
+  vars:
+    compose_directory: /data/pandorabox.io
+  tasks:
+    - name: Checkout git master
+      ansible.builtin.git:
+        repo: https://github.com/pandorabox-io/pandorabox.io
+        dest: "{{ compose_directory }}"
+        single_branch: yes
+        version: master
+
+    - name: Generate minetest config
+      shell:
+        cmd: "cat minetest.conf minetest.conf.keys > data/minetest/minetest.conf"
+        chdir: "{{ compose_directory }}"
+
+    - name: Create and start services
+      community.general.docker_compose:
+        project_src: "{{ compose_directory }}"
+        pull: yes
+        build: yes
+        remove_orphans: yes
+
+    - name: Reload nginx config
+      shell:
+        cmd: "docker-compose exec -T nginx nginx -s reload"
+        chdir: "{{ compose_directory }}"

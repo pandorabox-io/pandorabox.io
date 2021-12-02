@@ -1,28 +1,25 @@
-name: deployment
+name: deploy
 
 on:
-  repository_dispatch:
-    types: [update_deployment]
   push:
     branches:
       - master
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
+    timeout-minutes: 10
     steps:
     - uses: actions/checkout@v2
-    - name: update compose deployment
+    - name: Prepare environment
       run: |
-        # validate config
-        docker-compose config -q
-        # set up ssh
+        id
         eval $(ssh-agent -s)
-        echo "${{ secrets.SSH_PRIVATE_KEY }}" | tr -d '\r' | ssh-add -
         mkdir -p ~/.ssh
-        chmod 700 ~/.ssh
-        touch ~/.ssh/known_hosts
-        chmod 644 ~/.ssh/known_hosts
-        ssh-keyscan pandorabox.io >> ~/.ssh/known_hosts
-        # execute deployment script
-        cat scripts/deploy.sh | ssh root@pandorabox.io "cd /data/pandorabox.io && /bin/bash -"
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        ssh-keyscan akheron.rudin.io >> ~/.ssh/known_hosts
+        chmod -R 700 ~/.ssh
+        ansible-galaxy collection install community.general
+    - name: Run ansible
+      run: |
+        ansible-playbook -i hosts --private-key ~/.ssh/id_rsa deploy.yml
