@@ -11,6 +11,8 @@ services:
    - "30000:30000/udp"
   depends_on:
    - "postgres"
+  environment:
+   TZ: UTC
   volumes:
    - "./data/minetest:/data"
    - "./data/crashlogs:/crashlogs"
