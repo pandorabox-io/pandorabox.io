@@ -8,4 +8,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: validate config
-      run: docker-compose config -q
+      run: |
+        docker-compose config -q
+        docker-compose pull
