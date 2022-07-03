@@ -42,7 +42,7 @@ services:
     max-size: 50m
 
  ui:
-  image: buckaroobanzay/mtui:1.3
+  image: buckaroobanzay/mtui:1.4
   environment:
    WORLD_DIR: "/data/world"
    COOKIE_DOMAIN: "pandorabox.io"
