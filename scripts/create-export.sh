@@ -32,4 +32,5 @@ cd data/minetest/world && tar cvjf ../../../export/pandorabox.tar.bz2 \
  --exclude mapserver.tiles \
  --exclude mapserver.json \
  --exclude xban.db \
+ --exclude blockexchange_tokens \
  --exclude mod_storage *
