@@ -183,6 +183,14 @@ services:
   environment:
    - GIT_DIR=/git
 
+ autoupdate-skins:
+  image: buckaroobanzay/git_autoupdate
+  restart: always
+  volumes:
+   - "./data/minetest/world/worldmods/skinsdb/textures:/git"
+  environment:
+   - GIT_DIR=/git
+
  kv:
   image: anapsix/webdis
   restart: always
