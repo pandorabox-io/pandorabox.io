@@ -106,7 +106,7 @@ services:
     max-size: 50m
 
  nginx:
-  image: nginx:1.23.0
+  image: nginx:1.23.1
   networks:
    - terminator
    - default
