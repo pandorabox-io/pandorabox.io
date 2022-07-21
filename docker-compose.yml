@@ -52,16 +52,6 @@ services:
    - "./data/minetest:/data"
    - "postgres_socket:/var/run/postgresql"
 
- postgres-exporter:
-  image: wrouesnel/postgres_exporter:v0.8.0
-  restart: always
-  environment:
-   - DATA_SOURCE_URI=postgres:5432/postgres?sslmode=disable
-   - DATA_SOURCE_USER=postgres
-   - DATA_SOURCE_PASS=enter
-  depends_on:
-   - postgres
-
  auth-proxy:
   image: minetestauth/minetest-auth-proxy:1.2
   depends_on:
@@ -118,7 +108,6 @@ services:
    - wiki
    - kv
    - nodered
-   - postgres-exporter
    - ui
   labels:
     - "traefik.enable=true"
