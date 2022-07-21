@@ -104,7 +104,6 @@ services:
   depends_on:
    - highscore
    - mapserver
-   - webmail
    - wiki
    - kv
    - nodered
@@ -140,12 +139,6 @@ services:
    PGDATABASE: postgres
    PGPASSWORD: enter
    PGPORT: 5432
-
- webmail:
-  image: minetestmail/mail:1.2
-  restart: always
-  depends_on:
-   - minetest
 
  manager:
   image: buckaroobanzay/minetest_manager
