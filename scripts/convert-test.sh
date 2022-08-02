@@ -1,9 +1,5 @@
 #!/bin/sh
 
-echo -n "Enter 'YES' to convert to test system: "
-read tmp
-test "$tmp" != "YES" && exit 1
-
 echo "Converting to test system in 5 seconds..."
 sleep 5
 
