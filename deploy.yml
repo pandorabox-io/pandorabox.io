@@ -11,10 +11,10 @@
         single_branch: yes
         version: master
 
-    - name: Generate minetest config
-      shell:
-        cmd: "cat minetest.conf minetest.conf.keys > data/minetest/minetest.conf"
-        chdir: "{{ compose_directory }}"
+    - name: Template minetest config
+      template:
+        src: "minetest.conf"
+        dest: "{{compose_directory}}/data/minetest/minetest.conf"
 
     - name: Create and start services
       community.general.docker_compose:

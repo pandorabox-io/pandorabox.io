@@ -20,6 +20,7 @@ jobs:
         ssh-keyscan akheron.rudin.io >> ~/.ssh/known_hosts
         chmod -R 700 ~/.ssh
         ansible-galaxy collection install community.general
+        echo "${{ secrets.VAULT_PASS }}" > ~/.vault_pass.txt
     - name: Run ansible
       run: |
-        ansible-playbook -i hosts --private-key ~/.ssh/id_rsa deploy.yml
+        ansible-playbook -i hosts --vault-password-file ~/.vault_pass.txt --private-key ~/.ssh/id_rsa deploy.yml
