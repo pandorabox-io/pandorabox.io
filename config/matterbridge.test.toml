@@ -1,0 +1,36 @@
+[irc]
+[irc.Libera]
+Server="irc.libera.chat:6667"
+Nick="pandorabot-test"
+RemoteNickFormat="[{BRIDGE}] <{NICK}> "
+ColorNicks=true
+ShowJoinPart=true
+
+[discord]
+[discord.Discord]
+Token="{{discord_token}}"
+Server="642691106932523028"
+RemoteNickFormat="[{BRIDGE}] <{NICK}> "
+ShowJoinPart=true
+UseUserName=true
+AllowMention=["users"]
+
+[api.minetest]
+BindAddress="0.0.0.0:4242"
+Token="{{matterbridge_token}}"
+Buffer=1000
+RemoteNickFormat="[{BRIDGE}] {NICK}"
+ShowJoinPart=true
+
+[[gateway]]
+name="main"
+enable=true
+[[gateway.inout]]
+account="irc.Libera"
+channel="#pandorabox-test"
+[[gateway.inout]]
+account = "discord.Discord"
+channel="pandorabox-test"
+[[gateway.inout]]
+account="api.minetest"
+channel="api"
