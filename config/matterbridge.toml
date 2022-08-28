@@ -23,6 +23,12 @@ Buffer=1000
 RemoteNickFormat="[{BRIDGE}] {NICK}"
 ShowJoinPart=true
 
+[api.bot]
+BindAddress="0.0.0.0:4243"
+Token="{{matterbridge_bot_token}}"
+Buffer=1000
+RemoteNickFormat="[{BRIDGE}] {NICK}"
+
 [[gateway]]
 name="main"
 enable=true
@@ -133,6 +139,9 @@ channel="vote"
 [[gateway.inout]]
 account="api.minetest"
 channel="api"
+[[gateway.inout]]
+account="api.bot"
+channel="api"
 
 [[gateway]]
 name="offtopic"
@@ -191,6 +200,9 @@ account = "discord.Discord"
 channel="bot"
 [[gateway.inout]]
 account="api.minetest"
+channel="api"
+[[gateway.inout]]
+account="api.bot"
 channel="api"
 
 [[gateway]]
