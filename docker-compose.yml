@@ -58,13 +58,10 @@ services:
    - "minetest"
   restart: always
 
- beerchat-proxy:
-  image: beerchat/beerchat:1.5
-  depends_on:
-   - "minetest"
-  volumes:
-   - "./config/beerchat.js:/data/beerchat.js:ro"
-  restart: always
+ matterbridge:
+   image: 42wim/matterbridge:1.25.2
+   volumes:
+    - ./config/matterbridge.toml:/etc/matterbridge/matterbridge.toml
 
  mapserver:
   image: minetestmapserver/mapserver:latest
