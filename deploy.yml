@@ -19,8 +19,8 @@
 
     - name: Template matterbridge config
       template:
-        src: "config/matterbridge.conf"
-        dest: "{{compose_directory}}/config/matterbridge.conf"
+        src: "config/matterbridge.toml"
+        dest: "{{compose_directory}}/config/matterbridge.toml"
 
     - name: Create and start services
       community.general.docker_compose:
