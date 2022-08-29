@@ -10,7 +10,7 @@ ShowJoinPart=true
 [discord]
 [discord.Discord]
 Token="{{discord_token}}"
-Server="642691106932523028"
+Server="513329453741637637"
 RemoteNickFormat="[{BRIDGE}] <{NICK}> "
 ShowJoinPart=true
 UseUserName=true
