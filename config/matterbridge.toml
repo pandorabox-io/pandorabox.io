@@ -93,10 +93,10 @@ name="fr"
 enable=true
 [[gateway.inout]]
 account="irc.Libera"
-channel="#pandorabox-offtopic"
+channel="#pandorabox-fr"
 [[gateway.inout]]
 account = "discord.Discord"
-channel="offtopic"
+channel="fr"
 [[gateway.inout]]
 account="api.minetest"
 channel="api"
