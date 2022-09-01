@@ -5,14 +5,12 @@ Nick="pandorabot"
 Password="{{irc_password}}"
 RemoteNickFormat="[{BRIDGE}] <{NICK}> "
 ColorNicks=true
-ShowJoinPart=true
 
 [discord]
 [discord.Discord]
 Token="{{discord_token}}"
 Server="513329453741637637"
 RemoteNickFormat="[{BRIDGE}] <{NICK}> "
-ShowJoinPart=true
 UseUserName=true
 AllowMention=["users"]
 
@@ -21,7 +19,6 @@ BindAddress="0.0.0.0:4242"
 Token="{{matterbridge_token}}"
 Buffer=1000
 RemoteNickFormat="[{BRIDGE}] {NICK}"
-ShowJoinPart=true
 
 [api.bot]
 BindAddress="0.0.0.0:4243"
