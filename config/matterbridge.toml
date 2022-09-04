@@ -5,6 +5,7 @@ Nick="pandorabot"
 Password="{{irc_password}}"
 RemoteNickFormat="[{BRIDGE}] <{NICK}> "
 ColorNicks=true
+JoinDelay=2000
 
 [discord]
 [discord.Discord]
