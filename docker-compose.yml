@@ -175,8 +175,10 @@ services:
    - GIT_DIR=/git
 
  kv:
-  image: anapsix/webdis
+  image: nicolas/webdis:0.1.20
   restart: always
+  volumes:
+   - "./config/webdis.json:/etc/webdis.prod.json"
   environment:
    - LOCAL_REDIS=true
 
