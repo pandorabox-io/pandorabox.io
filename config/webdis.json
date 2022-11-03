@@ -12,6 +12,8 @@
 	"database":	0,
 
 	"acl": [{
+        "disabled": ["*"]
+    },{
         "enabled": ["GET", "SET", "DEL", "KEYS", "TIME", "INCR", "DECR"]
 	}],
     "verbosity": 3,
