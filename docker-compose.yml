@@ -42,7 +42,7 @@ services:
     max-size: 50m
 
  ui:
-  image: buckaroobanzay/mtui:1.14
+  image: buckaroobanzay/mtui:1.15
   restart: always
   environment:
    WORLD_DIR: "/data/world"
