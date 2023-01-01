@@ -42,7 +42,7 @@ services:
     max-size: 50m
 
  ui:
-  image: buckaroobanzay/mtui:1.14
+  image: ghcr.io/minetest-go/mtui:v1.16
   restart: always
   environment:
    WORLD_DIR: "/data/world"
