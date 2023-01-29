@@ -60,7 +60,7 @@ services:
   restart: always
 
  matterbridge:
-   image: 42wim/matterbridge:1.25.2
+   image: 42wim/matterbridge:1.26.0
    dns:
     - 8.8.4.4
     - 8.8.8.8
