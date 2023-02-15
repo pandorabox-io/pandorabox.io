@@ -118,9 +118,6 @@ services:
     - "traefik.http.routers.pandorabox.tls.certresolver=default"
   volumes:
    - "./data/nginx/nginx.conf:/etc/nginx/nginx.conf:ro"
-   - "./data/nginx/htpasswd:/etc/nginx/htpasswd:ro"
-   - "./data/nginx/routes:/routes"
-   - "./data/nginx/html:/html"
    - "./data/backup:/backup"
    - "./data/crashlogs:/crashlogs"
   logging:
@@ -151,7 +148,6 @@ services:
   environment:
    - WORLDMODS_DIR=/data/minetest/world/worldmods
    - WORLDMODS_BRANCH=master
-   - MEDIADIR=/data/nginx/html/media
    - DEBUG_LOG=/data/minetest/debug.txt
    - ERROR_LOG_OUTPUT=/data/nginx/html/error-log.txt
   logging:
