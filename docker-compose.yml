@@ -201,6 +201,7 @@ services:
   volumes:
    - "postgres_socket:/var/run/postgresql"
    - "./data/backup:/backup"
+   - "./data/minetest/world:/minetest"
 
 volumes:
   postgres_socket: {}
