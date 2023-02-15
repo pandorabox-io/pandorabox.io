@@ -193,6 +193,15 @@ services:
    options:
     max-size: 50m
 
+ housekeeping:
+  restart: always
+  build: ./housekeeping
+  depends_on:
+   - postgres
+  volumes:
+   - "postgres_socket:/var/run/postgresql"
+   - "./data/backup:/backup"
+
 volumes:
   postgres_socket: {}
 
