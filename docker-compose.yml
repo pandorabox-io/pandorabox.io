@@ -138,38 +138,6 @@ services:
    PGPASSWORD: enter
    PGPORT: 5432
 
- manager:
-  image: buckaroobanzay/minetest_manager
-  depends_on:
-   - minetest
-  restart: always
-  volumes:
-   - "./data:/data"
-  environment:
-   - WORLDMODS_DIR=/data/minetest/world/worldmods
-   - WORLDMODS_BRANCH=master
-   - DEBUG_LOG=/data/minetest/debug.txt
-   - ERROR_LOG_OUTPUT=/data/nginx/html/error-log.txt
-  logging:
-   options:
-    max-size: 50m
-
- autoupdate-textures:
-  image: buckaroobanzay/git_autoupdate
-  restart: always
-  volumes:
-   - "./data/pandorabox-textures:/git"
-  environment:
-   - GIT_DIR=/git
-
- autoupdate-skins:
-  image: buckaroobanzay/git_autoupdate
-  restart: always
-  volumes:
-   - "./data/minetest/world/worldmods/skinsdb/textures:/git"
-  environment:
-   - GIT_DIR=/git
-
  kv:
   image: nicolas/webdis:0.1.20
   restart: always
@@ -200,8 +168,7 @@ services:
    - postgres
   volumes:
    - "postgres_socket:/var/run/postgresql"
-   - "./data/backup:/backup"
-   - "./data/minetest/world:/minetest"
+   - "./data:/data"
 
 volumes:
   postgres_socket: {}
