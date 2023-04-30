@@ -181,6 +181,9 @@ channel="api"
 name="grounded"
 enable=true
 [[gateway.inout]]
+account="irc.Libera"
+channel="#pandorabox-grounded"
+[[gateway.inout]]
 account = "discord.Discord"
 channel="grounded"
 [[gateway.inout]]
