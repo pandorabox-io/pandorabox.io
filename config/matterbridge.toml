@@ -64,6 +64,19 @@ account="api.minetest"
 channel="api"
 
 [[gateway]]
+name="modding"
+enable=true
+[[gateway.inout]]
+account="irc.Libera"
+channel="#pandorabox-modding"
+[[gateway.inout]]
+account = "discord.Discord"
+channel="🛰modding"
+[[gateway.inout]]
+account="api.minetest"
+channel="api"
+
+[[gateway]]
 name="de"
 enable=true
 [[gateway.inout]]
