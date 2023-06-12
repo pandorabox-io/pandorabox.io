@@ -22,6 +22,11 @@
         src: "config/matterbridge.toml"
         dest: "{{compose_directory}}/config/matterbridge.toml"
 
+    - name: Template test matterbridge config
+      template:
+        src: "config/matterbridge.test.toml"
+        dest: "{{compose_directory}}/config/matterbridge.test.toml"
+
     - name: Create and start services
       community.general.docker_compose:
         project_src: "{{ compose_directory }}"
