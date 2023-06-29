@@ -77,6 +77,19 @@ account="api.minetest"
 channel="api"
 
 [[gateway]]
+name="lua"
+enable=true
+[[gateway.inout]]
+account="irc.Libera"
+channel="#pandorabox-lua"
+[[gateway.inout]]
+account = "discord.Discord"
+channel="lua"
+[[gateway.inout]]
+account="api.minetest"
+channel="api"
+
+[[gateway]]
 name="de"
 enable=true
 [[gateway.inout]]
