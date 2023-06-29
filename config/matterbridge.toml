@@ -12,7 +12,7 @@ JoinDelay=2000
 Token="{{discord_token}}"
 Server="513329453741637637"
 RemoteNickFormat="[{BRIDGE}] <{NICK}> "
-UseUserName=true
+UseUserName=false
 AllowMention=["users"]
 
 [api.minetest]
