@@ -9,7 +9,7 @@ WORLD_FILES="map_meta.txt env_meta.txt"
 # areas
 WORLD_FILES="${WORLD_FILES} priv_areas.dat xp_areas.dat areas.dat"
 # mod stuff
-WORLD_FILES="${WORLD_FILES} teleport_tubes mesecon_actionqueue luaentities locator_beacons.txt mod_travelnet.data advtrains*"
+WORLD_FILES="${WORLD_FILES} teleport_tubes mesecon_actionqueue luaentities locator_beacons.txt advtrains*"
 
 # create world file archive
 cd /data/minetest/world
