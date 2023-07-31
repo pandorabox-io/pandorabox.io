@@ -81,11 +81,10 @@ module.exports = {
 		}
 	},
 
-	// Customising the editor
 	editorTheme: {
-		projects: {
-			// To enable the Projects feature, set this value to true
-			enabled: true
-		}
-	}
+        tours: false,
+        projects: {
+            enabled: false
+        }
+    }
 };
