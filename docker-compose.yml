@@ -49,6 +49,7 @@ services:
    COOKIE_DOMAIN: "pandorabox.io"
    COOKIE_SECURE: "true"
    COOKIE_PATH: "/ui"
+   SERVER_NAME: "Pandorabox"
   volumes:
    - "./data/minetest:/data"
    - "postgres_socket:/var/run/postgresql"
