@@ -49,7 +49,7 @@ services:
    ALLOWED_PORT: "30000"
 
  ui:
-  image: ghcr.io/minetest-go/mtui:1.48
+  image: ghcr.io/minetest-go/mtui:1.49
   restart: always
   environment:
    WORLD_DIR: "/data/world"
