@@ -30,6 +30,9 @@ module.exports = {
 		},{
 			username: "6r1d",
 			permissions: ["*"]
+		},{
+			username: "FeXoR-o-Illuria",
+			permissions: ["*"]
 		}]
 	}),
 
