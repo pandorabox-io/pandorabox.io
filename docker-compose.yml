@@ -2,7 +2,7 @@ version: "2"
 
 services:
  minetest:
-  image: buckaroobanzay/minetest:5.7.0-r1
+  image: buckaroobanzay/minetest:5.8.0-r1
   restart: always
   networks:
    - terminator
@@ -13,6 +13,7 @@ services:
    - "postgres"
   volumes:
    - "./data/minetest:/data"
+   - "./minetest_game:/data/world/game"
    - "./data/crashlogs:/crashlogs"
    - "./data/minetest/debug.txt:/root/.minetest/debug.txt"
    - "./config/metatool.cfg:/data/world/metatool.cfg"
