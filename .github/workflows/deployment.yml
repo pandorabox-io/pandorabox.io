@@ -18,7 +18,7 @@ jobs:
         eval $(ssh-agent -s)
         mkdir -p ~/.ssh
         echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
-        ssh-keyscan akheron.rudin.io >> ~/.ssh/known_hosts
+        ssh-keyscan pandorabox.io >> ~/.ssh/known_hosts
         chmod -R 700 ~/.ssh
         ansible-galaxy collection install community.general
         echo "${{ secrets.VAULT_PASS }}" > ~/.vault_pass.txt
