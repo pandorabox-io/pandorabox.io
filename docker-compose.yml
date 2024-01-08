@@ -43,7 +43,7 @@ services:
     max-size: 50m
 
  mtweb:
-  image: ghcr.io/buckaroobanzay/minetest-web:v1.3
+  image: ghcr.io/buckaroobanzay/minetest-web:v1.4
   restart: always
   environment:
    ALLOWED_HOST: "minetest"
