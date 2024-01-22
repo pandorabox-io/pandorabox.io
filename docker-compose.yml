@@ -42,13 +42,6 @@ services:
    options:
     max-size: 50m
 
- mtweb:
-  image: ghcr.io/buckaroobanzay/minetest-web:v1.4
-  restart: always
-  environment:
-   ALLOWED_HOST: "minetest"
-   ALLOWED_PORT: "30000"
-
  ui:
   image: ghcr.io/minetest-go/mtui:1.60
   restart: always
@@ -113,7 +106,6 @@ services:
    - default
   restart: always
   depends_on:
-   - mtweb
    - highscore
    - mapserver
    - wiki
