@@ -58,6 +58,7 @@ services:
    COOKIE_SECURE: "true"
    COOKIE_PATH: "/ui"
    SERVER_NAME: "Pandorabox"
+   WASM_MINETEST_HOST: "minetest"
   volumes:
    - "./data/minetest:/data"
    - "postgres_socket:/var/run/postgresql"
