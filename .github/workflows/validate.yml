@@ -9,5 +9,5 @@ jobs:
     - uses: actions/checkout@v4
     - name: validate config
       run: |
-        docker-compose config -q
-        docker-compose pull
+        docker compose config -q
+        docker compose pull
