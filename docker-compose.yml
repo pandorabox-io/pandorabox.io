@@ -71,7 +71,7 @@ services:
     - ./config/matterbridge.toml:/etc/matterbridge/matterbridge.toml
 
  mapserver:
-  image: minetestmapserver/mapserver:latest
+  image: ghcr.io/minetest-mapserver/mapserver:v4.9.1
   restart: always
   depends_on:
    - "postgres"
