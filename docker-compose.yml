@@ -85,7 +85,7 @@ services:
     max-size: 50m
 
  wiki:
-  image: buckaroobanzay/mediawiki:1.35-r1
+  image: buckaroobanzay/mediawiki:1.38-r1
   restart: always
   depends_on:
    - "postgres"
