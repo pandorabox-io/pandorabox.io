@@ -28,11 +28,9 @@
         dest: "{{compose_directory}}/config/matterbridge.test.toml"
 
     - name: Create and start services
-      community.docker.docker_compose_v2:
-        project_src: "{{ compose_directory }}"
-        pull: "always"
-        build: "always"
-        remove_orphans: yes
+      shell:
+        cmd: "docker-compose up -d --build --remove-orphans"
+        chdir: "{{ compose_directory }}"
 
     - name: Reload nginx config
       shell:
