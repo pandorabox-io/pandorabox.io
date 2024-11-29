@@ -28,7 +28,7 @@
         dest: "{{compose_directory}}/config/matterbridge.test.toml"
 
     - name: Create and start services
-      community.general.docker_compose:
+      community.docker.docker_compose_v2:
         project_src: "{{ compose_directory }}"
         pull: yes
         build: yes
