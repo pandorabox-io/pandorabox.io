@@ -30,8 +30,8 @@
     - name: Create and start services
       community.docker.docker_compose_v2:
         project_src: "{{ compose_directory }}"
-        pull: yes
-        build: yes
+        pull: "always"
+        build: "always"
         remove_orphans: yes
 
     - name: Reload nginx config
