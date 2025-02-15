@@ -63,12 +63,12 @@ services:
   restart: always
 
  matterbridge:
-   image: 42wim/matterbridge:1.26.0
-   dns:
-    - 8.8.4.4
-    - 8.8.8.8
-   volumes:
-    - ./config/matterbridge.toml:/etc/matterbridge/matterbridge.toml
+  image: 42wim/matterbridge:1.26.0
+  dns:
+   - 8.8.4.4
+   - 8.8.8.8
+  volumes:
+   - ./config/matterbridge.toml:/etc/matterbridge/matterbridge.toml
 
  mapserver:
   image: ghcr.io/minetest-mapserver/mapserver:v4.9.1
@@ -113,12 +113,12 @@ services:
    - nodered
    - ui
   labels:
-    - "traefik.enable=true"
-    - "traefik.docker.network=terminator"
-    - "traefik.http.routers.pandorabox.rule=Host(`pandorabox.io`)"
-    - "traefik.http.services.pandorabox.loadbalancer.server.port=80"
-    - "traefik.http.routers.pandorabox.entrypoints=websecure"
-    - "traefik.http.routers.pandorabox.tls.certresolver=default"
+   - "traefik.enable=true"
+   - "traefik.docker.network=terminator"
+   - "traefik.http.routers.pandorabox.rule=Host(`pandorabox.io`)"
+   - "traefik.http.services.pandorabox.loadbalancer.server.port=80"
+   - "traefik.http.routers.pandorabox.entrypoints=websecure"
+   - "traefik.http.routers.pandorabox.tls.certresolver=default"
   volumes:
    - "./config/nginx.conf:/etc/nginx/nginx.conf:ro"
    - "./data/backup:/backup"
@@ -155,7 +155,7 @@ services:
    - postgres
   restart: always
   environment:
-  - TZ=Europe/Zurich
+   - TZ=Europe/Zurich
   volumes:
    - "./data/nodered:/data"
    - "./data/minetest:/minetest"
@@ -174,7 +174,7 @@ services:
    - "./data:/data"
 
 volumes:
-  postgres_socket: {}
+ postgres_socket: {}
 
 networks:
  terminator:
