@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 update-git /data/minetest/world/worldmods master >> /data/update-log.txt
