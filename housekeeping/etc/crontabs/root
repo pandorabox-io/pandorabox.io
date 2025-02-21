@@ -1,5 +1,5 @@
 # min   hour    day     month   weekday command
-*       *       *       *       *       /bin/update-repos.sh &> /dev/null &
+*       *       *       *       *       nohup /bin/update-repos.sh
 0       *       *       *       *       /bin/crashlogs-cleanup.sh
 0       *       *       *       *       /bin/logrotate.sh
 0       3       *       *       6       /bin/public-backup.sh
