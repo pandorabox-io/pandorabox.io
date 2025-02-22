@@ -43,7 +43,7 @@ services:
     max-size: 50m
 
  ui:
-  image: ghcr.io/minetest-go/mtui:v1.79
+  image: ghcr.io/minetest-go/mtui:v1.80
   restart: always
   environment:
    WORLD_DIR: "/data/world"
