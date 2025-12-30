@@ -24,7 +24,7 @@ services:
     max-size: 50m
 
  postgres:
-  image: postgres:13.22-alpine
+  image: postgres:18.1-alpine
   restart: always
   shm_size: '2gb'
   environment:
