@@ -177,6 +177,18 @@ services:
    - "postgres_socket:/var/run/postgresql"
    - "./data:/data"
 
+ mapcleaner:
+  image: ghcr.io/minetest-go/mapcleaner:latest
+  restart: "no"
+  profiles: [mapcleaner]
+  volumes:
+   - "./data/minetest/world:/data/world"
+   - "postgres_socket:/var/run/postgresql"
+  depends_on:
+   - "postgres"
+  working_dir: /data/world
+
+
 volumes:
  postgres_socket: {}
 
