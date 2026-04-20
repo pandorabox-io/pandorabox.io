@@ -24,13 +24,13 @@ services:
     max-size: 50m
 
  postgres:
-  image: postgres:13.22-alpine
+  image: postgres:18.3
   restart: always
   shm_size: '2gb'
   environment:
    POSTGRES_PASSWORD: enter
   volumes:
-   - "./data/postgres:/var/lib/postgresql/data"
+   - "./data/postgres:/var/lib/postgresql"
    - "postgres_socket:/var/run/postgresql"
   command:
    - "postgres"
