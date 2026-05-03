@@ -146,7 +146,7 @@ services:
    PGPORT: 5432
 
  kv:
-  image: nicolas/webdis:0.1.23
+  image: nicolas/webdis:0.1.24
   restart: always
   volumes:
    - "./config/webdis.json:/etc/webdis.prod.json"
