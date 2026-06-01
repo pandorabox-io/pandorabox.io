@@ -98,35 +98,6 @@ services:
    - "./data/wiki/images:/var/www/html/images"
    - "./config/LocalSettings.php:/var/www/html/LocalSettings.php"
    - "./data/wiki/LocalSettings.secrets.php:/var/www/html/LocalSettings.secrets.php"
-
-  logging:
-   options:
-    max-size: 50m
-
- nginx:
-  image: nginx:1.30.0
-  networks:
-   - terminator
-   - default
-  restart: always
-  depends_on:
-   - highscore
-   - mapserver
-   - wiki
-   - kv
-   - nodered
-   - ui
-  labels:
-   - "traefik.enable=true"
-   - "traefik.docker.network=terminator"
-   - "traefik.http.routers.pandorabox.rule=Host(`pandorabox.io`)"
-   - "traefik.http.services.pandorabox.loadbalancer.server.port=80"
-   - "traefik.http.routers.pandorabox.entrypoints=websecure"
-   - "traefik.http.routers.pandorabox.tls.certresolver=default"
-  volumes:
-   - "./config/nginx.conf:/etc/nginx/nginx.conf:ro"
-   - "./data/backup:/backup"
-   - "./data/crashlogs:/crashlogs"
   logging:
    options:
     max-size: 50m
@@ -188,6 +159,58 @@ services:
    - "postgres"
   working_dir: /data/world
 
+ pandorabox-nginx:
+  image: nginx:1.30.0
+  restart: always
+  depends_on:
+   - highscore
+   - mapserver
+   - wiki
+   - kv
+   - nodered
+   - ui
+   - minetest
+  volumes:
+   - "./config/nginx.conf:/etc/nginx/nginx.conf:ro"
+   - "./data/backup:/backup"
+   - "./data/crashlogs:/crashlogs"
+
+ pandorabox-anubis:
+   image: ghcr.io/techarohq/anubis:v1.25.0
+   networks:
+    - terminator
+    - default
+   depends_on:
+    - pandorabox-nginx
+   restart: always
+   environment:
+     BIND: ":8080"
+     DIFFICULTY: "4"
+     METRICS_BIND: ":9090"
+     SERVE_ROBOTS_TXT: "true"
+     COOKIE_DOMAIN: "pandorabox.io"
+     COOKIE_SAME_SITE: "Lax"
+     COOKIE_PREFIX: "pow-cookie"
+     DIFFICULTY_IN_JWT: "true"
+     XFF_STRIP_PRIVATE: "false"
+     TARGET: "http://pandorabox-nginx"
+     POLICY_FNAME: "/data/cfg/botPolicy.yaml"
+   healthcheck:
+     test: ["CMD", "anubis", "--healthcheck"]
+     interval: 5s
+     timeout: 30s
+     retries: 5
+     start_period: 500ms
+   volumes:
+     - "./botPolicy.yaml:/data/cfg/botPolicy.yaml:ro"
+     - "./data/anubis:/data"
+   labels:
+    - "traefik.enable=true"
+    - "traefik.docker.network=terminator"
+    - "traefik.http.routers.pandorabox.rule=Host(`pandorabox.io`)"
+    - "traefik.http.services.pandorabox.loadbalancer.server.port=8080"
+    - "traefik.http.routers.pandorabox.entrypoints=websecure"
+    - "traefik.http.routers.pandorabox.tls.certresolver=default"
 
 volumes:
  postgres_socket: {}
