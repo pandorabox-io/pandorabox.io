@@ -34,5 +34,5 @@
 
     - name: Reload nginx config
       shell:
-        cmd: "docker compose exec -T nginx nginx -s reload"
+        cmd: "docker compose exec -T pandorabox-nginx nginx -s reload"
         chdir: "{{ compose_directory }}"
