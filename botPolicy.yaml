@@ -39,7 +39,7 @@ bots:
     expression:
      all:
       - method == "GET"
-      - path.matches("(^/index.php.*$)")
+      - path.matches("(^/index.php.*$|^api.php.*$)")
 
 thresholds:
   - name: minimal-suspicion
