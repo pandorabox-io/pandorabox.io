@@ -127,7 +127,7 @@ services:
    - LOCAL_REDIS=true
 
  nodered:
-  image: nodered/node-red:4.1.8-18-minimal
+  image: nodered/node-red:4.1.14-18-minimal
   depends_on:
    - postgres
   restart: always
