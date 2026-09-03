@@ -162,7 +162,7 @@ services:
   working_dir: /data/world
 
  pandorabox-nginx:
-  image: nginx:1.30.0
+  image: nginx:1.31.5
   restart: always
   depends_on:
    - highscore
