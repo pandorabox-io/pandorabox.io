@@ -1,24 +1,26 @@
 version: "2"
 
 services:
- minetest:
-  image: buckaroobanzay/minetest:5.15.2-r1
+ luanti:
+  image: ghcr.io/luanti-org/luanti:5.17.0
   restart: always
   networks:
    - terminator
    - default
+  user: root
   ports:
    - "30000:30000/udp"
   depends_on:
    - "postgres"
   volumes:
-   - "./data/minetest:/data"
-   - "./minetest_game:/data/world/game"
-   - "./data/crashlogs:/crashlogs"
-   - "./data/minetest/debug.txt:/root/.minetest/debug.txt"
-   - "./config/metatool.cfg:/data/world/metatool.cfg"
+   - "./data/minetest/world:/root/.minetest/worlds/world"
+   - "./minetest_game:/root/.minetest/worlds/world/game"
+   - "./data/minetest/minetest.conf:/minetest.conf"
+   - "./config/metatool.cfg:/root/.minetest/worlds/world/metatool.cfg"
    - "./data/pandorabox-textures:/root/.minetest/textures/server"
+   - "./data/logs:/logs"
    - "postgres_socket:/var/run/postgresql"
+  command: ["--config", "/minetest.conf", "--logfile", "/logs/debug.txt"]
   logging:
    options:
     max-size: 50m
@@ -55,7 +57,7 @@ services:
    COOKIE_SECURE: "true"
    COOKIE_PATH: "/ui"
    SERVER_NAME: "Pandorabox"
-   WASM_MINETEST_HOST: "minetest"
+   WASM_MINETEST_HOST: "luanti"
   volumes:
    - "./data/minetest:/data"
    - "postgres_socket:/var/run/postgresql"
@@ -63,7 +65,7 @@ services:
  auth-proxy:
   image: minetestauth/minetest-auth-proxy:1.2
   depends_on:
-   - "minetest"
+   - "luanti"
   restart: always
 
  matterbridge:
@@ -80,7 +82,7 @@ services:
   restart: always
   depends_on:
    - "postgres"
-   - "minetest"
+   - "luanti"
   volumes:
    - "./data/minetest/world:/minetest"
    - "postgres_socket:/var/run/postgresql"
@@ -167,6 +169,7 @@ services:
   depends_on:
    - highscore
    - mapserver
+   - luanti
    - wiki
    - kv
    - nodered
@@ -174,7 +177,6 @@ services:
   volumes:
    - "./config/nginx.conf:/etc/nginx/nginx.conf:ro"
    - "./data/backup:/backup"
-   - "./data/crashlogs:/crashlogs"
   logging:
    options:
     max-size: 50m
