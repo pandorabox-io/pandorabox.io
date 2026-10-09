@@ -182,7 +182,7 @@ services:
     max-size: 50m
 
  pandorabox-anubis:
-  image: ghcr.io/techarohq/anubis:v1.25.0
+  image: ghcr.io/techarohq/anubis:v1.28.1
   networks:
    - terminator
    - default
