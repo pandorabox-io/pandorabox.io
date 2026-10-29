@@ -2,7 +2,7 @@ version: "2"
 
 services:
  luanti:
-  image: ghcr.io/luanti-org/luanti:5.17.0
+  image: ghcr.io/luanti-org/luanti:5.18.0
   restart: always
   networks:
    - terminator
