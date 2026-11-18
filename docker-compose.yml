@@ -58,7 +58,9 @@ services:
    COOKIE_PATH: "/ui"
    SERVER_NAME: "Pandorabox"
    WASM_MINETEST_HOST: "luanti"
+   TAIL_ENGINE_LOGFILE: "/data/logs/debug.txt"
   volumes:
+   - "./data/logs:/logs"
    - "./data/minetest:/data"
    - "postgres_socket:/var/run/postgresql"
 
