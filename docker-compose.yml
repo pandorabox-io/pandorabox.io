@@ -72,7 +72,7 @@ services:
 
  matterbridge:
   restart: always
-  image: 42wim/matterbridge:1.26.0
+  image: ghcr.io/matterbridge-org/matterbridge:latest
   dns:
    - 8.8.4.4
    - 8.8.8.8
